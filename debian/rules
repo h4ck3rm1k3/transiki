@@ -5,7 +5,9 @@ configure-stamp:
 	dh_testdir
 	# Add here commands to configure the package.
 	#ruby1.8 setup.rb config --prefix=$(CURDIR)/debian/transikiapi/usr
-	rake
+	rake db
+	rake db:migrate
+	rake 
 	touch configure-stamp
 
 build: build-stamp

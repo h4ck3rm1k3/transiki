@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101007195801) do
+ActiveRecord::Schema.define(:version => 20101011134822) do
 
   create_table "old_point_tags", :force => true do |t|
     t.string   "key"
@@ -65,6 +65,15 @@ ActiveRecord::Schema.define(:version => 20101007195801) do
     t.integer  "version"
     t.integer  "user_id"
     t.boolean  "visible"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "route_point_tags", :force => true do |t|
+    t.integer  "route_id"
+    t.integer  "point_id"
+    t.string   "key"
+    t.string   "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

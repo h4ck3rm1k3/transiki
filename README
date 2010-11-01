@@ -1,3 +1,17 @@
 transiki is a wiki of transit data, see transiki.org
 
 FIXME link to codebase, wiki, mailing list, etc...
+
+To isntall this, I needed to :
+0. install the prereqs from the debian/control file
+1. run the scrip in debian/gems.sh
+2. setup the database like debian/database.sh
+3. install the /etc/postgresql/8.4/main/pg_hba.conf like debian/etc/postgresql/8.4/main/pg_hba.conf
+the just run dpkg-buildpackage -us -uc to try and build.
+
+you will get some errors. my results are currently in debian/testlog.txt.
+
+more to come
+
+Mike
+~~~~
