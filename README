@@ -15,3 +15,13 @@ more to come
 
 Mike
 ~~~~
+
+How to test :
+rails server
+
+Create user :
+http://0.0.0.0:3000/users/new
+
+Create a new point:
+http://0.0.0.0:3000/points/new/
+
