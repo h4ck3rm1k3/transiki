@@ -1,0 +1,12 @@
+Source: transikiapi
+Section: interpreters
+Priority: optional
+Maintainer: James Michael DuPont <h4ck3rm1k3@flossk.org>
+Build-Depends: debhelper (>= 4.0.0), ruby1.8, ruby1.8-dev,ruby-full, build-essential, libopenssl-ruby, apache2, apache2-mpm-prefork, apache2-prefork-dev, rubygems , rake (>> 0.8.3), ruby1.8 (>= 1.8.7.249-3) | rdoc (>> 1.8.2), liberb-ruby, libbuilder-ruby (>> 2.1.2), libmocha-ruby (>> 0.6), rubygems, libredcloth-ruby1.8 (>> 4.1.1), librack-ruby
+Standards-Version: 3.6.2
+
+Package: transikiapi
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Transiki API
+ Transiki the Transportation Wiki ruby api server
