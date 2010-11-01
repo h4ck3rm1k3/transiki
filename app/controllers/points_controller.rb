@@ -2,6 +2,29 @@ class PointsController < ApplicationController
   before_filter :require_user, :only => [:new, :edit]
   before_filter :require_user_api, :only => [:create_xml, :delete]
 
+  # GET /points
+  # GET /points.xml
+  def index
+    @points = Point.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @points }
+    end
+  end
+
+  # GET /points/1
+  # GET /points/1.xml
+  def show
+    @point = Point.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @point }
+    end
+  end
+
+
   # GET /points/new
   # GET /points/new.xml
   def new

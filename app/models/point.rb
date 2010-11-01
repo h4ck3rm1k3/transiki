@@ -6,6 +6,27 @@ class Point < ActiveRecord::Base
   # like OSM, we should maintain our own hash of tags internally to the model
   # but we don't yet.
 
+  # def tagstring
+  #   return tags.collect {|tt| tt.tag}.join(", ")
+  # end
+
+  # def tagstring=(s)
+  #   if s.include? ','
+  #     self.tags = s.split(/\s*,\s*/).select {|tag| tag !~ /^\s*$/}.collect {|tag|
+  #       tt = Tracetag.new
+  #       tt.tag = tag
+  #       tt
+  #     }
+  #   else
+  #     #do as before for backwards compatibility:
+  #     self.tags = s.split().collect {|tag|
+  #       tt = Tracetag.new
+  #       tt.tag = tag
+  #       tt
+  #     }
+  #   end
+  # end
+
   def tag_string=(ts)
     point_tags = []
 
