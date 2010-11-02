@@ -1,0 +1,2583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="OpenStreetMap server">
+  <node id="9665698" lat="54.103574" lon="12.1583754" version="2" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:58:00Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="9665704" lat="54.1038472" lon="12.1567796" version="2" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:29:57Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="25469020" lat="54.1352997" lon="12.1064654" version="6" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:59Z"/>
+  <node id="25469019" lat="54.1352936" lon="12.1054357" version="5" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:59Z"/>
+  <node id="25468941" lat="54.1353913" lon="12.105426" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:59Z"/>
+  <node id="25469022" lat="54.1354918" lon="12.1086607" version="5" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:01Z"/>
+  <node id="25469010" lat="54.1360171" lon="12.0809707" version="2" changeset="752245" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-07T19:27:56Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="25469023" lat="54.1361367" lon="12.111897" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="25469024" lat="54.1367706" lon="12.1140791" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="25469025" lat="54.1371436" lon="12.1153514" version="5" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z">
+    <tag k="name" v="Rostock-Überseehafen"/>
+    <tag k="highway" v="motorway_junction"/>
+    <tag k="ref" v="4"/>
+  </node>
+  <node id="25468935" lat="54.1372237" lon="12.115212" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="25469000" lat="54.1380174" lon="12.0619884" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:31Z"/>
+  <node id="25469001" lat="54.1379873" lon="12.0626314" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:31Z"/>
+  <node id="25469003" lat="54.1378023" lon="12.0665132" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:36Z"/>
+  <node id="25469002" lat="54.1379527" lon="12.063351" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:38Z"/>
+  <node id="25469012" lat="54.1351196" lon="12.0843285" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:43Z"/>
+  <node id="25468939" lat="54.1355218" lon="12.1075386" version="9" changeset="5793409" user="crazystars" uid="347298" visible="true" timestamp="2010-09-16T08:45:28Z">
+    <tag k="name" v="Warnowtunnel"/>
+    <tag k="barrier" v="toll_booth"/>
+    <tag k="charge:pkw" v="2,30 Euro"/>
+    <tag k="operator" v="Warnowtunnel"/>
+  </node>
+  <node id="25469021" lat="54.1353799" lon="12.1075861" version="10" changeset="5793409" user="crazystars" uid="347298" visible="true" timestamp="2010-09-16T08:45:30Z">
+    <tag k="name" v="Warnowtunnel"/>
+    <tag k="barrier" v="toll_booth"/>
+    <tag k="charge:pkw" v="2,30 Euro"/>
+    <tag k="operator" v="Warnowtunnel"/>
+  </node>
+  <node id="25470918" lat="54.1043302" lon="12.1588638" version="2" changeset="815739" user="falcius" uid="52602" visible="true" timestamp="2008-11-30T19:48:03Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="25470919" lat="54.1047452" lon="12.1594305" version="3" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:57:00Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="25470920" lat="54.1055807" lon="12.1609814" version="2" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:21:33Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="25470922" lat="54.1070132" lon="12.163444" version="1" changeset="32384" visible="true" timestamp="2007-04-28T23:28:01Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="25470924" lat="54.1073812" lon="12.1639564" version="1" changeset="32384" visible="true" timestamp="2007-04-28T23:28:01Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="25470927" lat="54.108508" lon="12.1652752" version="2" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:21:30Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="27651075" lat="54.1382557" lon="12.0479072" version="3" changeset="4889677" user="kilt" uid="92408" visible="true" timestamp="2010-06-03T06:36:40Z"/>
+  <node id="27651071" lat="54.1382492" lon="12.0571761" version="3" changeset="840148" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-26T13:03:35Z">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="28151632" lat="54.1098445" lon="12.1630405" version="4" changeset="613288" user="SvenHRO" uid="46882" visible="true" timestamp="2008-07-27T21:35:42Z">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="28151634" lat="54.1085739" lon="12.1653585" version="2" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:21:29Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="28152267" lat="54.1372888" lon="12.1167398" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="28171219" lat="54.1076734" lon="12.1643008" version="2" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:21:31Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="28171222" lat="54.1069212" lon="12.1632681" version="2" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:21:27Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="28171245" lat="54.1040446" lon="12.1557673" version="2" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:29:59Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="28171247" lat="54.1045429" lon="12.1590888" version="2" changeset="815739" user="falcius" uid="52602" visible="true" timestamp="2008-11-30T19:47:56Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="28927577" lat="54.1430409" lon="12.1094571" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="28927637" lat="54.1381596" lon="12.1185029" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="28927647" lat="54.1421934" lon="12.1098277" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="28928053" lat="54.1390187" lon="12.1142389" version="5" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="28928055" lat="54.1377948" lon="12.1190044" version="6" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="28928056" lat="54.1370004" lon="12.1199667" version="8" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="28928054" lat="54.138114" lon="12.1183726" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="28928059" lat="54.1408229" lon="12.1107595" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="28928057" lat="54.1433075" lon="12.1091522" version="2" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:09Z"/>
+  <node id="30237811" lat="54.1357718" lon="12.1212517" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="30240587" lat="54.1341075" lon="12.0774958" version="6" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:43Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="30240580" lat="54.1370003" lon="12.0653882" version="2" changeset="38621" user="jennergruhle" uid="7532" visible="true" timestamp="2008-08-03T21:01:27Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30240581" lat="54.1362407" lon="12.0656186" version="2" changeset="312237" user="jennergruhle" uid="7532" visible="true" timestamp="2008-05-02T18:39:18Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30240582" lat="54.1351278" lon="12.0672995" version="2" changeset="212121" user="sumpfralle" uid="18325" visible="true" timestamp="2008-02-26T09:01:59Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30240586" lat="54.134156" lon="12.0765399" version="4" changeset="752245" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-07T19:28:16Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30240650" lat="54.134099" lon="12.0776619" version="6" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:42Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="30240647" lat="54.1382503" lon="12.0658926" version="2" changeset="840148" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-26T13:04:24Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30240649" lat="54.1381185" lon="12.0657085" version="1" changeset="92296" user="jennergruhle" uid="7532" visible="true" timestamp="2007-06-12T11:32:04Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30244495" lat="54.134416" lon="12.0732803" version="6" changeset="1103340" user="kilt" uid="92408" visible="true" timestamp="2009-05-07T05:27:24Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30244494" lat="54.1344855" lon="12.0705577" version="5" changeset="1103340" user="kilt" uid="92408" visible="true" timestamp="2009-05-07T05:27:24Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30244493" lat="54.1344941" lon="12.0694294" version="5" changeset="1103340" user="kilt" uid="92408" visible="true" timestamp="2009-05-07T05:27:24Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30244492" lat="54.1347828" lon="12.0686617" version="7" changeset="1267642" user="kilt" uid="92408" visible="true" timestamp="2009-05-20T19:48:02Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729740" lat="54.109922" lon="12.1629574" version="2" changeset="352497" user="jennergruhle" uid="7532" visible="true" timestamp="2008-03-19T22:15:48Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729741" lat="54.1108169" lon="12.1630007" version="3" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:11Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729742" lat="54.1115603" lon="12.163902" version="3" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:13Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729744" lat="54.1127592" lon="12.1635336" version="3" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:45Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729745" lat="54.1135869" lon="12.1607307" version="2" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:20Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729746" lat="54.1144519" lon="12.1576682" version="2" changeset="286085" user="jennergruhle" uid="7532" visible="true" timestamp="2008-04-29T16:20:11Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729747" lat="54.1149119" lon="12.1560694" version="3" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:08Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729748" lat="54.1155668" lon="12.153846" version="2" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:52Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729749" lat="54.116434" lon="12.1509246" version="1" changeset="106388" user="jennergruhle" uid="7532" visible="true" timestamp="2007-06-21T08:29:07Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30729750" lat="54.1173501" lon="12.1481651" version="1" changeset="106388" user="jennergruhle" uid="7532" visible="true" timestamp="2007-06-21T08:29:08Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30730850" lat="54.1176733" lon="12.1472936" version="2" changeset="269454" user="bender2004" uid="18097" visible="true" timestamp="2008-03-05T16:45:50Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30731083" lat="54.1194375" lon="12.1421377" version="1" changeset="106388" user="jennergruhle" uid="7532" visible="true" timestamp="2007-06-21T09:48:47Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30731084" lat="54.1186561" lon="12.1445148" version="1" changeset="106388" user="jennergruhle" uid="7532" visible="true" timestamp="2007-06-21T09:48:47Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30997741" lat="54.1331932" lon="12.0432166" version="2" changeset="4006526" user="!i!" uid="25720" visible="true" timestamp="2010-03-01T08:28:04Z"/>
+  <node id="30997743" lat="54.1339943" lon="12.0436684" version="3" changeset="4006526" user="!i!" uid="25720" visible="true" timestamp="2010-03-01T08:28:04Z"/>
+  <node id="30997744" lat="54.1338024" lon="12.0431978" version="2" changeset="4006526" user="!i!" uid="25720" visible="true" timestamp="2010-03-01T08:28:04Z"/>
+  <node id="30997731" lat="54.1382553" lon="12.0498278" version="6" changeset="4745286" user="Masch" uid="55988" visible="true" timestamp="2010-05-19T06:24:12Z">
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="30997736" lat="54.1382554" lon="12.0436902" version="3" changeset="321683" user="falcius" uid="52602" visible="true" timestamp="2008-12-11T19:53:13Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30997742" lat="54.133229" lon="12.0436879" version="3" changeset="4827784" user="kilt" uid="92408" visible="true" timestamp="2010-05-28T05:59:42Z"/>
+  <node id="30997737" lat="54.1341256" lon="12.0436774" version="5" changeset="4895172" user="kilt" uid="92408" visible="true" timestamp="2010-06-03T18:56:33Z"/>
+  <node id="30999113" lat="54.1380876" lon="12.0502405" version="4" changeset="4745286" user="Masch" uid="55988" visible="true" timestamp="2010-05-19T06:24:12Z">
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="30999111" lat="54.138087" lon="12.0479069" version="3" changeset="4889677" user="kilt" uid="92408" visible="true" timestamp="2010-06-03T06:36:39Z"/>
+  <node id="30999112" lat="54.1380934" lon="12.0571776" version="3" changeset="840148" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-26T13:03:43Z">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="30999114" lat="54.138078" lon="12.0436948" version="4" changeset="2259155" user="Schwedenhagen" uid="70400" visible="true" timestamp="2009-08-25T18:29:12Z"/>
+  <node id="30999302" lat="54.1382552" lon="12.0540507" version="4" changeset="4218727" user="kilt" uid="92408" visible="true" timestamp="2010-03-24T07:17:06Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="31000003" lat="54.1380538" lon="12.0633347" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:37Z"/>
+  <node id="31000004" lat="54.1380919" lon="12.0625876" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:31Z"/>
+  <node id="31197166" lat="54.1379025" lon="12.0643959" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:38Z"/>
+  <node id="31513635" lat="54.1214237" lon="12.1478191" version="2" changeset="58511" user="bender2004" uid="18097" visible="true" timestamp="2008-02-06T20:45:17Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="31577696" lat="54.1049662" lon="12.159891" version="4" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:57:00Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="32122086" lat="54.133484" lon="12.1296618" version="3" changeset="5066770" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:08:17Z"/>
+  <node id="32122060" lat="54.1345654" lon="12.1263902" version="3" changeset="5066770" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:08:19Z"/>
+  <node id="32122264" lat="54.1282764" lon="12.1393847" version="2" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:19Z"/>
+  <node id="32122265" lat="54.1260778" lon="12.1431944" version="2" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:19Z"/>
+  <node id="32122269" lat="54.1236851" lon="12.1476675" version="2" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:20Z"/>
+  <node id="59768893" lat="54.1411055" lon="12.1279176" version="2" changeset="4503952" user="jennergruhle" uid="7532" visible="true" timestamp="2010-04-23T14:16:10Z"/>
+  <node id="59768900" lat="54.1459527" lon="12.1326811" version="2" changeset="4503952" user="jennergruhle" uid="7532" visible="true" timestamp="2010-04-23T14:16:11Z"/>
+  <node id="59768892" lat="54.1408403" lon="12.1279799" version="2" changeset="4503952" user="jennergruhle" uid="7532" visible="true" timestamp="2010-04-23T14:16:13Z"/>
+  <node id="59768890" lat="54.1404813" lon="12.1282189" version="2" changeset="4503952" user="jennergruhle" uid="7532" visible="true" timestamp="2010-04-23T14:16:14Z"/>
+  <node id="59768894" lat="54.1414095" lon="12.1280888" version="1" changeset="515984" user="jennergruhle" uid="7532" visible="true" timestamp="2007-09-25T18:28:07Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="59768897" lat="54.1452306" lon="12.1311243" version="2" changeset="310532" user="jennergruhle" uid="7532" visible="true" timestamp="2008-03-12T10:10:18Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="59768898" lat="54.1454396" lon="12.1313809" version="1" changeset="515984" user="jennergruhle" uid="7532" visible="true" timestamp="2007-09-25T18:28:07Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="59768899" lat="54.1457596" lon="12.1319796" version="1" changeset="515984" user="jennergruhle" uid="7532" visible="true" timestamp="2007-09-25T18:28:08Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="59768901" lat="54.1460314" lon="12.1327654" version="1" changeset="515984" user="jennergruhle" uid="7532" visible="true" timestamp="2007-09-25T18:28:08Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="59768946" lat="54.1138636" lon="12.1597073" version="2" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:42Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="59768947" lat="54.1140136" lon="12.1591736" version="2" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:34Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="59768953" lat="54.1049366" lon="12.1598281" version="4" changeset="318967" user="bahnpirat" uid="13203" visible="true" timestamp="2008-12-11T14:05:07Z"/>
+  <node id="73832941" lat="54.138097" lon="12.0568126" version="5" changeset="4718554" user="!i!" uid="25720" visible="true" timestamp="2010-05-16T15:37:49Z">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="73832954" lat="54.1380905" lon="12.0574637" version="5" changeset="4718554" user="!i!" uid="25720" visible="true" timestamp="2010-05-16T15:37:51Z">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="73832947" lat="54.1382471" lon="12.0574772" version="5" changeset="4718554" user="!i!" uid="25720" visible="true" timestamp="2010-05-16T15:37:53Z">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="74148097" lat="54.1361881" lon="12.0660352" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:36Z"/>
+  <node id="74148100" lat="54.1363617" lon="12.0659152" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:36Z"/>
+  <node id="74148078" lat="54.1362813" lon="12.0669282" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:36Z"/>
+  <node id="74148050" lat="54.1377647" lon="12.0669149" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:36Z"/>
+  <node id="74148074" lat="54.1365848" lon="12.067209" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:37Z"/>
+  <node id="74148068" lat="54.1369516" lon="12.0673766" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:37Z"/>
+  <node id="74148064" lat="54.1371788" lon="12.0674005" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:37Z"/>
+  <node id="74148057" lat="54.1374083" lon="12.0674176" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:37Z"/>
+  <node id="74148174" lat="54.1456892" lon="12.1009246" version="2" changeset="374955" user="Masch" uid="55988" visible="true" timestamp="2009-04-10T11:44:29Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="74148179" lat="54.1462555" lon="12.1002104" version="3" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:57Z"/>
+  <node id="92273963" lat="54.137998" lon="12.0644287" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:38Z"/>
+  <node id="183230856" lat="54.1133462" lon="12.1615955" version="5" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:31Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="197671253" lat="54.1462902" lon="12.1008092" version="4" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:57Z"/>
+  <node id="197672438" lat="54.14433" lon="12.1055192" version="4" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:56Z">
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="205288238" lat="54.1343277" lon="12.0777555" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:42Z"/>
+  <node id="205288246" lat="54.1350905" lon="12.0850322" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:49Z"/>
+  <node id="246205374" lat="54.1389755" lon="12.1169067" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="246205378" lat="54.1391561" lon="12.1171057" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="246205409" lat="54.139017" lon="12.1190314" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246205402" lat="54.1393618" lon="12.1182697" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246205408" lat="54.1392676" lon="12.1186404" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246224509" lat="54.1202014" lon="12.1430477" version="1" changeset="58511" user="bender2004" uid="18097" visible="true" timestamp="2008-02-06T20:45:15Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="246224511" lat="54.1201261" lon="12.1428142" version="1" changeset="58511" user="bender2004" uid="18097" visible="true" timestamp="2008-02-06T20:45:15Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="246224513" lat="54.1200357" lon="12.1426334" version="1" changeset="58511" user="bender2004" uid="18097" visible="true" timestamp="2008-02-06T20:45:15Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="246224514" lat="54.1198699" lon="12.1424451" version="1" changeset="58511" user="bender2004" uid="18097" visible="true" timestamp="2008-02-06T20:45:16Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="249357105" lat="54.1347539" lon="12.0679558" version="4" changeset="752245" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-07T19:28:27Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="250730796" lat="54.1187055" lon="12.1443606" version="1" changeset="269454" user="bender2004" uid="18097" visible="true" timestamp="2008-03-05T16:45:49Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="251741957" lat="54.1368997" lon="12.1179299" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="252969973" lat="54.1101565" lon="12.1627476" version="1" changeset="352497" user="jennergruhle" uid="7532" visible="true" timestamp="2008-03-19T22:15:44Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="252969974" lat="54.110468" lon="12.1626931" version="2" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:10Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="252969986" lat="54.1087168" lon="12.1651437" version="2" changeset="318967" user="bahnpirat" uid="13203" visible="true" timestamp="2008-12-11T14:04:42Z"/>
+  <node id="254019708" lat="54.1049" lon="12.1597476" version="3" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:59Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="254364955" lat="54.1381474" lon="12.0788501" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:46Z"/>
+  <node id="261942243" lat="54.1348903" lon="12.0677041" version="1" changeset="321159" user="jennergruhle" uid="7532" visible="true" timestamp="2008-05-03T21:16:15Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="261942237" lat="54.1346549" lon="12.0688523" version="2" changeset="1103340" user="kilt" uid="92408" visible="true" timestamp="2009-05-07T05:27:24Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="262416356" lat="54.136969" lon="12.0436902" version="4" changeset="4825419" user="kilt" uid="92408" visible="true" timestamp="2010-05-27T19:48:37Z"/>
+  <node id="262416401" lat="54.135096" lon="12.0436798" version="4" changeset="4825419" user="kilt" uid="92408" visible="true" timestamp="2010-05-27T19:48:41Z"/>
+  <node id="262416367" lat="54.1365001" lon="12.0436982" version="4" changeset="4825419" user="kilt" uid="92408" visible="true" timestamp="2010-05-27T19:48:45Z"/>
+  <node id="262416370" lat="54.1360272" lon="12.0436919" version="3" changeset="2058550" user="BigD" uid="84743" visible="true" timestamp="2009-08-06T19:09:47Z"/>
+  <node id="262416593" lat="54.1382528" lon="12.0540984" version="3" changeset="3725593" user="kilt" uid="92408" visible="true" timestamp="2010-01-27T07:34:10Z"/>
+  <node id="263902974" lat="54.1363178" lon="12.0785706" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:44Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="264996069" lat="54.1374309" lon="12.0437026" version="4" changeset="4825419" user="kilt" uid="92408" visible="true" timestamp="2010-05-27T19:48:35Z"/>
+  <node id="268827825" lat="54.1373247" lon="12.0774955" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:44Z"/>
+  <node id="269670934" lat="54.1207692" lon="12.1452772" version="2" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:32Z"/>
+  <node id="270438461" lat="54.138174" lon="12.0604297" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:30Z"/>
+  <node id="279081372" lat="54.112211" lon="12.1646708" version="2" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:30:15Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="279888336" lat="54.1344619" lon="12.0712591" version="1" changeset="550893" user="jennergruhle" uid="7532" visible="true" timestamp="2008-07-20T20:58:15Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="279888341" lat="54.1344556" lon="12.0718103" version="2" changeset="119977" user="kilt" uid="92408" visible="true" timestamp="2009-04-03T07:32:33Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="283205083" lat="54.1369924" lon="12.0658254" version="2" changeset="485093" user="falcius" uid="52602" visible="true" timestamp="2008-09-01T19:11:35Z"/>
+  <node id="283205084" lat="54.1369935" lon="12.0656181" version="1" changeset="38621" user="jennergruhle" uid="7532" visible="true" timestamp="2008-08-03T21:01:23Z"/>
+  <node id="283205085" lat="54.1366268" lon="12.0654001" version="2" changeset="483200" user="jennergruhle" uid="7532" visible="true" timestamp="2008-09-01T13:05:21Z"/>
+  <node id="283205087" lat="54.1381808" lon="12.0656967" version="2" changeset="840148" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-26T13:04:39Z"/>
+  <node id="283205108" lat="54.1380475" lon="12.0634572" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:37Z"/>
+  <node id="283205096" lat="54.1379477" lon="12.0634551" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:37Z"/>
+  <node id="292934721" lat="54.1370402" lon="12.0659551" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:36Z"/>
+  <node id="299773755" lat="54.1359092" lon="12.066005" version="2" changeset="1267642" user="kilt" uid="92408" visible="true" timestamp="2009-05-20T19:48:02Z"/>
+  <node id="302309899" lat="54.1242875" lon="12.1465616" version="1" changeset="87833" user="mfi" uid="58950" visible="true" timestamp="2008-10-05T15:38:33Z"/>
+  <node id="302313505" lat="54.1530206" lon="12.1122311" version="1" changeset="87833" user="mfi" uid="58950" visible="true" timestamp="2008-10-05T15:55:19Z"/>
+  <node id="302313513" lat="54.1470285" lon="12.1217255" version="2" changeset="4503952" user="jennergruhle" uid="7532" visible="true" timestamp="2010-04-23T14:16:12Z"/>
+  <node id="302315610" lat="54.145416" lon="12.1134066" version="2" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:03Z"/>
+  <node id="302315602" lat="54.1448922" lon="12.1106864" version="2" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:06Z"/>
+  <node id="302317976" lat="54.1441551" lon="12.1027985" version="3" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:56Z"/>
+  <node id="315902505" lat="54.1039798" lon="12.1586167" version="1" changeset="815739" user="falcius" uid="52602" visible="true" timestamp="2008-11-30T19:47:55Z"/>
+  <node id="316108113" lat="54.1377121" lon="12.0671667" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:37Z"/>
+  <node id="316108136" lat="54.1381095" lon="12.0677135" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:39Z"/>
+  <node id="316439413" lat="54.1034069" lon="12.1544246" version="5" changeset="3116592" user="!i!" uid="25720" visible="true" timestamp="2009-11-14T20:11:04Z">
+    <tag k="name" v="Dierkower Kreuz"/>
+    <tag k="amenity" v="bus_station"/>
+  </node>
+  <node id="330052817" lat="54.1372331" lon="12.0776112" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:44Z"/>
+  <node id="330066018" lat="54.1362036" lon="12.0800215" version="1" changeset="752245" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-07T19:27:16Z"/>
+  <node id="330066022" lat="54.1359667" lon="12.0785458" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:44Z"/>
+  <node id="330066042" lat="54.1347013" lon="12.0682457" version="1" changeset="752245" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-07T19:27:19Z"/>
+  <node id="330066025" lat="54.1361096" lon="12.0786695" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:44Z"/>
+  <node id="337437976" lat="54.1382682" lon="12.0659944" version="1" changeset="840148" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-26T13:02:39Z"/>
+  <node id="337437989" lat="54.1382149" lon="12.0590668" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:30Z"/>
+  <node id="338650766" lat="54.1089027" lon="12.1648028" version="1" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:20:52Z"/>
+  <node id="338650831" lat="54.1076993" lon="12.1643177" version="1" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:20:57Z"/>
+  <node id="338660575" lat="54.1084562" lon="12.1652158" version="1" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:43:27Z"/>
+  <node id="338660586" lat="54.1097262" lon="12.1632628" version="1" changeset="848230" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-28T14:43:30Z"/>
+  <node id="338976978" lat="54.1042392" lon="12.1547694" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:10Z"/>
+  <node id="338977035" lat="54.1032424" lon="12.1540671" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:25Z"/>
+  <node id="338977040" lat="54.1031279" lon="12.1540888" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:26Z"/>
+  <node id="338977045" lat="54.1030834" lon="12.1542515" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:27Z"/>
+  <node id="338977049" lat="54.1030897" lon="12.1544088" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:27Z"/>
+  <node id="338977053" lat="54.1031565" lon="12.1544901" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:28Z"/>
+  <node id="338977058" lat="54.1034141" lon="12.1546962" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:29Z"/>
+  <node id="338977063" lat="54.1037702" lon="12.154425" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:29Z"/>
+  <node id="338977067" lat="54.1033441" lon="12.1546148" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:30Z"/>
+  <node id="338977073" lat="54.1036653" lon="12.1543654" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:30Z"/>
+  <node id="338977078" lat="54.1032678" lon="12.1545715" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:31Z"/>
+  <node id="338977082" lat="54.1035921" lon="12.1543166" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:31Z"/>
+  <node id="338977085" lat="54.1031883" lon="12.1545118" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:32Z"/>
+  <node id="338977093" lat="54.1035031" lon="12.1542515" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:24:33Z"/>
+  <node id="338978331" lat="54.1106505" lon="12.1627946" version="1" changeset="851647" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-29T19:27:37Z"/>
+  <node id="339305029" lat="54.1380911" lon="12.0533558" version="1" changeset="857913" user="jennergruhle" uid="7532" visible="true" timestamp="2009-01-31T11:04:31Z"/>
+  <node id="339305028" lat="54.1380831" lon="12.0526977" version="3" changeset="4218727" user="kilt" uid="92408" visible="true" timestamp="2010-03-24T07:17:06Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="339305030" lat="54.1382515" lon="12.0527" version="3" changeset="4218727" user="kilt" uid="92408" visible="true" timestamp="2010-03-24T07:17:06Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="343782293" lat="54.134879" lon="12.0677339" version="1" changeset="302274" user="jennergruhle" uid="7532" visible="true" timestamp="2009-02-09T21:05:41Z"/>
+  <node id="343782295" lat="54.1347686" lon="12.0679156" version="1" changeset="302274" user="jennergruhle" uid="7532" visible="true" timestamp="2009-02-09T21:05:41Z"/>
+  <node id="349008060" lat="54.1185906" lon="12.1444658" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:43Z">
+    <tag k="name" v="Urho-Kekkonen-Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008068" lat="54.1187084" lon="12.1445997" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:43Z">
+    <tag k="name" v="Urho-Kekkonen-Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008073" lat="54.1166431" lon="12.1500233" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:44Z">
+    <tag k="name" v="Albert-Schweitzer-Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008077" lat="54.1167592" lon="12.1501265" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:44Z">
+    <tag k="name" v="Albert-Schweitzer-Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008081" lat="54.1141361" lon="12.1589598" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:45Z">
+    <tag k="name" v="Jawaharlal-Nehru-Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008085" lat="54.1138097" lon="12.1596717" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:46Z">
+    <tag k="name" v="Jawaharlal-Nehru-Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008089" lat="54.1109801" lon="12.1630562" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:46Z">
+    <tag k="name" v="Martin-Luther-King-Allee"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008092" lat="54.1109108" lon="12.163247" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:47Z">
+    <tag k="name" v="Martin-Luther-King-Allee"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008096" lat="54.1083604" lon="12.164998" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:47Z">
+    <tag k="name" v="Kurt-Schumacher-Ring"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008100" lat="54.1077648" lon="12.1645397" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:48Z">
+    <tag k="name" v="Kurt-Schumacher-Ring"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008105" lat="54.104761" lon="12.1595875" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:48Z">
+    <tag k="name" v="Lorenzstraße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008109" lat="54.1051892" lon="12.1602062" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:49Z">
+    <tag k="name" v="Lorenzstraße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="349008114" lat="54.1052613" lon="12.1604556" version="1" changeset="618904" user="Masch" uid="55988" visible="true" timestamp="2009-02-22T07:56:50Z"/>
+  <node id="362123765" lat="54.135673" lon="12.1214887" version="3" changeset="2974406" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:14:43Z">
+    <tag k="name" v="Krummendorf Nord"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="371431659" lat="54.1395957" lon="12.1130241" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z"/>
+  <node id="371431637" lat="54.1395104" lon="12.1128969" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z"/>
+  <node id="371432079" lat="54.1444089" lon="12.1067943" version="2" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:56Z">
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="302313510" lat="54.145918" lon="12.1159196" version="3" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:04Z"/>
+  <node id="302313511" lat="54.146179" lon="12.1172581" version="3" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:10Z"/>
+  <node id="28927630" lat="54.1470031" lon="12.1216045" version="5" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:10Z"/>
+  <node id="74148088" lat="54.1360872" lon="12.0663993" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:36Z"/>
+  <node id="263902980" lat="54.1341159" lon="12.0773294" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:42Z"/>
+  <node id="263902981" lat="54.1342259" lon="12.0775515" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:42Z"/>
+  <node id="407054417" lat="54.1344462" lon="12.0722449" version="1" changeset="1256208" user="kilt" uid="92408" visible="true" timestamp="2009-05-19T23:57:54Z"/>
+  <node id="283205082" lat="54.1369962" lon="12.0659508" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:36Z"/>
+  <node id="254365086" lat="54.1360114" lon="12.0658403" version="3" changeset="1267642" user="kilt" uid="92408" visible="true" timestamp="2009-05-20T19:48:02Z">
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="408470509" lat="54.1344303" lon="12.0727222" version="2" changeset="2974117" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T15:41:51Z"/>
+  <node id="413896942" lat="54.1099677" lon="12.1629135" version="1" changeset="1376302" user="mfi" uid="58950" visible="true" timestamp="2009-06-01T08:15:57Z"/>
+  <node id="25468944" lat="54.1347835" lon="12.0882949" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:49Z"/>
+  <node id="25469014" lat="54.1346965" lon="12.0882857" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="428623075" lat="54.1349094" lon="12.0923386" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="428623076" lat="54.1349988" lon="12.0922859" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="25469015" lat="54.1354694" lon="12.0951373" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="205288253" lat="54.1355581" lon="12.0951005" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="25468943" lat="54.1357378" lon="12.1002585" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="174046445" lat="54.1356466" lon="12.100235" version="7" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="25469017" lat="54.1355079" lon="12.1018424" version="7" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="440618097" lat="54.138068" lon="12.0602699" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:30Z"/>
+  <node id="30240577" lat="54.1377351" lon="12.0656332" version="6" changeset="2974117" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T15:41:51Z"/>
+  <node id="450190127" lat="54.1380626" lon="12.055149" version="1" changeset="1969068" user="Schwedenhagen" uid="70400" visible="true" timestamp="2009-07-28T20:26:25Z">
+    <tag k="name" v="Lütten Klein Zentrum"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="450190128" lat="54.138325" lon="12.0466143" version="1" changeset="1969068" user="Schwedenhagen" uid="70400" visible="true" timestamp="2009-07-28T20:26:25Z">
+    <tag k="name" v="Osloer Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="450190129" lat="54.1379696" lon="12.0491416" version="1" changeset="1969068" user="Schwedenhagen" uid="70400" visible="true" timestamp="2009-07-28T20:26:25Z">
+    <tag k="name" v="Osloer Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="450190130" lat="54.1379968" lon="12.0448315" version="1" changeset="1969068" user="Schwedenhagen" uid="70400" visible="true" timestamp="2009-07-28T20:26:25Z">
+    <tag k="name" v="Gedser Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="450190131" lat="54.1373289" lon="12.0435866" version="1" changeset="1969068" user="Schwedenhagen" uid="70400" visible="true" timestamp="2009-07-28T20:26:25Z">
+    <tag k="name" v="Gedser Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="450190132" lat="54.1345964" lon="12.0435097" version="1" changeset="1969068" user="Schwedenhagen" uid="70400" visible="true" timestamp="2009-07-28T20:26:25Z">
+    <tag k="name" v="Kopenhagener Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="450190133" lat="54.1344598" lon="12.0438252" version="1" changeset="1969068" user="Schwedenhagen" uid="70400" visible="true" timestamp="2009-07-28T20:26:25Z">
+    <tag k="name" v="Kopenhagener Straße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="450190126" lat="54.1383262" lon="12.0533538" version="3" changeset="6247625" user="wheelmap_visitor" uid="290680" visible="true" timestamp="2010-10-31T23:09:32Z">
+    <tag k="name" v="Lütten Klein Zentrum"/>
+    <tag k="wheelchair" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="73832926" lat="54.1382518" lon="12.0568009" version="6" changeset="4718554" user="!i!" uid="25720" visible="true" timestamp="2010-05-16T15:37:50Z">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="457407381" lat="54.1379238" lon="12.0436916" version="1" changeset="2055123" user="BigD" uid="84743" visible="true" timestamp="2009-08-06T12:19:30Z"/>
+  <node id="251740051" lat="54.1488221" lon="12.1283141" version="4" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:02Z"/>
+  <node id="251740054" lat="54.1470893" lon="12.1308117" version="4" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:03Z"/>
+  <node id="251740056" lat="54.1463924" lon="12.1322889" version="5" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:03Z"/>
+  <node id="251740052" lat="54.1484397" lon="12.1285981" version="3" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:04Z"/>
+  <node id="28927634" lat="54.1541118" lon="12.1175677" version="3" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:09Z"/>
+  <node id="28927627" lat="54.1448385" lon="12.1104374" version="4" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:09Z"/>
+  <node id="28927645" lat="54.1400647" lon="12.1121016" version="5" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="28928060" lat="54.1400723" lon="12.1118114" version="5" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="28927639" lat="54.1391255" lon="12.114305" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="28152246" lat="54.1361819" lon="12.1205464" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="30237805" lat="54.136207" lon="12.1206442" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="28927636" lat="54.1378184" lon="12.1191635" version="5" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="28927652" lat="54.1440006" lon="12.1007887" version="6" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:55Z"/>
+  <node id="25468936" lat="54.1368681" lon="12.1139917" version="2" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:14Z"/>
+  <node id="25468940" lat="54.1354342" lon="12.1064229" version="5" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:59Z"/>
+  <node id="25468938" lat="54.1357601" lon="12.1096521" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:01Z"/>
+  <node id="25468937" lat="54.136237" lon="12.1118488" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:01Z"/>
+  <node id="246205430" lat="54.1377868" lon="12.1174816" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="246205361" lat="54.1386515" lon="12.1165626" version="5" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z"/>
+  <node id="32122261" lat="54.1299664" lon="12.1357567" version="2" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:20Z"/>
+  <node id="32122263" lat="54.1293369" lon="12.1370211" version="2" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:20Z"/>
+  <node id="32122078" lat="54.1340821" lon="12.1280959" version="2" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:21Z"/>
+  <node id="31513627" lat="54.1221306" lon="12.1508797" version="3" changeset="2213599" user="WanMil" uid="109925" visible="true" timestamp="2009-08-20T16:26:22Z"/>
+  <node id="32122049" lat="54.1348349" lon="12.1247766" version="3" changeset="5066770" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:08:12Z"/>
+  <node id="32122256" lat="54.1328088" lon="12.130947" version="3" changeset="5066770" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:08:18Z"/>
+  <node id="257410551" lat="54.1371275" lon="12.1174357" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="32122042" lat="54.1356538" lon="12.1217048" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="32122008" lat="54.1359117" lon="12.1209389" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="32122011" lat="54.1359593" lon="12.1209902" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="32122045" lat="54.1354526" lon="12.1224609" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="472281514" lat="54.1442171" lon="12.1090187" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="475262475" lat="54.1533951" lon="12.1140628" version="1" changeset="2280694" user="!i!" uid="25720" visible="true" timestamp="2009-08-27T18:38:23Z"/>
+  <node id="475262474" lat="54.1463229" lon="12.1180114" version="3" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:08Z"/>
+  <node id="482841358" lat="54.1114178" lon="12.1637293" version="1" changeset="2366879" user="!i!" uid="25720" visible="true" timestamp="2009-09-04T08:29:06Z"/>
+  <node id="502214456" lat="54.13494" lon="12.043679" version="1" changeset="2536931" user="!i!" uid="25720" visible="true" timestamp="2009-09-19T18:36:38Z"/>
+  <node id="502214464" lat="54.1368581" lon="12.043691" version="1" changeset="2536931" user="!i!" uid="25720" visible="true" timestamp="2009-09-19T18:36:38Z"/>
+  <node id="502214915" lat="54.1368584" lon="12.0653927" version="1" changeset="2536931" user="!i!" uid="25720" visible="true" timestamp="2009-09-19T18:36:45Z"/>
+  <node id="543675441" lat="54.1373555" lon="12.0655044" version="1" changeset="2974117" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T15:41:50Z">
+    <tag k="name" v="HP Lütten Klein"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543675449" lat="54.1343686" lon="12.0730575" version="1" changeset="2974117" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T15:41:50Z">
+    <tag k="name" v="Schmarl Zentrum"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543675457" lat="54.1344842" lon="12.0728257" version="2" changeset="3116592" user="!i!" uid="25720" visible="true" timestamp="2009-11-14T20:11:04Z">
+    <tag k="name" v="Schmarl Zentrum"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543721607" lat="54.1463522" lon="12.1004161" version="1" changeset="2974312" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:04:35Z">
+    <tag k="name" v="Seehafen Fähre"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543721610" lat="54.1442257" lon="12.1029309" version="1" changeset="2974312" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:04:35Z">
+    <tag k="name" v="Seehafen West"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543721622" lat="54.1441352" lon="12.1037377" version="1" changeset="2974312" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:04:36Z">
+    <tag k="name" v="Seehafen West"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543721626" lat="54.1463232" lon="12.1183924" version="2" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:04Z">
+    <tag k="name" v="Seehafen Ost"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543721586" lat="54.1536964" lon="12.1151103" version="1" changeset="2974312" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:04:34Z">
+    <tag k="name" v="Liebherrstraße"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543721590" lat="54.1406157" lon="12.128045" version="1" changeset="2974312" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:04:34Z">
+    <tag k="name" v="Kraftwerk"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543721595" lat="54.1427475" lon="12.1096343" version="1" changeset="2974312" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:04:34Z">
+    <tag k="name" v="Seehafen"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543721599" lat="54.143562" lon="12.1089477" version="1" changeset="2974312" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:04:35Z">
+    <tag k="name" v="Seehafen"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543751598" lat="54.1357183" lon="12.1217205" version="1" changeset="2974406" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:14:42Z">
+    <tag k="name" v="Krummendorf Nord"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543751604" lat="54.1324697" lon="12.1316167" version="1" changeset="2974406" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:14:42Z">
+    <tag k="name" v="Bahnbetriebswerk"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543751621" lat="54.1322384" lon="12.1316854" version="1" changeset="2974406" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:14:42Z">
+    <tag k="name" v="Bahnbetriebswerk"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543751631" lat="54.12566" lon="12.1441995" version="1" changeset="2974406" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:14:42Z">
+    <tag k="name" v="Hafenbahnweg"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="543751638" lat="54.125318" lon="12.1444656" version="1" changeset="2974406" user="LuWe" uid="175487" visible="true" timestamp="2009-10-28T16:14:43Z">
+    <tag k="name" v="Hafenbahnweg"/>
+    <tag k="highway" v="bus_stop"/>
+  </node>
+  <node id="270816184" lat="54.1382567" lon="12.0505412" version="2" changeset="3725593" user="kilt" uid="92408" visible="true" timestamp="2010-01-27T07:34:07Z"/>
+  <node id="270816180" lat="54.1382565" lon="12.051922" version="2" changeset="3725593" user="kilt" uid="92408" visible="true" timestamp="2010-01-27T07:34:08Z"/>
+  <node id="270816179" lat="54.1382566" lon="12.0496237" version="4" changeset="4218727" user="kilt" uid="92408" visible="true" timestamp="2010-03-24T07:17:06Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="656187946" lat="54.1361098" lon="12.0657452" version="1" changeset="3997544" user="!i!" uid="25720" visible="true" timestamp="2010-02-28T12:55:26Z"/>
+  <node id="656402285" lat="54.1457625" lon="12.1151176" version="2" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:03Z">
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="656402317" lat="54.1532236" lon="12.1132242" version="1" changeset="4000050" user="glycsy" uid="195608" visible="true" timestamp="2010-02-28T16:27:11Z"/>
+  <node id="657809895" lat="54.1331456" lon="12.0434476" version="2" changeset="4827784" user="kilt" uid="92408" visible="true" timestamp="2010-05-28T05:59:23Z"/>
+  <node id="662000034" lat="54.1056095" lon="12.1610305" version="1" changeset="4057967" user="Masch" uid="55988" visible="true" timestamp="2010-03-07T07:57:07Z"/>
+  <node id="662000069" lat="54.1068167" lon="12.1630898" version="1" changeset="4057967" user="Masch" uid="55988" visible="true" timestamp="2010-03-07T07:57:09Z"/>
+  <node id="662000074" lat="54.1064043" lon="12.1623863" version="1" changeset="4057967" user="Masch" uid="55988" visible="true" timestamp="2010-03-07T07:57:09Z"/>
+  <node id="662234900" lat="54.135535" lon="12.043681" version="1" changeset="4061236" user="falcius" uid="52602" visible="true" timestamp="2010-03-07T14:14:20Z"/>
+  <node id="671266419" lat="54.145866" lon="12.1156656" version="2" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:03Z"/>
+  <node id="671266412" lat="54.1459704" lon="12.1162499" version="2" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:03Z"/>
+  <node id="671266415" lat="54.1458354" lon="12.1155159" version="2" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:08Z"/>
+  <node id="671266443" lat="54.1463673" lon="12.1182632" version="3" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:09Z"/>
+  <node id="673067683" lat="54.1380874" lon="12.0496286" version="1" changeset="4218727" user="kilt" uid="92408" visible="true" timestamp="2010-03-24T07:17:04Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="673067685" lat="54.1382557" lon="12.0500334" version="1" changeset="4218727" user="kilt" uid="92408" visible="true" timestamp="2010-03-24T07:17:04Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="674542548" lat="54.1382554" lon="12.0443383" version="1" changeset="4235103" user="kilt" uid="92408" visible="true" timestamp="2010-03-26T06:52:45Z"/>
+  <node id="679138180" lat="54.1036576" lon="12.1584251" version="1" changeset="4285514" user="FvGordon" uid="161619" visible="true" timestamp="2010-03-31T13:50:57Z"/>
+  <node id="704454697" lat="54.1461775" lon="12.1328988" version="1" changeset="4503952" user="jennergruhle" uid="7532" visible="true" timestamp="2010-04-23T14:16:06Z"/>
+  <node id="704454711" lat="54.1441099" lon="12.1302213" version="1" changeset="4503952" user="jennergruhle" uid="7532" visible="true" timestamp="2010-04-23T14:16:06Z"/>
+  <node id="656402332" lat="54.1458719" lon="12.1323747" version="2" changeset="4503952" user="jennergruhle" uid="7532" visible="true" timestamp="2010-04-23T14:16:11Z"/>
+  <node id="59768902" lat="54.1462316" lon="12.1329066" version="4" changeset="4503952" user="jennergruhle" uid="7532" visible="true" timestamp="2010-04-23T14:16:14Z"/>
+  <node id="733810334" lat="54.1382521" lon="12.0559733" version="1" changeset="4694130" user="kilt" uid="92408" visible="true" timestamp="2010-05-14T09:59:38Z"/>
+  <node id="787323658" lat="54.1449282" lon="12.1108497" version="1" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:02:57Z">
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="787323661" lat="54.1474446" lon="12.1299053" version="1" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:02:57Z"/>
+  <node id="787323672" lat="54.1477748" lon="12.1293303" version="1" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:02:58Z"/>
+  <node id="787323675" lat="54.1451551" lon="12.1120316" version="1" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:02:58Z">
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="787323677" lat="54.1480799" lon="12.1289463" version="1" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:02:58Z"/>
+  <node id="787323696" lat="54.1479181" lon="12.1291372" version="1" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:02:58Z"/>
+  <node id="787323699" lat="54.147391" lon="12.1229054" version="1" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:02:58Z"/>
+  <node id="787323702" lat="54.1475985" lon="12.1296043" version="1" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:02:58Z"/>
+  <node id="787323704" lat="54.1471887" lon="12.1223439" version="1" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:02:58Z"/>
+  <node id="656402305" lat="54.1466567" lon="12.119851" version="3" changeset="5066732" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:03:06Z">
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="787332354" lat="54.1343433" lon="12.1273185" version="1" changeset="5066770" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:08:02Z"/>
+  <node id="787332359" lat="54.1337967" lon="12.1289189" version="1" changeset="5066770" user="Masch" uid="55988" visible="true" timestamp="2010-06-24T15:08:02Z"/>
+  <node id="798005808" lat="54.1353968" lon="12.1046623" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:32Z"/>
+  <node id="798005811" lat="54.1353052" lon="12.1046624" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:32Z"/>
+  <node id="798005965" lat="54.1353442" lon="12.1070865" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:35Z"/>
+  <node id="798005973" lat="54.1356154" lon="12.1084996" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:35Z"/>
+  <node id="798005988" lat="54.1356509" lon="12.1097053" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:35Z"/>
+  <node id="798005990" lat="54.1357574" lon="12.1102858" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:35Z"/>
+  <node id="798005996" lat="54.135892" lon="12.1109206" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:36Z"/>
+  <node id="798005998" lat="54.135991" lon="12.1108632" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:36Z"/>
+  <node id="798006000" lat="54.135864" lon="12.110238" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:36Z"/>
+  <node id="798006074" lat="54.1406065" lon="12.109301" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:37Z"/>
+  <node id="798006081" lat="54.1404103" lon="12.1106275" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:37Z"/>
+  <node id="798006082" lat="54.140384" lon="12.1108151" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006091" lat="54.1398793" lon="12.1121406" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006092" lat="54.1402531" lon="12.111372" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006093" lat="54.1402252" lon="12.1117098" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006094" lat="54.1401988" lon="12.1115402" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006095" lat="54.140542" lon="12.111108" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006096" lat="54.1405301" lon="12.111372" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006097" lat="54.1403007" lon="12.1117142" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006098" lat="54.1403228" lon="12.111285" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006099" lat="54.1402843" lon="12.1114888" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006104" lat="54.136391" lon="12.1128111" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006105" lat="54.1364908" lon="12.1127386" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006108" lat="54.137246" lon="12.1158606" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006110" lat="54.1374135" lon="12.1159003" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006111" lat="54.1372802" lon="12.1160777" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006112" lat="54.1372985" lon="12.1163094" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006113" lat="54.1372998" lon="12.1165057" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006114" lat="54.1376018" lon="12.1166497" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006116" lat="54.1372643" lon="12.1169315" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006117" lat="54.1372142" lon="12.1171716" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006119" lat="54.1389764" lon="12.1148607" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006120" lat="54.1388639" lon="12.1147918" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006121" lat="54.1393359" lon="12.1133243" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:38Z"/>
+  <node id="798006130" lat="54.1392723" lon="12.1138587" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:39Z"/>
+  <node id="798006143" lat="54.1388541" lon="12.1153722" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:39Z"/>
+  <node id="798006144" lat="54.1387379" lon="12.1153221" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:39Z"/>
+  <node id="798006146" lat="54.138409" lon="12.1178208" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:39Z"/>
+  <node id="798006147" lat="54.1384909" lon="12.1174847" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:39Z"/>
+  <node id="798006148" lat="54.1384518" lon="12.117086" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:39Z"/>
+  <node id="798006149" lat="54.1383882" lon="12.1174179" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:39Z"/>
+  <node id="798006154" lat="54.1385716" lon="12.1171006" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:39Z"/>
+  <node id="798006164" lat="54.1363306" lon="12.1203991" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:40Z"/>
+  <node id="798006165" lat="54.136378" lon="12.1204721" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:40Z"/>
+  <node id="798006166" lat="54.1368152" lon="12.1181746" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:40Z"/>
+  <node id="798006167" lat="54.1367587" lon="12.1184146" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:40Z"/>
+  <node id="798006168" lat="54.1367342" lon="12.1189235" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:40Z"/>
+  <node id="798006169" lat="54.1367663" lon="12.11914" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:40Z"/>
+  <node id="798006181" lat="54.1377082" lon="12.1191401" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:40Z"/>
+  <node id="798006182" lat="54.1369121" lon="12.1196536" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:40Z"/>
+  <node id="798006185" lat="54.1370332" lon="12.1200001" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:40Z"/>
+  <node id="798006189" lat="54.1366198" lon="12.1202971" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006190" lat="54.1365724" lon="12.1202292" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006191" lat="54.1375431" lon="12.119401" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006195" lat="54.1376761" lon="12.1193838" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006196" lat="54.1375263" lon="12.1195795" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006197" lat="54.1357054" lon="12.1214637" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006198" lat="54.135739" lon="12.1214558" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006199" lat="54.1360234" lon="12.1207487" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006200" lat="54.1360646" lon="12.1208218" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006201" lat="54.1358338" lon="12.1210958" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006202" lat="54.1358842" lon="12.1211218" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006203" lat="54.1381852" lon="12.1181798" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006208" lat="54.1382965" lon="12.1181652" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006209" lat="54.1382622" lon="12.1179252" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006211" lat="54.1381865" lon="12.1188152" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006216" lat="54.1386588" lon="12.1191727" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006217" lat="54.138908" lon="12.1191153" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006218" lat="54.1391113" lon="12.1189326" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006219" lat="54.1391892" lon="12.1188152" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:41Z"/>
+  <node id="798006533" lat="54.1414509" lon="12.102787" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:47Z"/>
+  <node id="798006549" lat="54.1412863" lon="12.1032234" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:47Z"/>
+  <node id="798006589" lat="54.141033" lon="12.104225" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:48Z"/>
+  <node id="798006594" lat="54.140892" lon="12.1052837" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:49Z"/>
+  <node id="798006596" lat="54.1409192" lon="12.1049646" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:49Z"/>
+  <node id="798006605" lat="54.1408342" lon="12.106119" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:49Z"/>
+  <node id="798006619" lat="54.140649" lon="12.1089413" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:49Z"/>
+  <node id="798006648" lat="54.1421323" lon="12.1096554" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:49Z"/>
+  <node id="798006649" lat="54.1426507" lon="12.1093999" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:49Z"/>
+  <node id="798006650" lat="54.1426686" lon="12.1095882" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:49Z"/>
+  <node id="798006664" lat="54.1412318" lon="12.1103307" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:50Z"/>
+  <node id="798006673" lat="54.1412943" lon="12.1104993" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:50Z"/>
+  <node id="798006676" lat="54.1415428" lon="12.110058" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:50Z"/>
+  <node id="798006678" lat="54.141819" lon="12.1098545" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:50Z"/>
+  <node id="798006680" lat="54.1418764" lon="12.1100232" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:50Z"/>
+  <node id="798006682" lat="54.1415693" lon="12.1102558" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:50Z"/>
+  <node id="798006712" lat="54.1435623" lon="12.1092667" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:50Z"/>
+  <node id="798006714" lat="54.1440853" lon="12.109066" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:50Z"/>
+  <node id="798006716" lat="54.1446865" lon="12.1096233" version="1" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:40:50Z"/>
+  <node id="371431684" lat="54.1391674" lon="12.1137703" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:02Z"/>
+  <node id="371431687" lat="54.1394079" lon="12.1134816" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z"/>
+  <node id="787332351" lat="54.1398726" lon="12.1124565" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z"/>
+  <node id="787332347" lat="54.1396963" lon="12.1124898" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z"/>
+  <node id="787332338" lat="54.1387629" lon="12.1158569" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z"/>
+  <node id="787332342" lat="54.1386464" lon="12.1158083" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z"/>
+  <node id="299591998" lat="54.1385321" lon="12.1165799" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="246205368" lat="54.1386343" lon="12.1166962" version="6" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="435779288" lat="54.1388659" lon="12.1168357" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:03Z"/>
+  <node id="435779291" lat="54.1390605" lon="12.1169889" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="246205381" lat="54.1392472" lon="12.1172852" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="246205393" lat="54.1392989" lon="12.1174221" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="246205395" lat="54.1393436" lon="12.1176004" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="246205399" lat="54.1393819" lon="12.1178601" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="771148232" lat="54.1367336" lon="12.1186939" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:04Z"/>
+  <node id="771148059" lat="54.137089" lon="12.1198814" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="771148058" lat="54.1370715" lon="12.1200115" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="771148234" lat="54.1368125" lon="12.1193365" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="771148146" lat="54.1371937" lon="12.1197974" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="787332349" lat="54.137373" lon="12.1196199" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="787332340" lat="54.1373151" lon="12.1198177" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="30237806" lat="54.1358075" lon="12.1212932" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:05Z"/>
+  <node id="246205426" lat="54.1379929" lon="12.1183452" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246205422" lat="54.1380794" lon="12.1185894" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="371432100" lat="54.1379721" lon="12.1186794" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="371432097" lat="54.1380182" lon="12.1188086" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246205420" lat="54.1382957" lon="12.1189711" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246205418" lat="54.1383997" lon="12.119076" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246205416" lat="54.1384971" lon="12.1191315" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246205413" lat="54.1387599" lon="12.1191667" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246205400" lat="54.1393845" lon="12.1180535" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="246205406" lat="54.1393233" lon="12.1184705" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:06Z"/>
+  <node id="302318622" lat="54.1426788" lon="12.1006646" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:09Z"/>
+  <node id="28927657" lat="54.141694" lon="12.1022625" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:09Z"/>
+  <node id="302318626" lat="54.1419463" lon="12.101824" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:09Z"/>
+  <node id="371431634" lat="54.1411325" lon="12.1037542" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:09Z"/>
+  <node id="28927659" lat="54.1409498" lon="12.1047265" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:09Z"/>
+  <node id="28927660" lat="54.1406817" lon="12.1085689" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:09Z"/>
+  <node id="28928058" lat="54.1423215" lon="12.1095564" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="28927646" lat="54.1408088" lon="12.1110078" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="302317124" lat="54.142354" lon="12.1097404" version="2" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="302317109" lat="54.1444558" lon="12.1074571" version="3" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="28927575" lat="54.1445774" lon="12.1089012" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="28927649" lat="54.1445511" lon="12.1086916" version="4" changeset="5119242" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T09:41:10Z"/>
+  <node id="798474407" lat="54.1432941" lon="12.0999802" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:09Z"/>
+  <node id="798474451" lat="54.1429571" lon="12.1002778" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:15Z"/>
+  <node id="798474452" lat="54.1429294" lon="12.1004118" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:15Z"/>
+  <node id="798474453" lat="54.1431475" lon="12.1000827" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:15Z"/>
+  <node id="798474456" lat="54.1432341" lon="12.1002541" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:15Z"/>
+  <node id="798474606" lat="54.1434684" lon="12.0998935" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:22Z"/>
+  <node id="798474609" lat="54.1436635" lon="12.0998442" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:22Z"/>
+  <node id="798474632" lat="54.1438286" lon="12.0998561" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:22Z"/>
+  <node id="798474634" lat="54.1439913" lon="12.0999999" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:22Z"/>
+  <node id="798474635" lat="54.1439036" lon="12.0998837" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:22Z"/>
+  <node id="798474638" lat="54.1440121" lon="12.1000551" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:22Z"/>
+  <node id="798474640" lat="54.1439557" lon="12.0999343" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:22Z"/>
+  <node id="798474686" lat="54.1434996" lon="12.1001812" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474689" lat="54.1437789" lon="12.1002226" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474691" lat="54.1438309" lon="12.1002758" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474695" lat="54.1438944" lon="12.1003586" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474696" lat="54.1439405" lon="12.1004512" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474697" lat="54.1440364" lon="12.1001635" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474699" lat="54.1440571" lon="12.1003172" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474705" lat="54.1439717" lon="12.1005734" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474707" lat="54.1437165" lon="12.1001912" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474708" lat="54.1440326" lon="12.1012423" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:23Z"/>
+  <node id="798474724" lat="54.1440638" lon="12.1004375" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:24Z"/>
+  <node id="798474725" lat="54.1441092" lon="12.1006982" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:24Z"/>
+  <node id="798474737" lat="54.144098" lon="12.1012308" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:24Z"/>
+  <node id="798474738" lat="54.1442821" lon="12.100986" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:24Z"/>
+  <node id="798474740" lat="54.1442334" lon="12.1009647" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:24Z"/>
+  <node id="798474741" lat="54.1441915" lon="12.1009068" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:24Z"/>
+  <node id="798474742" lat="54.1441418" lon="12.1008044" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:24Z"/>
+  <node id="798474744" lat="54.1444402" lon="12.1011709" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:24Z"/>
+  <node id="798474745" lat="54.1445486" lon="12.1009335" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:24Z"/>
+  <node id="798474807" lat="54.1458221" lon="12.1006827" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:26Z"/>
+  <node id="798474809" lat="54.1460961" lon="12.1002412" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:26Z"/>
+  <node id="798474810" lat="54.1460183" lon="12.1002563" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:26Z"/>
+  <node id="798474813" lat="54.1440944" lon="12.1018341" version="1" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:26Z"/>
+  <node id="671266300" lat="54.1441185" lon="12.1022055" version="2" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:56Z"/>
+  <node id="302317903" lat="54.1442348" lon="12.1040245" version="3" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:56Z"/>
+  <node id="302317918" lat="54.1443233" lon="12.1053918" version="3" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:56Z"/>
+  <node id="671266308" lat="54.1443185" lon="12.1052587" version="2" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:56Z"/>
+  <node id="302317922" lat="54.1443802" lon="12.1063337" version="3" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:56Z"/>
+  <node id="302317921" lat="54.144357" lon="12.1059316" version="3" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:56Z"/>
+  <node id="302316077" lat="54.144425" lon="12.1070424" version="3" changeset="5120904" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T14:10:58Z"/>
+  <node id="798559741" lat="54.1380725" lon="12.0588839" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:10Z"/>
+  <node id="798559749" lat="54.1380437" lon="12.061356" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:11Z"/>
+  <node id="798559809" lat="54.1361327" lon="12.0661509" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:14Z"/>
+  <node id="798559810" lat="54.1361018" lon="12.0662672" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:14Z"/>
+  <node id="798559811" lat="54.1362541" lon="12.0659712" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:14Z"/>
+  <node id="798559812" lat="54.1361055" lon="12.0665611" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:14Z"/>
+  <node id="798559815" lat="54.1361637" lon="12.0667323" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:14Z"/>
+  <node id="798559816" lat="54.1364288" lon="12.0670854" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:15Z"/>
+  <node id="798559818" lat="54.1366629" lon="12.0659183" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:15Z"/>
+  <node id="798559819" lat="54.13781" lon="12.0663205" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:15Z"/>
+  <node id="798559820" lat="54.1377436" lon="12.0670444" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:15Z"/>
+  <node id="798559822" lat="54.1367558" lon="12.0673095" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:15Z"/>
+  <node id="798559823" lat="54.1375266" lon="12.0673878" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:15Z"/>
+  <node id="798559824" lat="54.1376039" lon="12.0673404" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:15Z"/>
+  <node id="798559826" lat="54.1376594" lon="12.0672744" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:15Z"/>
+  <node id="798559853" lat="54.1379948" lon="12.0644912" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:16Z"/>
+  <node id="798559855" lat="54.1378983" lon="12.0644832" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:17Z"/>
+  <node id="798559863" lat="54.1378923" lon="12.0665302" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:17Z"/>
+  <node id="798559864" lat="54.1386027" lon="12.0666503" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:17Z"/>
+  <node id="798559868" lat="54.1379577" lon="12.0673641" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:17Z"/>
+  <node id="798559869" lat="54.1380062" lon="12.0675434" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:17Z"/>
+  <node id="798559871" lat="54.1380518" lon="12.0676465" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:17Z"/>
+  <node id="798559872" lat="54.1381648" lon="12.0677497" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:17Z"/>
+  <node id="798559873" lat="54.1383005" lon="12.0677362" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:17Z"/>
+  <node id="798559874" lat="54.1383897" lon="12.0676245" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:18Z"/>
+  <node id="798559905" lat="54.1342045" lon="12.0776957" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:19Z"/>
+  <node id="798559912" lat="54.1352811" lon="12.0780673" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:20Z"/>
+  <node id="798559915" lat="54.1352591" lon="12.0782043" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:20Z"/>
+  <node id="798559916" lat="54.1361684" lon="12.0787561" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:20Z"/>
+  <node id="798559928" lat="54.136208" lon="12.0788405" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:21Z"/>
+  <node id="798559929" lat="54.1362344" lon="12.0789362" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:21Z"/>
+  <node id="798559935" lat="54.1371547" lon="12.077759" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:21Z"/>
+  <node id="798559945" lat="54.1374311" lon="12.0774154" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:22Z"/>
+  <node id="798559947" lat="54.1375218" lon="12.0774029" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:22Z"/>
+  <node id="798559949" lat="54.1376689" lon="12.0774528" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:22Z"/>
+  <node id="798559950" lat="54.1378055" lon="12.0776112" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:22Z"/>
+  <node id="798559957" lat="54.1372118" lon="12.0789944" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:22Z"/>
+  <node id="798559959" lat="54.1374075" lon="12.0790507" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:23Z"/>
+  <node id="798559963" lat="54.1378013" lon="12.0790746" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:23Z"/>
+  <node id="798559966" lat="54.1376042" lon="12.0790764" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:23Z"/>
+  <node id="798559972" lat="54.1379849" lon="12.0781809" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:23Z"/>
+  <node id="798559981" lat="54.1357751" lon="12.0817797" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559983" lat="54.1358726" lon="12.0817978" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559985" lat="54.1361536" lon="12.0803972" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559987" lat="54.1352984" lon="12.0835303" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559988" lat="54.1353916" lon="12.0835665" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559990" lat="54.1352187" lon="12.0843604" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559992" lat="54.1348839" lon="12.085789" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559993" lat="54.1349687" lon="12.0858324" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559995" lat="54.1347822" lon="12.0866932" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559996" lat="54.134867" lon="12.0867873" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:24Z"/>
+  <node id="798559997" lat="54.1347292" lon="12.0874817" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798559998" lat="54.1348182" lon="12.087507" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798559999" lat="54.1346989" lon="12.0898495" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798560000" lat="54.134789" lon="12.0898266" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798560002" lat="54.1347672" lon="12.0910575" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798560003" lat="54.1348605" lon="12.0910247" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798560005" lat="54.1351471" lon="12.0936542" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798560006" lat="54.1352419" lon="12.0936017" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798560007" lat="54.1357107" lon="12.0973834" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798560009" lat="54.135626" lon="12.0963026" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:25Z"/>
+  <node id="798560010" lat="54.135716" lon="12.0962419" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:26Z"/>
+  <node id="798560011" lat="54.1358008" lon="12.0973677" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:26Z"/>
+  <node id="798560013" lat="54.1355932" lon="12.1009887" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:26Z"/>
+  <node id="798560014" lat="54.1356801" lon="12.1010032" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:26Z"/>
+  <node id="798560015" lat="54.1357139" lon="12.0987397" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:26Z"/>
+  <node id="798560016" lat="54.1357988" lon="12.0987173" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:26Z"/>
+  <node id="798560018" lat="54.1355064" lon="12.102855" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:26Z"/>
+  <node id="798560019" lat="54.1353093" lon="12.1042655" version="1" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:26Z"/>
+  <node id="10615860" lat="54.1381277" lon="12.0616674" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:31Z"/>
+  <node id="10615861" lat="54.137902" lon="12.0663111" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:39Z"/>
+  <node id="10615862" lat="54.1378922" lon="12.0667913" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:39Z"/>
+  <node id="10615866" lat="54.138625" lon="12.0660156" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:39Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="10615865" lat="54.1386261" lon="12.0662629" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:39Z"/>
+  <node id="10615864" lat="54.1385694" lon="12.0669513" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:39Z"/>
+  <node id="10615863" lat="54.13823" lon="12.0677654" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:40Z"/>
+  <node id="316108124" lat="54.1384785" lon="12.0674112" version="6" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:40Z"/>
+  <node id="30241871" lat="54.1362446" lon="12.0790335" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:44Z"/>
+  <node id="30241874" lat="54.1375916" lon="12.0774105" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:44Z"/>
+  <node id="268827824" lat="54.1377423" lon="12.0775174" version="4" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:44Z"/>
+  <node id="30241875" lat="54.137853" lon="12.0777324" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:44Z"/>
+  <node id="30240588" lat="54.1368927" lon="12.0788546" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:45Z"/>
+  <node id="30240606" lat="54.1366146" lon="12.0787175" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:45Z"/>
+  <node id="25468949" lat="54.1369557" lon="12.0782697" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:46Z"/>
+  <node id="30241876" lat="54.1381614" lon="12.0790049" version="6" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:46Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="254364958" lat="54.1379802" lon="12.0790467" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:47Z"/>
+  <node id="25469011" lat="54.1355129" lon="12.0827014" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:48Z"/>
+  <node id="25468945" lat="54.1356065" lon="12.0827565" version="3" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:48Z"/>
+  <node id="25469013" lat="54.1349978" lon="12.0849887" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:49Z"/>
+  <node id="25468942" lat="54.1356064" lon="12.1018151" version="5" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="798005804" lat="54.1353405" lon="12.103707" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="798005806" lat="54.1354419" lon="12.103652" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="798005802" lat="54.13541" lon="12.1028445" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:50Z"/>
+  <node id="798005807" lat="54.1354077" lon="12.1041895" version="2" changeset="5121551" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-01T15:43:51Z"/>
+  <node id="801317075" lat="54.146481" lon="12.1321116" version="1" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T21:46:21Z">
+    <tag k="railway" v="level_crossing"/>
+  </node>
+  <node id="251740057" lat="54.1462835" lon="12.1325746" version="5" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T21:46:32Z">
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="787323709" lat="54.1465201" lon="12.1320416" version="2" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T21:46:35Z">
+    <tag k="railway" v="level_crossing"/>
+  </node>
+  <node id="801352327" lat="54.1438748" lon="12.1300319" version="1" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T22:04:07Z"/>
+  <node id="801352685" lat="54.1462967" lon="12.13254" version="1" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T22:04:13Z"/>
+  <node id="251740103" lat="54.1478478" lon="12.1245702" version="3" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T22:04:38Z"/>
+  <node id="251740091" lat="54.1428141" lon="12.1292288" version="2" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T22:04:39Z"/>
+  <node id="371432102" lat="54.1482227" lon="12.1259365" version="2" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T22:04:44Z"/>
+  <node id="251740035" lat="54.1476526" lon="12.1238587" version="4" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T22:04:45Z"/>
+  <node id="671266470" lat="54.1485717" lon="12.127322" version="2" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T22:04:47Z"/>
+  <node id="251740039" lat="54.1479468" lon="12.1249311" version="4" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T22:04:54Z"/>
+  <node id="801317195" lat="54.1462572" lon="12.1326575" version="2" changeset="5137537" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-04T22:05:09Z"/>
+  <node id="475262485" lat="54.1465778" lon="12.1194017" version="4" changeset="5144666" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-05T19:10:50Z"/>
+  <node id="30729743" lat="54.1122827" lon="12.1647478" version="5" changeset="5145563" user="Nibbler" uid="67020" visible="true" timestamp="2010-07-05T21:31:01Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="30999301" lat="54.1381063" lon="12.0540503" version="6" changeset="5596085" user="kilt" uid="92408" visible="true" timestamp="2010-08-26T06:36:17Z">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <way id="2556712" visible="true" timestamp="2010-07-01T15:44:00Z" version="13" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="263902974"/>
+    <nd ref="798559912"/>
+    <nd ref="263902981"/>
+    <nd ref="30240587"/>
+    <tag k="name" v="Schmarler Damm"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4253904" visible="true" timestamp="2010-03-31T13:50:59Z" version="7" changeset="4285514" user="FvGordon" uid="161619">
+    <nd ref="9665698"/>
+    <nd ref="679138180"/>
+    <nd ref="315902505"/>
+    <nd ref="25470918"/>
+    <nd ref="28171247"/>
+    <nd ref="25470919"/>
+    <nd ref="254019708"/>
+    <nd ref="59768953"/>
+    <nd ref="31577696"/>
+    <nd ref="349008114"/>
+    <nd ref="25470920"/>
+    <tag k="name" v="Lorenzstraße"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="4255597" visible="true" timestamp="2010-07-01T15:44:15Z" version="10" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25468935"/>
+    <nd ref="25468936"/>
+    <nd ref="798006105"/>
+    <nd ref="25468937"/>
+    <nd ref="798005998"/>
+    <nd ref="798006000"/>
+    <nd ref="25468938"/>
+    <nd ref="798005973"/>
+    <nd ref="25468939"/>
+    <nd ref="25468940"/>
+    <nd ref="25468941"/>
+    <nd ref="798005808"/>
+    <nd ref="798005807"/>
+    <nd ref="798005806"/>
+    <nd ref="798560018"/>
+    <nd ref="25468942"/>
+    <nd ref="798560014"/>
+    <nd ref="25468943"/>
+    <tag k="toll" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="hazmat:water" v="no"/>
+  </way>
+  <way id="4579030" visible="true" timestamp="2010-02-28T16:27:21Z" version="6" changeset="4000050" user="glycsy" uid="195608">
+    <nd ref="28927630"/>
+    <nd ref="28927634"/>
+    <nd ref="475262475"/>
+    <nd ref="656402317"/>
+    <nd ref="302313505"/>
+    <tag k="name" v="Liebherrstraße"/>
+    <tag k="highway" v="unclassified"/>
+  </way>
+  <way id="4579056" visible="true" timestamp="2010-08-19T16:15:42Z" version="7" changeset="5536792" user="aighes" uid="110639">
+    <nd ref="28927645"/>
+    <nd ref="798006093"/>
+    <nd ref="798006099"/>
+    <nd ref="798006098"/>
+    <nd ref="798006082"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="name" v="Zum Fährterminal"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+  </way>
+  <way id="4745109" visible="true" timestamp="2010-07-01T09:41:31Z" version="12" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="28927649"/>
+    <nd ref="28928057"/>
+    <nd ref="798006649"/>
+    <nd ref="28928058"/>
+    <nd ref="798006648"/>
+    <nd ref="798006678"/>
+    <nd ref="798006676"/>
+    <nd ref="798006664"/>
+    <nd ref="28928059"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4817346" visible="true" timestamp="2010-07-01T14:11:06Z" version="7" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="25469025"/>
+    <nd ref="798006108"/>
+    <nd ref="798006111"/>
+    <nd ref="798006112"/>
+    <nd ref="798006113"/>
+    <nd ref="28152267"/>
+    <nd ref="798006116"/>
+    <nd ref="798006117"/>
+    <nd ref="257410551"/>
+    <nd ref="251741957"/>
+    <nd ref="798006166"/>
+    <nd ref="798006167"/>
+    <nd ref="771148232"/>
+    <nd ref="798006168"/>
+    <nd ref="798006169"/>
+    <nd ref="771148234"/>
+    <nd ref="798006182"/>
+    <nd ref="28928056"/>
+    <nd ref="798006185"/>
+    <nd ref="771148058"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4823159" visible="true" timestamp="2010-03-24T07:17:08Z" version="5" changeset="4218727" user="kilt" uid="92408">
+    <nd ref="30999114"/>
+    <nd ref="30999111"/>
+    <nd ref="673067683"/>
+    <nd ref="30999113"/>
+    <nd ref="339305028"/>
+    <nd ref="339305029"/>
+    <nd ref="30999301"/>
+    <nd ref="73832941"/>
+    <nd ref="30999112"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4823158" visible="true" timestamp="2010-05-14T09:59:44Z" version="8" changeset="4694130" user="kilt" uid="92408">
+    <nd ref="27651071"/>
+    <nd ref="73832926"/>
+    <nd ref="733810334"/>
+    <nd ref="262416593"/>
+    <nd ref="30999302"/>
+    <nd ref="339305030"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4823311" visible="true" timestamp="2009-01-03T14:20:43Z" version="2" changeset="724121" user="Gluko" uid="36745">
+    <nd ref="31000003"/>
+    <nd ref="31000004"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="4823308" visible="true" timestamp="2009-07-12T08:31:59Z" version="6" changeset="1803888" user="Kivi" uid="120279">
+    <nd ref="31000004"/>
+    <nd ref="10615860"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4823310" visible="true" timestamp="2010-07-01T15:43:57Z" version="5" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25469001"/>
+    <nd ref="25469002"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="4823309" visible="true" timestamp="2010-07-01T15:43:59Z" version="6" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="30999112"/>
+    <nd ref="73832954"/>
+    <nd ref="798559741"/>
+    <nd ref="440618097"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4823627" visible="true" timestamp="2009-10-26T12:23:33Z" version="2" changeset="2955634" user="LuWe" uid="175487">
+    <nd ref="30997743"/>
+    <nd ref="30997744"/>
+    <nd ref="30997741"/>
+    <tag k="name" v="Ostseeallee"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="4823626" visible="true" timestamp="2010-05-28T05:59:22Z" version="4" changeset="4827784" user="kilt" uid="92408">
+    <nd ref="30997743"/>
+    <nd ref="30997742"/>
+    <nd ref="657809895"/>
+    <nd ref="30997741"/>
+    <tag k="name" v="Ostseeallee"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="4823656" visible="true" timestamp="2010-02-28T12:55:30Z" version="9" changeset="3997544" user="!i!" uid="25720">
+    <nd ref="30240580"/>
+    <nd ref="502214915"/>
+    <nd ref="283205085"/>
+    <nd ref="30240581"/>
+    <nd ref="656187946"/>
+    <nd ref="254365086"/>
+    <tag k="highway" v="service"/>
+    <tag k="foot" v="yes"/>
+    <tag k="psv" v="yes"/>
+  </way>
+  <way id="4823659" visible="true" timestamp="2010-07-01T15:44:09Z" version="5" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="10615866"/>
+    <nd ref="10615865"/>
+    <nd ref="798559864"/>
+    <nd ref="10615864"/>
+    <nd ref="316108124"/>
+    <tag k="highway" v="primary_link"/>
+  </way>
+  <way id="4844008" visible="true" timestamp="2009-10-26T12:23:31Z" version="6" changeset="2955634" user="LuWe" uid="175487">
+    <nd ref="92273963"/>
+    <nd ref="283205108"/>
+    <nd ref="31000003"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4844007" visible="true" timestamp="2010-07-01T15:44:06Z" version="5" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="10615861"/>
+    <nd ref="798559853"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="4844006" visible="true" timestamp="2010-07-01T15:44:07Z" version="8" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25469002"/>
+    <nd ref="283205096"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4878076" visible="true" timestamp="2009-02-22T07:57:12Z" version="11" changeset="618904" user="Masch" uid="55988">
+    <nd ref="28151632"/>
+    <nd ref="338660586"/>
+    <nd ref="338650766"/>
+    <nd ref="252969986"/>
+    <nd ref="28151634"/>
+    <tag k="name" v="Kurt-Schumacher-Ring"/>
+    <tag k="created_by" v="JOSM"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="4878084" visible="true" timestamp="2008-02-06T20:45:19Z" version="2" changeset="58511" user="bender2004" uid="18097">
+    <nd ref="31513627"/>
+    <nd ref="31513635"/>
+    <tag k="name" v="Lindenallee"/>
+    <tag k="created_by" v="JOSM"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="4911114" visible="true" timestamp="2010-07-01T14:11:06Z" version="12" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="28927637"/>
+    <nd ref="798006208"/>
+    <nd ref="798006146"/>
+    <nd ref="798006147"/>
+    <nd ref="798006154"/>
+    <nd ref="246205368"/>
+    <nd ref="246205361"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4911116" visible="true" timestamp="2010-07-01T14:11:07Z" version="11" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="28927636"/>
+    <nd ref="371432097"/>
+    <nd ref="28927637"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="7988578" visible="true" timestamp="2010-07-01T15:44:16Z" version="10" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="174046445"/>
+    <nd ref="798560013"/>
+    <nd ref="25469017"/>
+    <nd ref="798005802"/>
+    <nd ref="798005804"/>
+    <nd ref="798560019"/>
+    <nd ref="798005811"/>
+    <nd ref="25469019"/>
+    <nd ref="25469020"/>
+    <nd ref="798005965"/>
+    <nd ref="25469021"/>
+    <nd ref="25469022"/>
+    <nd ref="798005988"/>
+    <nd ref="798005990"/>
+    <nd ref="798005996"/>
+    <nd ref="25469023"/>
+    <nd ref="798006104"/>
+    <nd ref="25469024"/>
+    <nd ref="25469025"/>
+    <tag k="toll" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="hazmat:water" v="no"/>
+  </way>
+  <way id="8124386" visible="true" timestamp="2008-07-30T11:48:43Z" version="2" changeset="628904" user="studerap" uid="7260">
+    <nd ref="9665704"/>
+    <nd ref="9665698"/>
+    <tag k="name" v="Gutenbergstraße"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="8124387" visible="true" timestamp="2009-02-22T07:57:14Z" version="6" changeset="618904" user="Masch" uid="55988">
+    <nd ref="9665704"/>
+    <nd ref="28171245"/>
+    <nd ref="338976978"/>
+    <tag k="name" v="Gutenbergstraße"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="8137133" visible="true" timestamp="2010-03-07T07:57:11Z" version="6" changeset="4057967" user="Masch" uid="55988">
+    <nd ref="25470920"/>
+    <nd ref="662000034"/>
+    <nd ref="662000074"/>
+    <nd ref="662000069"/>
+    <nd ref="28171222"/>
+    <nd ref="25470922"/>
+    <nd ref="25470924"/>
+    <nd ref="28171219"/>
+    <nd ref="338650831"/>
+    <nd ref="338660575"/>
+    <nd ref="25470927"/>
+    <nd ref="28151634"/>
+    <tag k="name" v="Lorenzstraße"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="8452505" visible="true" timestamp="2010-07-01T15:44:10Z" version="9" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25468949"/>
+    <nd ref="798559935"/>
+    <nd ref="330052817"/>
+    <nd ref="268827825"/>
+    <nd ref="798559945"/>
+    <nd ref="798559947"/>
+    <nd ref="30241874"/>
+    <nd ref="798559949"/>
+    <nd ref="268827824"/>
+    <nd ref="798559950"/>
+    <nd ref="30241875"/>
+    <nd ref="798559972"/>
+    <nd ref="254364955"/>
+    <tag k="highway" v="primary_link"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="9567387" visible="true" timestamp="2010-07-01T15:44:06Z" version="8" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25469003"/>
+    <nd ref="74148050"/>
+    <nd ref="798559820"/>
+    <nd ref="316108113"/>
+    <nd ref="798559826"/>
+    <nd ref="798559824"/>
+    <nd ref="798559823"/>
+    <nd ref="74148057"/>
+    <tag k="highway" v="primary_link"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="14325839" visible="true" timestamp="2010-07-01T15:44:13Z" version="6" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="30240588"/>
+    <nd ref="30240606"/>
+    <tag k="name" v="Groß Kleiner Damm"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="16813673" visible="true" timestamp="2010-07-01T15:44:17Z" version="12" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25469014"/>
+    <nd ref="798559999"/>
+    <nd ref="798560002"/>
+    <nd ref="428623075"/>
+    <nd ref="798560005"/>
+    <nd ref="25469015"/>
+    <nd ref="798560009"/>
+    <nd ref="798560007"/>
+    <nd ref="798560015"/>
+    <nd ref="174046445"/>
+    <tag k="name" v="Warnowtunnel"/>
+    <tag k="url" v="http://www.warnowquerung.com/"/>
+    <tag k="toll" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="tunnel" v="yes"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="layer" v="-1"/>
+    <tag k="hazmat:water" v="no"/>
+  </way>
+  <way id="22889454" visible="true" timestamp="2008-06-23T15:45:21Z" version="3" changeset="270634" user="Islanit" uid="27600">
+    <nd ref="31513635"/>
+    <nd ref="269670934"/>
+    <nd ref="246224509"/>
+    <nd ref="246224511"/>
+    <nd ref="246224513"/>
+    <nd ref="246224514"/>
+    <nd ref="30731083"/>
+    <tag k="name" v="Lindenallee"/>
+    <tag k="created_by" v="Potlatch 0.9c"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="22897239" visible="true" timestamp="2010-07-01T15:43:54Z" version="9" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25468944"/>
+    <nd ref="798559998"/>
+    <nd ref="798559996"/>
+    <nd ref="798559993"/>
+    <nd ref="205288246"/>
+    <nd ref="798559990"/>
+    <nd ref="798559988"/>
+    <nd ref="25468945"/>
+    <nd ref="798559983"/>
+    <nd ref="25468949"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="hazmat:water" v="no"/>
+  </way>
+  <way id="25647957" visible="true" timestamp="2010-07-01T09:41:29Z" version="5" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="28928056"/>
+    <nd ref="798006190"/>
+    <nd ref="798006164"/>
+    <nd ref="28152246"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="25647959" visible="true" timestamp="2010-07-01T14:11:07Z" version="10" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="246205361"/>
+    <nd ref="787332338"/>
+    <nd ref="798006143"/>
+    <nd ref="798006119"/>
+    <nd ref="28927639"/>
+    <nd ref="798006130"/>
+    <nd ref="371431687"/>
+    <nd ref="371431659"/>
+    <nd ref="787332351"/>
+    <nd ref="28927645"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="25647955" visible="true" timestamp="2010-08-07T07:30:06Z" version="13" changeset="5422415" user="Marsman" uid="316232">
+    <nd ref="798474813"/>
+    <nd ref="671266300"/>
+    <nd ref="302317976"/>
+    <nd ref="302317903"/>
+    <nd ref="671266308"/>
+    <nd ref="302317918"/>
+    <nd ref="197672438"/>
+    <nd ref="302317921"/>
+    <nd ref="302317922"/>
+    <nd ref="371432079"/>
+    <nd ref="302316077"/>
+    <nd ref="302317109"/>
+    <nd ref="28927649"/>
+    <nd ref="28927575"/>
+    <tag k="name" v="Ost-West-Straße"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="cycleway" v="lane"/>
+  </way>
+  <way id="26420478" visible="true" timestamp="2010-07-01T09:41:29Z" version="6" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="30237805"/>
+    <nd ref="798006165"/>
+    <nd ref="798006189"/>
+    <nd ref="771148058"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="26420481" visible="true" timestamp="2010-07-01T14:11:11Z" version="4" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="74148179"/>
+    <nd ref="798474809"/>
+    <nd ref="798474810"/>
+    <tag k="service" v="parking_aisle"/>
+    <tag k="highway" v="service"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="26420479" visible="true" timestamp="2010-07-01T14:11:12Z" version="4" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="798474708"/>
+    <nd ref="798474737"/>
+    <tag k="name" v="Am Warnowkai"/>
+    <tag k="highway" v="residential"/>
+    <tag k="int_ref" v="E 55"/>
+  </way>
+  <way id="26702915" visible="true" timestamp="2009-10-26T12:44:45Z" version="7" changeset="2955634" user="LuWe" uid="175487">
+    <nd ref="254365086"/>
+    <nd ref="299773755"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="service"/>
+    <tag k="psv" v="designated"/>
+    <tag k="access" v="no"/>
+  </way>
+  <way id="26709843" visible="true" timestamp="2010-07-01T15:44:05Z" version="2" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="74148057"/>
+    <nd ref="74148064"/>
+    <nd ref="74148068"/>
+    <nd ref="798559822"/>
+    <nd ref="74148074"/>
+    <nd ref="798559816"/>
+    <nd ref="74148078"/>
+    <nd ref="798559815"/>
+    <nd ref="798559812"/>
+    <nd ref="74148088"/>
+    <nd ref="798559810"/>
+    <nd ref="798559809"/>
+    <nd ref="74148097"/>
+    <nd ref="798559811"/>
+    <nd ref="74148100"/>
+    <tag k="highway" v="primary_link"/>
+  </way>
+  <way id="26709845" visible="true" timestamp="2010-07-01T15:44:05Z" version="5" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="74148100"/>
+    <nd ref="798559818"/>
+    <nd ref="283205082"/>
+    <tag k="footway" v="both"/>
+    <tag k="highway" v="tertiary"/>
+  </way>
+  <way id="27022015" visible="true" timestamp="2010-08-19T16:15:45Z" version="3" changeset="5536792" user="aighes" uid="110639">
+    <nd ref="302318622"/>
+    <nd ref="798474452"/>
+    <nd ref="798474456"/>
+    <nd ref="798474686"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="name" v="Zum Fährterminal"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+  </way>
+  <way id="29493502" visible="true" timestamp="2009-10-26T12:23:32Z" version="4" changeset="2955634" user="LuWe" uid="175487">
+    <nd ref="270438461"/>
+    <nd ref="337437989"/>
+    <nd ref="73832947"/>
+    <nd ref="27651071"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="29493512" visible="true" timestamp="2010-07-01T15:44:08Z" version="3" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="31197166"/>
+    <nd ref="798559855"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="29493545" visible="true" timestamp="2010-07-01T15:44:08Z" version="3" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="316108124"/>
+    <nd ref="798559874"/>
+    <nd ref="798559873"/>
+    <nd ref="10615863"/>
+    <nd ref="798559872"/>
+    <nd ref="316108136"/>
+    <nd ref="798559871"/>
+    <nd ref="798559869"/>
+    <nd ref="798559868"/>
+    <nd ref="10615862"/>
+    <tag k="highway" v="primary_link"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="29983066" visible="true" timestamp="2010-07-01T15:44:13Z" version="2" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="330066022"/>
+    <nd ref="330066025"/>
+    <nd ref="798559916"/>
+    <nd ref="798559928"/>
+    <nd ref="798559929"/>
+    <nd ref="30241871"/>
+    <tag k="highway" v="primary_link"/>
+  </way>
+  <way id="30540984" visible="true" timestamp="2009-10-28T15:36:22Z" version="3" changeset="2974117" user="LuWe" uid="175487">
+    <nd ref="337437976"/>
+    <nd ref="30240647"/>
+    <nd ref="283205087"/>
+    <nd ref="30240649"/>
+    <nd ref="30240577"/>
+    <tag k="name" v="Alte Warnemünder Chaussee"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="30651492" visible="true" timestamp="2009-01-29T19:28:28Z" version="1" changeset="851647" user="jennergruhle" uid="7532">
+    <nd ref="338976978"/>
+    <nd ref="338977063"/>
+    <nd ref="338977073"/>
+    <nd ref="338977082"/>
+    <nd ref="338977093"/>
+    <nd ref="338977035"/>
+    <nd ref="338977040"/>
+    <nd ref="338977045"/>
+    <nd ref="338977049"/>
+    <nd ref="338977053"/>
+    <nd ref="338977085"/>
+    <nd ref="338977078"/>
+    <nd ref="338977067"/>
+    <nd ref="338977058"/>
+    <nd ref="338977063"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="30651494" visible="true" timestamp="2009-01-29T19:28:29Z" version="1" changeset="851647" user="jennergruhle" uid="7532">
+    <nd ref="338977067"/>
+    <nd ref="338977073"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="30651496" visible="true" timestamp="2009-01-29T19:28:30Z" version="1" changeset="851647" user="jennergruhle" uid="7532">
+    <nd ref="338977078"/>
+    <nd ref="338977082"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="30651497" visible="true" timestamp="2009-01-29T19:28:31Z" version="1" changeset="851647" user="jennergruhle" uid="7532">
+    <nd ref="338977085"/>
+    <nd ref="338977093"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="30925474" visible="true" timestamp="2009-03-16T14:41:55Z" version="2" changeset="820117" user="Stemby" uid="28559">
+    <nd ref="343782293"/>
+    <nd ref="343782295"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="service"/>
+    <tag k="access" v="no"/>
+    <tag k="psv" v="designated"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="30925475" visible="true" timestamp="2009-03-16T14:41:56Z" version="2" changeset="820117" user="Stemby" uid="28559">
+    <nd ref="343782295"/>
+    <nd ref="249357105"/>
+    <nd ref="330066042"/>
+    <nd ref="30244492"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="service"/>
+    <tag k="access" v="no"/>
+    <tag k="psv" v="designated"/>
+  </way>
+  <way id="31337233" visible="true" timestamp="2009-02-22T07:56:51Z" version="1" changeset="618904" user="Masch" uid="55988">
+    <nd ref="30729743"/>
+    <nd ref="30729744"/>
+    <nd ref="183230856"/>
+    <nd ref="30729745"/>
+    <nd ref="59768946"/>
+    <nd ref="59768947"/>
+    <nd ref="30729746"/>
+    <nd ref="30729747"/>
+    <nd ref="30729748"/>
+    <nd ref="30729749"/>
+    <nd ref="30729750"/>
+    <nd ref="30730850"/>
+    <nd ref="30731084"/>
+    <nd ref="250730796"/>
+    <nd ref="30731083"/>
+    <tag k="name" v="Toitenwinkler Allee"/>
+    <tag k="created_by" v="JOSM"/>
+    <tag k="highway" v="tertiary"/>
+  </way>
+  <way id="32776815" visible="true" timestamp="2010-07-01T15:44:10Z" version="2" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="30240586"/>
+    <nd ref="263902980"/>
+    <nd ref="30240587"/>
+    <nd ref="30240650"/>
+    <tag k="name" v="Kolumbusring"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="32977295" visible="true" timestamp="2009-04-10T11:43:45Z" version="1" changeset="374955" user="Masch" uid="55988">
+    <nd ref="197671253"/>
+    <nd ref="74148179"/>
+    <tag k="created_by" v="Potlatch 0.6"/>
+    <tag k="highway" v="service"/>
+    <tag k="int_ref" v="E 55"/>
+  </way>
+  <way id="32977284" visible="true" timestamp="2010-07-01T09:41:10Z" version="3" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="28928059"/>
+    <nd ref="798006095"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="32977282" visible="true" timestamp="2010-08-19T16:15:44Z" version="5" changeset="5536792" user="aighes" uid="110639">
+    <nd ref="798006082"/>
+    <nd ref="798006092"/>
+    <nd ref="798006094"/>
+    <nd ref="28928060"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="name" v="Zum Fährterminal"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+  </way>
+  <way id="39538328" visible="true" timestamp="2010-05-27T19:48:28Z" version="5" changeset="4825419" user="kilt" uid="92408">
+    <nd ref="30999114"/>
+    <nd ref="457407381"/>
+    <nd ref="264996069"/>
+    <nd ref="262416356"/>
+    <nd ref="502214464"/>
+    <nd ref="262416367"/>
+    <nd ref="262416370"/>
+    <nd ref="662234900"/>
+    <nd ref="262416401"/>
+    <nd ref="502214456"/>
+    <nd ref="30997737"/>
+    <nd ref="30997743"/>
+    <tag k="name" v="Ostseeallee"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="4745614" visible="true" timestamp="2009-08-01T20:16:08Z" version="10" changeset="2007212" user="Schwedenhagen" uid="70400">
+    <nd ref="30244492"/>
+    <nd ref="261942237"/>
+    <nd ref="30244493"/>
+    <nd ref="30244494"/>
+    <nd ref="279888336"/>
+    <nd ref="279888341"/>
+    <nd ref="407054417"/>
+    <nd ref="408470509"/>
+    <nd ref="30244495"/>
+    <tag k="name" v="Kolumbusring"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="34855949" visible="true" timestamp="2010-07-01T15:44:00Z" version="3" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="30240650"/>
+    <nd ref="798559905"/>
+    <nd ref="205288238"/>
+    <nd ref="798559915"/>
+    <nd ref="330066022"/>
+    <tag k="name" v="Schmarler Damm"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="34855838" visible="true" timestamp="2009-10-28T15:41:51Z" version="2" changeset="2974117" user="LuWe" uid="175487">
+    <nd ref="30240577"/>
+    <nd ref="283205084"/>
+    <tag k="name" v="Alte Warnemünder Chaussee"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="34855837" visible="true" timestamp="2009-05-20T21:05:46Z" version="1" changeset="1268654" user="kilt" uid="92408">
+    <nd ref="283205084"/>
+    <nd ref="283205083"/>
+    <nd ref="283205082"/>
+    <tag k="name" v="Alte Warnemünder Chaussee"/>
+    <tag k="created_by" v="JOSM"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="34855836" visible="true" timestamp="2010-05-13T11:39:53Z" version="3" changeset="4685067" user="!i!" uid="25720">
+    <nd ref="283205082"/>
+    <nd ref="292934721"/>
+    <nd ref="337437976"/>
+    <tag k="footway" v="right"/>
+    <tag k="highway" v="tertiary"/>
+  </way>
+  <way id="34855842" visible="true" timestamp="2010-07-01T15:44:10Z" version="2" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="30241876"/>
+    <nd ref="254364958"/>
+    <nd ref="798559963"/>
+    <nd ref="798559966"/>
+    <nd ref="798559959"/>
+    <nd ref="798559957"/>
+    <nd ref="30240588"/>
+    <tag k="name" v="Groß Kleiner Damm"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4878075" visible="true" timestamp="2009-09-04T08:29:25Z" version="7" changeset="2366879" user="!i!" uid="25720">
+    <nd ref="28151632"/>
+    <nd ref="30729740"/>
+    <nd ref="413896942"/>
+    <nd ref="252969973"/>
+    <nd ref="252969974"/>
+    <nd ref="338978331"/>
+    <nd ref="30729741"/>
+    <nd ref="482841358"/>
+    <nd ref="30729742"/>
+    <nd ref="279081372"/>
+    <nd ref="30729743"/>
+    <tag k="name" v="Hinrichsdorfer Straße"/>
+    <tag k="highway" v="tertiary"/>
+  </way>
+  <way id="4579029" visible="true" timestamp="2010-07-01T14:11:12Z" version="8" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="798474686"/>
+    <nd ref="798474707"/>
+    <nd ref="798474689"/>
+    <nd ref="798474691"/>
+    <nd ref="798474695"/>
+    <nd ref="798474696"/>
+    <nd ref="798474705"/>
+    <nd ref="28927652"/>
+    <tag k="name" v="Ost-West-Straße"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="16813672" visible="true" timestamp="2010-07-01T15:44:17Z" version="14" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25468943"/>
+    <nd ref="798560016"/>
+    <nd ref="798560011"/>
+    <nd ref="798560010"/>
+    <nd ref="205288253"/>
+    <nd ref="798560006"/>
+    <nd ref="428623076"/>
+    <nd ref="798560003"/>
+    <nd ref="798560000"/>
+    <nd ref="25468944"/>
+    <tag k="name" v="Warnowtunnel"/>
+    <tag k="url" v="http://www.warnowquerung.com/"/>
+    <tag k="toll" v="yes"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="tunnel" v="yes"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="layer" v="-1"/>
+    <tag k="hazmat:water" v="no"/>
+  </way>
+  <way id="37586984" visible="true" timestamp="2010-07-01T15:44:00Z" version="3" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="10615860"/>
+    <nd ref="270438461"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="38213785" visible="true" timestamp="2009-07-28T20:26:26Z" version="1" changeset="1969068" user="Schwedenhagen" uid="70400">
+    <nd ref="30997736"/>
+    <nd ref="30999114"/>
+    <tag k="name" v="Ostseeallee"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="cycleway" v="track"/>
+  </way>
+  <way id="38213787" visible="true" timestamp="2010-05-13T11:40:02Z" version="2" changeset="4685067" user="!i!" uid="25720">
+    <nd ref="337437976"/>
+    <nd ref="10615866"/>
+    <tag k="footway" v="right"/>
+    <tag k="highway" v="tertiary"/>
+  </way>
+  <way id="38378125" visible="true" timestamp="2009-08-01T20:16:01Z" version="1" changeset="2007212" user="Schwedenhagen" uid="70400">
+    <nd ref="30244495"/>
+    <nd ref="30240586"/>
+    <tag k="name" v="Kolumbusring"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="38423526" visible="true" timestamp="2010-07-01T15:44:09Z" version="2" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="10615862"/>
+    <nd ref="798559863"/>
+    <nd ref="10615861"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="38632520" visible="true" timestamp="2010-03-26T06:52:47Z" version="3" changeset="4235103" user="kilt" uid="92408">
+    <nd ref="339305030"/>
+    <nd ref="270816180"/>
+    <nd ref="270816184"/>
+    <nd ref="673067685"/>
+    <nd ref="30997731"/>
+    <nd ref="270816179"/>
+    <nd ref="27651075"/>
+    <nd ref="674542548"/>
+    <nd ref="30997736"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="38632521" visible="true" timestamp="2010-07-01T15:44:07Z" version="3" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="283205096"/>
+    <nd ref="31197166"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="39354775" visible="true" timestamp="2009-08-20T16:26:01Z" version="1" changeset="2213599" user="WanMil" uid="109925">
+    <nd ref="299591998"/>
+    <nd ref="246205368"/>
+    <tag k="name" v="Zum Südtor"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="32977286" visible="true" timestamp="2010-07-01T09:41:26Z" version="3" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="28927645"/>
+    <nd ref="798006097"/>
+    <nd ref="798006096"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4911115" visible="true" timestamp="2010-07-01T09:41:29Z" version="6" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="32122042"/>
+    <nd ref="798006198"/>
+    <nd ref="30237806"/>
+    <nd ref="798006202"/>
+    <nd ref="32122011"/>
+    <nd ref="798006200"/>
+    <nd ref="30237805"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="residential"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="39354774" visible="true" timestamp="2010-07-01T14:11:05Z" version="3" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="246205368"/>
+    <nd ref="435779288"/>
+    <nd ref="246205374"/>
+    <nd ref="435779291"/>
+    <nd ref="246205378"/>
+    <nd ref="246205381"/>
+    <nd ref="246205393"/>
+    <nd ref="246205395"/>
+    <nd ref="246205399"/>
+    <nd ref="246205400"/>
+    <nd ref="246205402"/>
+    <nd ref="246205406"/>
+    <nd ref="246205408"/>
+    <nd ref="798006219"/>
+    <nd ref="798006218"/>
+    <nd ref="246205409"/>
+    <nd ref="798006217"/>
+    <nd ref="246205413"/>
+    <nd ref="798006216"/>
+    <nd ref="246205416"/>
+    <nd ref="246205418"/>
+    <nd ref="246205420"/>
+    <nd ref="798006211"/>
+    <nd ref="246205422"/>
+    <nd ref="246205426"/>
+    <nd ref="246205430"/>
+    <tag k="highway" v="motorway_link"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="32977285" visible="true" timestamp="2010-07-01T14:11:07Z" version="6" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="28928060"/>
+    <nd ref="798006091"/>
+    <nd ref="787332347"/>
+    <nd ref="371431637"/>
+    <nd ref="798006121"/>
+    <nd ref="371431684"/>
+    <nd ref="28928053"/>
+    <nd ref="798006120"/>
+    <nd ref="798006144"/>
+    <nd ref="787332342"/>
+    <nd ref="299591998"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4911117" visible="true" timestamp="2010-07-01T14:11:08Z" version="10" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="28928055"/>
+    <nd ref="798006181"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4911118" visible="true" timestamp="2010-07-01T14:11:08Z" version="9" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="28928054"/>
+    <nd ref="371432100"/>
+    <nd ref="28928055"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="39424693" visible="true" timestamp="2009-08-23T16:06:53Z" version="1" changeset="2231011" user="falcius" uid="52602">
+    <nd ref="472281514"/>
+    <nd ref="28927575"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="43159608" visible="true" timestamp="2009-10-26T12:44:40Z" version="1" changeset="2955634" user="LuWe" uid="175487">
+    <nd ref="299773755"/>
+    <nd ref="30240582"/>
+    <nd ref="261942243"/>
+    <nd ref="343782293"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="service"/>
+    <tag k="access" v="no"/>
+    <tag k="psv" v="designated"/>
+  </way>
+  <way id="43159607" visible="true" timestamp="2010-07-01T14:11:06Z" version="3" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="299591998"/>
+    <nd ref="798006148"/>
+    <nd ref="798006149"/>
+    <nd ref="798006209"/>
+    <nd ref="798006203"/>
+    <nd ref="28928054"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="43159606" visible="true" timestamp="2010-07-01T14:11:08Z" version="5" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="771148058"/>
+    <nd ref="787332340"/>
+    <nd ref="798006196"/>
+    <nd ref="798006195"/>
+    <nd ref="28927636"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="43159605" visible="true" timestamp="2010-07-01T15:43:55Z" version="3" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25469010"/>
+    <nd ref="798559981"/>
+    <nd ref="25469011"/>
+    <nd ref="798559987"/>
+    <nd ref="25469012"/>
+    <nd ref="25469013"/>
+    <nd ref="798559992"/>
+    <nd ref="798559995"/>
+    <nd ref="798559997"/>
+    <nd ref="25469014"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="hazmat:water" v="no"/>
+  </way>
+  <way id="43160251" visible="true" timestamp="2010-06-25T20:41:23Z" version="4" changeset="5076666" user="aighes" uid="110639">
+    <nd ref="31513627"/>
+    <nd ref="32122269"/>
+    <nd ref="302309899"/>
+    <nd ref="32122265"/>
+    <tag k="name" v="Petersdorfer Straße"/>
+    <tag k="maxspeed" v="60"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="43160250" visible="true" timestamp="2010-07-01T09:41:29Z" version="2" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="28152246"/>
+    <nd ref="798006199"/>
+    <nd ref="32122008"/>
+    <nd ref="798006201"/>
+    <nd ref="30237811"/>
+    <nd ref="798006197"/>
+    <nd ref="32122042"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="residential"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="43284739" visible="true" timestamp="2009-10-28T15:36:23Z" version="1" changeset="2974117" user="LuWe" uid="175487">
+    <nd ref="30240580"/>
+    <nd ref="283205084"/>
+    <tag k="name" v="Alte Warnemünder Chaussee"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="43286435" visible="true" timestamp="2010-07-01T09:41:26Z" version="3" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="246205430"/>
+    <nd ref="798006114"/>
+    <nd ref="798006110"/>
+    <nd ref="25468935"/>
+    <tag k="highway" v="motorway"/>
+    <tag k="lanes" v="2"/>
+    <tag k="ref" v="A 19"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="hazmat:water" v="no"/>
+  </way>
+  <way id="44061703" visible="true" timestamp="2010-07-01T15:44:11Z" version="2" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="30241871"/>
+    <nd ref="330066018"/>
+    <nd ref="798559985"/>
+    <nd ref="25469010"/>
+    <tag k="highway" v="primary_link"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="57017690" visible="true" timestamp="2010-04-29T10:21:35Z" version="1" changeset="4556674" user="!i!" uid="25720">
+    <nd ref="254364955"/>
+    <nd ref="30241876"/>
+    <tag k="highway" v="primary_link"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="57017688" visible="true" timestamp="2010-07-01T15:43:59Z" version="3" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="25469000"/>
+    <nd ref="25469001"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="64096732" visible="true" timestamp="2010-06-25T20:41:04Z" version="2" changeset="5076666" user="aighes" uid="110639">
+    <nd ref="32122265"/>
+    <nd ref="32122264"/>
+    <nd ref="32122263"/>
+    <nd ref="32122261"/>
+    <nd ref="32122256"/>
+    <nd ref="32122086"/>
+    <nd ref="787332359"/>
+    <nd ref="32122078"/>
+    <nd ref="787332354"/>
+    <nd ref="32122060"/>
+    <nd ref="32122049"/>
+    <nd ref="32122045"/>
+    <nd ref="32122042"/>
+    <tag k="name" v="Petersdorfer Straße"/>
+    <tag k="maxspeed" v="60"/>
+    <tag k="highway" v="residential"/>
+  </way>
+  <way id="65277968" visible="true" timestamp="2010-07-01T09:40:51Z" version="1" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="798006096"/>
+    <nd ref="28927646"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="65278017" visible="true" timestamp="2010-07-01T09:40:57Z" version="1" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="798006095"/>
+    <nd ref="798006099"/>
+    <nd ref="28928060"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="65278019" visible="true" timestamp="2010-07-01T09:40:57Z" version="1" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="798006181"/>
+    <nd ref="798006191"/>
+    <nd ref="787332349"/>
+    <nd ref="771148146"/>
+    <nd ref="771148059"/>
+    <nd ref="28928056"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="32977287" visible="true" timestamp="2010-07-01T09:41:31Z" version="4" changeset="5119242" user="Nibbler" uid="67020">
+    <nd ref="28927646"/>
+    <nd ref="798006673"/>
+    <nd ref="798006682"/>
+    <nd ref="798006680"/>
+    <nd ref="28927647"/>
+    <nd ref="302317124"/>
+    <nd ref="798006650"/>
+    <nd ref="28927577"/>
+    <nd ref="798006712"/>
+    <nd ref="798006714"/>
+    <nd ref="472281514"/>
+    <tag k="name" v="Straße zum Überseehafen"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="65354553" visible="true" timestamp="2010-07-01T14:10:46Z" version="1" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="798474744"/>
+    <nd ref="74148174"/>
+    <nd ref="197671253"/>
+    <tag k="name" v="Am Warnowkai"/>
+    <tag k="highway" v="residential"/>
+    <tag k="int_ref" v="E 55"/>
+  </way>
+  <way id="65354567" visible="true" timestamp="2010-08-07T07:30:08Z" version="2" changeset="5422415" user="Marsman" uid="316232">
+    <nd ref="798474813"/>
+    <nd ref="798474737"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+  </way>
+  <way id="65354570" visible="true" timestamp="2010-08-19T16:15:44Z" version="2" changeset="5536792" user="aighes" uid="110639">
+    <nd ref="798474609"/>
+    <nd ref="798474606"/>
+    <nd ref="798474407"/>
+    <nd ref="798474453"/>
+    <nd ref="798474451"/>
+    <nd ref="302318622"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+  </way>
+  <way id="65354587" visible="true" timestamp="2010-07-01T14:10:51Z" version="1" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="798474724"/>
+    <nd ref="798474699"/>
+    <nd ref="798474697"/>
+    <nd ref="798474638"/>
+    <nd ref="798474634"/>
+    <nd ref="798474640"/>
+    <nd ref="798474635"/>
+    <nd ref="798474632"/>
+    <nd ref="798474609"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="65354588" visible="true" timestamp="2010-07-01T14:10:51Z" version="1" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="28927652"/>
+    <nd ref="798474708"/>
+    <tag k="name" v="Ost-West-Straße"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="65354590" visible="true" timestamp="2010-07-01T14:10:51Z" version="1" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="798474745"/>
+    <nd ref="798474738"/>
+    <nd ref="798474740"/>
+    <nd ref="798474741"/>
+    <nd ref="798474742"/>
+    <nd ref="798474725"/>
+    <nd ref="798474724"/>
+    <tag k="service" v="parking_aisle"/>
+    <tag k="highway" v="service"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="65354591" visible="true" timestamp="2010-07-01T14:10:51Z" version="1" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="798474745"/>
+    <nd ref="798474744"/>
+    <tag k="service" v="parking_aisle"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="65354592" visible="true" timestamp="2010-07-01T14:10:51Z" version="1" changeset="5120904" user="Nibbler" uid="67020">
+    <nd ref="798474737"/>
+    <nd ref="798474744"/>
+    <tag k="name" v="Am Warnowkai"/>
+    <tag k="highway" v="residential"/>
+    <tag k="int_ref" v="E 55"/>
+  </way>
+  <way id="65277967" visible="true" timestamp="2010-08-19T16:15:43Z" version="3" changeset="5536792" user="aighes" uid="110639">
+    <nd ref="798006081"/>
+    <nd ref="798006074"/>
+    <nd ref="798006619"/>
+    <nd ref="28927660"/>
+    <nd ref="798006605"/>
+    <nd ref="798006594"/>
+    <nd ref="798006596"/>
+    <nd ref="28927659"/>
+    <tag k="name" v="Zum Fährterminal"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+    <tag k="layer" v="1"/>
+    <tag k="bridge" v="yes"/>
+  </way>
+  <way id="65370741" visible="true" timestamp="2010-07-01T15:43:26Z" version="1" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="798559855"/>
+    <nd ref="798559819"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="layer" v="1"/>
+  </way>
+  <way id="65370742" visible="true" timestamp="2010-07-01T15:43:27Z" version="1" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="798559819"/>
+    <nd ref="25469003"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="65370743" visible="true" timestamp="2010-07-01T15:43:27Z" version="1" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="798559853"/>
+    <nd ref="92273963"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="ref" v="B 105"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="65370744" visible="true" timestamp="2010-07-01T15:43:28Z" version="1" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="30240606"/>
+    <nd ref="263902974"/>
+    <tag k="name" v="Groß Kleiner Damm"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="44373506" visible="true" timestamp="2010-07-01T15:43:59Z" version="3" changeset="5121551" user="Nibbler" uid="67020">
+    <nd ref="440618097"/>
+    <nd ref="798559749"/>
+    <nd ref="25469000"/>
+    <tag k="name" v="Warnowallee"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="8570228" visible="true" timestamp="2010-07-04T22:04:30Z" version="8" changeset="5137537" user="Nibbler" uid="67020">
+    <nd ref="59768902"/>
+    <nd ref="704454697"/>
+    <nd ref="59768901"/>
+    <nd ref="59768900"/>
+    <nd ref="656402332"/>
+    <nd ref="59768899"/>
+    <nd ref="59768898"/>
+    <nd ref="59768897"/>
+    <nd ref="704454711"/>
+    <nd ref="801352327"/>
+    <nd ref="251740091"/>
+    <nd ref="59768894"/>
+    <nd ref="59768893"/>
+    <nd ref="59768892"/>
+    <nd ref="59768890"/>
+    <tag k="name" v="Am Kühlturm"/>
+    <tag k="highway" v="unclassified"/>
+  </way>
+  <way id="63634730" visible="true" timestamp="2010-07-04T22:04:48Z" version="3" changeset="5137537" user="Nibbler" uid="67020">
+    <nd ref="251740051"/>
+    <nd ref="251740052"/>
+    <nd ref="787323677"/>
+    <nd ref="787323696"/>
+    <nd ref="787323672"/>
+    <nd ref="787323702"/>
+    <nd ref="787323661"/>
+    <nd ref="251740054"/>
+    <nd ref="787323709"/>
+    <nd ref="801317075"/>
+    <nd ref="251740056"/>
+    <nd ref="801352685"/>
+    <nd ref="251740057"/>
+    <nd ref="801317195"/>
+    <nd ref="59768902"/>
+    <tag k="name" v="Ost-West-Straße"/>
+    <tag k="highway" v="unclassified"/>
+  </way>
+  <way id="43160252" visible="true" timestamp="2010-08-07T07:30:09Z" version="7" changeset="5422415" user="Marsman" uid="316232">
+    <nd ref="28927575"/>
+    <nd ref="798006716"/>
+    <nd ref="28927627"/>
+    <nd ref="302315602"/>
+    <nd ref="787323658"/>
+    <nd ref="787323675"/>
+    <nd ref="302315610"/>
+    <nd ref="656402285"/>
+    <nd ref="671266415"/>
+    <nd ref="671266419"/>
+    <nd ref="302313510"/>
+    <nd ref="671266412"/>
+    <nd ref="302313511"/>
+    <nd ref="475262474"/>
+    <nd ref="671266443"/>
+    <nd ref="475262485"/>
+    <nd ref="656402305"/>
+    <nd ref="28927630"/>
+    <nd ref="302313513"/>
+    <nd ref="787323704"/>
+    <nd ref="787323699"/>
+    <nd ref="251740035"/>
+    <nd ref="251740103"/>
+    <nd ref="251740039"/>
+    <nd ref="371432102"/>
+    <nd ref="671266470"/>
+    <nd ref="251740051"/>
+    <tag k="name" v="Ost-West-Straße"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="highway" v="unclassified"/>
+  </way>
+  <way id="65354568" visible="true" timestamp="2010-08-07T07:30:09Z" version="2" changeset="5422415" user="Marsman" uid="316232">
+    <nd ref="798474708"/>
+    <nd ref="798474813"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="name" v="Ost-West-Straße"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="int_ref" v="E 55"/>
+  </way>
+  <way id="65278016" visible="true" timestamp="2010-08-19T16:15:43Z" version="3" changeset="5536792" user="aighes" uid="110639">
+    <nd ref="798006082"/>
+    <nd ref="798006081"/>
+    <tag k="name" v="Zum Fährterminal"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+  </way>
+  <way id="65278022" visible="true" timestamp="2010-08-19T16:15:45Z" version="3" changeset="5536792" user="aighes" uid="110639">
+    <nd ref="28927659"/>
+    <nd ref="798006589"/>
+    <nd ref="371431634"/>
+    <nd ref="798006549"/>
+    <nd ref="798006533"/>
+    <nd ref="28927657"/>
+    <nd ref="302318626"/>
+    <nd ref="302318622"/>
+    <tag k="name" v="Zum Fährterminal"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="int_ref" v="E 55"/>
+    <tag k="ref" v="E 55"/>
+  </way>
+  <way id="65354577" visible="true" timestamp="2010-09-11T06:48:14Z" version="2" changeset="5747044" user="!i!" uid="25720">
+    <nd ref="798474810"/>
+    <nd ref="798474807"/>
+    <nd ref="798474745"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="service" v="parking_aisle"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <relation id="303078" visible="true" timestamp="2010-07-01T15:44:18Z" version="21" changeset="5121551" user="Nibbler" uid="67020">
+    <member type="way" ref="39538328" role=""/>
+    <member type="way" ref="4823626" role="backward"/>
+    <member type="way" ref="4823627" role="forward"/>
+    <member type="way" ref="4823159" role="forward"/>
+    <member type="way" ref="38213785" role="forward"/>
+    <member type="way" ref="38632520" role="forward"/>
+    <member type="way" ref="4823158" role="forward"/>
+    <member type="way" ref="4823309" role="forward"/>
+    <member type="way" ref="29493502" role="forward"/>
+    <member type="way" ref="37586984" role="forward"/>
+    <member type="way" ref="4823308" role="forward"/>
+    <member type="way" ref="4823311" role="forward"/>
+    <member type="way" ref="4823310" role="forward"/>
+    <member type="way" ref="4844006" role="forward"/>
+    <member type="way" ref="4844008" role="forward"/>
+    <member type="way" ref="38632521" role="forward"/>
+    <member type="way" ref="29493512" role="forward"/>
+    <member type="way" ref="65370741" role="forward"/>
+    <member type="way" ref="65370742" role="forward"/>
+    <member type="way" ref="4844007" role="forward"/>
+    <member type="way" ref="65370743" role="forward"/>
+    <member type="way" ref="38423526" role="forward"/>
+    <member type="way" ref="9567387" role="forward"/>
+    <member type="way" ref="26709843" role="forward"/>
+    <member type="way" ref="26709845" role="forward"/>
+    <member type="way" ref="34855836" role="forward"/>
+    <member type="way" ref="30540984" role="forward"/>
+    <member type="way" ref="34855838" role="forward"/>
+    <member type="way" ref="34855837" role="forward"/>
+    <member type="way" ref="38213787" role="forward"/>
+    <member type="way" ref="4823659" role="forward"/>
+    <member type="way" ref="29493545" role="forward"/>
+    <member type="way" ref="43159608" role=""/>
+    <member type="way" ref="30925474" role=""/>
+    <member type="way" ref="30925475" role=""/>
+    <member type="way" ref="4745614" role=""/>
+    <member type="way" ref="38378125" role=""/>
+    <member type="way" ref="32776815" role=""/>
+    <member type="way" ref="34855949" role="forward"/>
+    <member type="way" ref="29983066" role="forward"/>
+    <member type="way" ref="2556712" role="forward"/>
+    <member type="way" ref="8452505" role="forward"/>
+    <member type="way" ref="57017690" role="forward"/>
+    <member type="way" ref="34855842" role="forward"/>
+    <member type="way" ref="14325839" role="forward"/>
+    <member type="way" ref="65370744" role="forward"/>
+    <member type="way" ref="22897239" role="forward"/>
+    <member type="way" ref="43159605" role="forward"/>
+    <member type="way" ref="16813673" role="forward"/>
+    <member type="way" ref="16813672" role="forward"/>
+    <member type="way" ref="4255597" role="forward"/>
+    <member type="way" ref="7988578" role="forward"/>
+    <member type="way" ref="4817346" role="forward"/>
+    <member type="way" ref="43159606" role="forward"/>
+    <member type="way" ref="4911116" role="forward"/>
+    <member type="way" ref="39354775" role="forward"/>
+    <member type="way" ref="39354774" role="forward"/>
+    <member type="way" ref="4911114" role="forward"/>
+    <member type="way" ref="25647959" role="forward"/>
+    <member type="way" ref="32977285" role="forward"/>
+    <member type="way" ref="32977286" role="forward"/>
+    <member type="way" ref="65277968" role="forward"/>
+    <member type="way" ref="32977284" role="forward"/>
+    <member type="way" ref="65278017" role="forward"/>
+    <member type="way" ref="4745109" role="forward"/>
+    <member type="way" ref="32977287" role="forward"/>
+    <member type="way" ref="39424693" role="forward"/>
+    <member type="way" ref="25647955" role=""/>
+    <member type="way" ref="65354567" role="forward"/>
+    <member type="way" ref="65354592" role="forward"/>
+    <member type="way" ref="65354553" role="forward"/>
+    <member type="way" ref="65354591" role="forward"/>
+    <member type="way" ref="32977295" role="forward"/>
+    <member type="way" ref="26420481" role="forward"/>
+    <member type="way" ref="65354577" role="forward"/>
+    <member type="way" ref="65354590" role="forward"/>
+    <member type="way" ref="65354587" role="forward"/>
+    <member type="way" ref="65354570" role="forward"/>
+    <member type="way" ref="8570228" role=""/>
+    <member type="way" ref="63634730" role=""/>
+    <member type="way" ref="43160252" role=""/>
+    <member type="way" ref="4579030" role=""/>
+    <member type="way" ref="43159607" role="forward"/>
+    <member type="way" ref="4911118" role="forward"/>
+    <member type="way" ref="4911117" role="forward"/>
+    <member type="way" ref="65278019" role="forward"/>
+    <member type="way" ref="26420478" role="forward"/>
+    <member type="way" ref="25647957" role="forward"/>
+    <member type="way" ref="4911115" role="forward"/>
+    <member type="way" ref="43160250" role="forward"/>
+    <member type="way" ref="64096732" role=""/>
+    <member type="way" ref="43160251" role=""/>
+    <member type="way" ref="4878084" role=""/>
+    <member type="way" ref="22889454" role=""/>
+    <member type="way" ref="31337233" role=""/>
+    <member type="way" ref="4878075" role=""/>
+    <member type="way" ref="4878076" role=""/>
+    <member type="way" ref="8137133" role=""/>
+    <member type="way" ref="4253904" role=""/>
+    <member type="way" ref="8124386" role=""/>
+    <member type="way" ref="8124387" role=""/>
+    <member type="way" ref="30651492" role=""/>
+    <member type="way" ref="30651497" role=""/>
+    <member type="way" ref="30651496" role=""/>
+    <member type="way" ref="30651494" role=""/>
+    <member type="way" ref="4823656" role=""/>
+    <member type="way" ref="26702915" role=""/>
+    <member type="way" ref="43284739" role=""/>
+    <member type="way" ref="32977282" role="forward"/>
+    <member type="way" ref="65278016" role=""/>
+    <member type="way" ref="65277967" role=""/>
+    <member type="way" ref="65278022" role=""/>
+    <member type="way" ref="27022015" role="forward"/>
+    <member type="way" ref="4579029" role="forward"/>
+    <member type="way" ref="65354588" role="forward"/>
+    <member type="way" ref="26420479" role=""/>
+    <member type="way" ref="65354568" role="forward"/>
+    <member type="way" ref="4579056" role="forward"/>
+    <member type="way" ref="43286435" role="forward"/>
+    <member type="way" ref="44061703" role="forward"/>
+    <member type="way" ref="44373506" role="forward"/>
+    <member type="way" ref="57017688" role="forward"/>
+    <member type="node" ref="450190133" role="forward:stop"/>
+    <member type="node" ref="450190130" role="forward:stop"/>
+    <member type="node" ref="450190129" role="forward:stop"/>
+    <member type="node" ref="450190127" role="forward:stop"/>
+    <member type="node" ref="543675441" role="forward:stop"/>
+    <member type="node" ref="543675449" role="forward:stop"/>
+    <member type="node" ref="543721607" role="forward:stop"/>
+    <member type="node" ref="543721622" role="forward:stop"/>
+    <member type="node" ref="543721626" role="forward:stop"/>
+    <member type="node" ref="543721590" role="forward:stop"/>
+    <member type="node" ref="543721586" role="forward:stop"/>
+    <member type="node" ref="543721599" role="forward:stop"/>
+    <member type="node" ref="362123765" role="forward:stop"/>
+    <member type="node" ref="543751621" role="forward:stop"/>
+    <member type="node" ref="543751638" role="forward:stop"/>
+    <member type="node" ref="349008060" role="forward:stop"/>
+    <member type="node" ref="349008073" role="forward:stop"/>
+    <member type="node" ref="349008085" role="forward:stop"/>
+    <member type="node" ref="349008089" role="forward:stop"/>
+    <member type="node" ref="349008096" role="forward:stop"/>
+    <member type="node" ref="349008109" role="forward:stop"/>
+    <member type="node" ref="316439413" role="forward:stop"/>
+    <member type="node" ref="316439413" role="backward:stop"/>
+    <member type="node" ref="349008105" role="backward:stop"/>
+    <member type="node" ref="349008100" role="backward:stop"/>
+    <member type="node" ref="349008092" role="backward:stop"/>
+    <member type="node" ref="349008081" role="backward:stop"/>
+    <member type="node" ref="349008077" role="backward:stop"/>
+    <member type="node" ref="349008068" role="backward:stop"/>
+    <member type="node" ref="543751631" role="backward:stop"/>
+    <member type="node" ref="543751604" role="backward:stop"/>
+    <member type="node" ref="543751598" role="backward:stop"/>
+    <member type="node" ref="543721595" role="backward:stop"/>
+    <member type="node" ref="543721626" role="backward:stop"/>
+    <member type="node" ref="543721590" role="backward:stop"/>
+    <member type="node" ref="543721586" role="backward:stop"/>
+    <member type="node" ref="543721610" role="backward:stop"/>
+    <member type="node" ref="543721607" role="backward:stop"/>
+    <member type="node" ref="543675457" role="backward:stop"/>
+    <member type="node" ref="543675441" role="backward:stop"/>
+    <member type="node" ref="450190126" role="backward:stop"/>
+    <member type="node" ref="450190128" role="backward:stop"/>
+    <member type="node" ref="450190131" role="backward:stop"/>
+    <member type="node" ref="450190132" role="backward:stop"/>
+    <tag k="name" v="Bus Linie 49 (Rostock)"/>
+    <tag k="network" v="VVW"/>
+    <tag k="operator" v="RSAG Rostocker Straßenbahn AG"/>
+    <tag k="ref" v="49"/>
+    <tag k="route" v="bus"/>
+    <tag k="type" v="route"/>
+    <tag k="url" v="http://rsag-online.de/fahrplan/list/linie/49"/>
+  </relation>
+</osm>

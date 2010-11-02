@@ -3,11 +3,17 @@
 one:
   route_id: 1
   point_id: 1
+  version: 1
   key: MyString
   value: MyString
+  created_at: "2007-01-01 00:00:00"
+  updated_at: "2007-01-01 00:00:00"
 
 two:
   route_id: 1
   point_id: 1
+  version: 1
   key: MyString
   value: MyString
+  created_at: "2007-01-01 00:00:00"
+  updated_at: "2007-01-01 00:00:00"
