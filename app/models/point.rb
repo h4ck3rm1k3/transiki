@@ -27,6 +27,7 @@ class Point < ActiveRecord::Base
   #   end
   # end
 
+
   def tag_string=(ts)
     point_tags = []
 
@@ -67,6 +68,10 @@ class Point < ActiveRecord::Base
     #maybe FIXME?
   end
 
+  def save_with_dependencies!
+    #FIXME
+  end
+
   def save_with_history!
     Point.transaction do
       self.version = 0 unless self.version
@@ -79,9 +84,9 @@ class Point < ActiveRecord::Base
         tag.save!
       end
 
-      old_point = OldPoint.from_point(self)
+      point = Point.from_point(self)
 
-      old_point.save_with_dependencies!
+      point.save_with_dependencies!
     end
   end
 
@@ -99,10 +104,34 @@ class Point < ActiveRecord::Base
 
       p = Point.find(self.id)
 
-      old_point = OldPoint.from_point(p)
+      point = Point.from_point(p)
 
-      old_point.save_with_dependencies!
+      point.save_with_dependencies!
     end
+  end
+
+  def self.from_point(pt)
+
+    point = Point.new
+
+    point.id = pt.id
+    point.latitude = pt.latitude
+    point.longitude = pt.longitude
+    point.version = pt.version
+    point.user_id = pt.user_id
+    point.visible = pt.visible
+
+    pt.point_tags.each() do |tag|
+      pt = PointTag.new
+      pt.key = tag.key
+      pt.value = tag.value
+      pt.version = tag.version
+      pt.point_id = pt.point_id
+      point.point_tags << pt
+    end
+
+    return point
+    
   end
 
   def self.from_xml(xml, create=false)

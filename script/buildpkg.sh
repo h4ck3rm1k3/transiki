@@ -1,1 +1,1 @@
-dpkg-buildpackage -us -c > debian/testlog.txt 2>&1
+dpkg-buildpackage -us -uc > debian/testlog.txt 2>&1

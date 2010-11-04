@@ -1,8 +1,12 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
+  fixtures :users
+
   setup do
-    @user = users(:one)
+    @user = users(:normal_user)
+#User.first
+      
   end
 
   test "should get index" do

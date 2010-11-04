@@ -1,27 +1,17 @@
-dpkg-buildpackage: set CFLAGS to default value: -g -O2
-dpkg-buildpackage: set CPPFLAGS to default value: 
-dpkg-buildpackage: set LDFLAGS to default value: -Wl,-Bsymbolic-functions
-dpkg-buildpackage: set FFLAGS to default value: -g -O2
-dpkg-buildpackage: set CXXFLAGS to default value: -g -O2
-dpkg-buildpackage: source package transikiapi
-dpkg-buildpackage: source version 0.1
-dpkg-buildpackage: source changed by James Michael DuPont <h4ck3rm1k3@flossk.org>
-dpkg-buildpackage: host architecture i386
+dpkg-buildpackage: setze CFLAGS auf Standardwert: -g -O2
+dpkg-buildpackage: setze CPPFLAGS auf Standardwert: 
+dpkg-buildpackage: setze LDFLAGS auf Standardwert: -Wl,-Bsymbolic-functions
+dpkg-buildpackage: setze FFLAGS auf Standardwert: -g -O2
+dpkg-buildpackage: setze CXXFLAGS auf Standardwert: -g -O2
+dpkg-buildpackage: Quellpaket transikiapi
+dpkg-buildpackage: Quellversion 0.1
+dpkg-buildpackage: Quellen geändert durch James Michael DuPont <h4ck3rm1k3@flossk.org>
+dpkg-buildpackage: Host-Architektur i386
  fakeroot debian/rules clean
-debian/rules: line 3: configure:: command not found
-debian/rules: line 4: configure-stamp:: command not found
+debian/rules: Zeile 3: configure:: Kommando nicht gefunden.
+debian/rules: Zeile 4: configure-stamp:: Kommando nicht gefunden.
 (in /home/andreas/experiments/transiki/transikiapi-0.1)
 (in /home/andreas/experiments/transiki/transikiapi-0.1)
-HINWEIS:  CREATE TABLE erstellt implizit eine Sequenz »old_point_tags_id_seq« für die »serial«-Spalte »old_point_tags.id«
-HINWEIS:  CREATE TABLE / PRIMARY KEY erstellt implizit einen Index »old_point_tags_pkey« für Tabelle »old_point_tags«
-HINWEIS:  CREATE TABLE erstellt implizit eine Sequenz »old_points_id_seq« für die »serial«-Spalte »old_points.id«
-HINWEIS:  CREATE TABLE / PRIMARY KEY erstellt implizit einen Index »old_points_pkey« für Tabelle »old_points«
-HINWEIS:  CREATE TABLE erstellt implizit eine Sequenz »old_route_points_id_seq« für die »serial«-Spalte »old_route_points.id«
-HINWEIS:  CREATE TABLE / PRIMARY KEY erstellt implizit einen Index »old_route_points_pkey« für Tabelle »old_route_points«
-HINWEIS:  CREATE TABLE erstellt implizit eine Sequenz »old_route_tags_id_seq« für die »serial«-Spalte »old_route_tags.id«
-HINWEIS:  CREATE TABLE / PRIMARY KEY erstellt implizit einen Index »old_route_tags_pkey« für Tabelle »old_route_tags«
-HINWEIS:  CREATE TABLE erstellt implizit eine Sequenz »old_routes_id_seq« für die »serial«-Spalte »old_routes.id«
-HINWEIS:  CREATE TABLE / PRIMARY KEY erstellt implizit einen Index »old_routes_pkey« für Tabelle »old_routes«
 HINWEIS:  CREATE TABLE erstellt implizit eine Sequenz »point_tags_id_seq« für die »serial«-Spalte »point_tags.id«
 HINWEIS:  CREATE TABLE / PRIMARY KEY erstellt implizit einen Index »point_tags_pkey« für Tabelle »point_tags«
 HINWEIS:  CREATE TABLE erstellt implizit eine Sequenz »points_id_seq« für die »serial«-Spalte »points.id«
@@ -40,419 +30,128 @@ HINWEIS:  CREATE TABLE / PRIMARY KEY erstellt implizit einen Index »users_pkey�
 Loaded suite /usr/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
 ............
-Finished in 0.302843 seconds.
+Finished in 0.67067 seconds.
 
 12 tests, 12 assertions, 0 failures, 0 errors
 Loaded suite /usr/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
-EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE.......EEEEEEEEEEEEEEEEEEEEEFE.EEEEEEE
-Finished in 2.763346 seconds.
+E.......F.F.F..EEEEEEE..............EEEEE.EFE.F......
+Finished in 7.108056 seconds.
 
   1) Error:
 test_should_get_index(AdminControllerTest):
 ActionController::RoutingError: No route matches {:controller=>"admin"}
     /test/functional/admin_controller_test.rb:5:in `test_should_get_index'
 
-  2) Error:
-test_should_create_old_point_tag(OldPointTagsControllerTest):
-NoMethodError: undefined method `old_point_tags' for #<OldPointTagsControllerTest:0xb6dc5bd4>
-    /test/functional/old_point_tags_controller_test.rb:5:in `_callback_before_135'
+  2) Failure:
+test_should_create_point(PointsControllerTest) [/test/functional/points_controller_test.rb:24]:
+Expected response to be a <:redirect>, but was <200>
 
-  3) Error:
-test_should_destroy_old_point_tag(OldPointTagsControllerTest):
-NoMethodError: undefined method `old_point_tags' for #<OldPointTagsControllerTest:0xb6dc5bc0>
-    /test/functional/old_point_tags_controller_test.rb:5:in `_callback_before_135'
+  3) Failure:
+test_should_get_edit(PointsControllerTest) [/test/functional/points_controller_test.rb:34]:
+Expected response to be a <:success>, but was <302>
 
-  4) Error:
-test_should_get_edit(OldPointTagsControllerTest):
-NoMethodError: undefined method `old_point_tags' for #<OldPointTagsControllerTest:0xb6dc5b84>
-    /test/functional/old_point_tags_controller_test.rb:5:in `_callback_before_135'
+  4) Failure:
+test_should_get_new(PointsControllerTest) [/test/functional/points_controller_test.rb:16]:
+Expected response to be a <:success>, but was <302>
 
   5) Error:
-test_should_get_index(OldPointTagsControllerTest):
-NoMethodError: undefined method `old_point_tags' for #<OldPointTagsControllerTest:0xb6dc5b48>
-    /test/functional/old_point_tags_controller_test.rb:5:in `_callback_before_135'
+test_should_create_route_point_tag(RoutePointTagsControllerTest):
+ActionController::RoutingError: No route matches {:controller=>"route_point_tags", :action=>"create", :route_point_tag=>{"point_id"=>1, "created_at"=>Mon Jan 01 00:00:00 UTC 2007, "updated_at"=>Mon Jan 01 00:00:00 UTC 2007, "id"=>980190962, "version"=>1, "value"=>"MyString", "key"=>"MyString", "route_id"=>1}}
+    /test/functional/route_point_tags_controller_test.rb:21:in `test_should_create_route_point_tag'
+    /test/functional/route_point_tags_controller_test.rb:20:in `test_should_create_route_point_tag'
 
   6) Error:
-test_should_get_new(OldPointTagsControllerTest):
-NoMethodError: undefined method `old_point_tags' for #<OldPointTagsControllerTest:0xb6dc5b0c>
-    /test/functional/old_point_tags_controller_test.rb:5:in `_callback_before_135'
+test_should_destroy_route_point_tag(RoutePointTagsControllerTest):
+ActionController::RoutingError: No route matches {:controller=>"route_point_tags", :action=>"destroy", :id=>"980190962"}
+    /test/functional/route_point_tags_controller_test.rb:44:in `test_should_destroy_route_point_tag'
+    /test/functional/route_point_tags_controller_test.rb:43:in `test_should_destroy_route_point_tag'
 
   7) Error:
-test_should_show_old_point_tag(OldPointTagsControllerTest):
-NoMethodError: undefined method `old_point_tags' for #<OldPointTagsControllerTest:0xb6dc5ad0>
-    /test/functional/old_point_tags_controller_test.rb:5:in `_callback_before_135'
+test_should_get_edit(RoutePointTagsControllerTest):
+ActionController::RoutingError: No route matches {:controller=>"route_point_tags", :action=>"edit", :id=>"980190962"}
+    /test/functional/route_point_tags_controller_test.rb:33:in `test_should_get_edit'
 
   8) Error:
-test_should_update_old_point_tag(OldPointTagsControllerTest):
-NoMethodError: undefined method `old_point_tags' for #<OldPointTagsControllerTest:0xb6dc5a94>
-    /test/functional/old_point_tags_controller_test.rb:5:in `_callback_before_135'
+test_should_get_index(RoutePointTagsControllerTest):
+ActionController::RoutingError: No route matches {:controller=>"route_point_tags"}
+    /test/functional/route_point_tags_controller_test.rb:9:in `test_should_get_index'
 
   9) Error:
-test_should_create_old_point(OldPointsControllerTest):
-NoMethodError: undefined method `old_points' for #<OldPointsControllerTest:0xb6dc1638>
-    /test/functional/old_points_controller_test.rb:5:in `_callback_before_129'
+test_should_get_new(RoutePointTagsControllerTest):
+ActionController::RoutingError: No route matches {:controller=>"route_point_tags", :action=>"new"}
+    /test/functional/route_point_tags_controller_test.rb:15:in `test_should_get_new'
 
  10) Error:
-test_should_destroy_old_point(OldPointsControllerTest):
-NoMethodError: undefined method `old_points' for #<OldPointsControllerTest:0xb6dc1624>
-    /test/functional/old_points_controller_test.rb:5:in `_callback_before_129'
+test_should_show_route_point_tag(RoutePointTagsControllerTest):
+ActionController::RoutingError: No route matches {:controller=>"route_point_tags", :action=>"show", :id=>"980190962"}
+    /test/functional/route_point_tags_controller_test.rb:28:in `test_should_show_route_point_tag'
 
  11) Error:
-test_should_get_edit(OldPointsControllerTest):
-NoMethodError: undefined method `old_points' for #<OldPointsControllerTest:0xb6dc15e8>
-    /test/functional/old_points_controller_test.rb:5:in `_callback_before_129'
+test_should_update_route_point_tag(RoutePointTagsControllerTest):
+ActionController::RoutingError: No route matches {:controller=>"route_point_tags", :action=>"update", :route_point_tag=>{"point_id"=>1, "created_at"=>Mon Jan 01 00:00:00 UTC 2007, "updated_at"=>Mon Jan 01 00:00:00 UTC 2007, "id"=>980190962, "version"=>1, "value"=>"MyString", "key"=>"MyString", "route_id"=>1}, :id=>"980190962"}
+    /test/functional/route_point_tags_controller_test.rb:38:in `test_should_update_route_point_tag'
 
  12) Error:
-test_should_get_index(OldPointsControllerTest):
-NoMethodError: undefined method `old_points' for #<OldPointsControllerTest:0xb6dc15ac>
-    /test/functional/old_points_controller_test.rb:5:in `_callback_before_129'
+test_should_create_route(RoutesControllerTest):
+AbstractController::ActionNotFound: The action 'create' could not be found for RoutesController
+    /test/functional/routes_controller_test.rb:23:in `test_should_create_route'
+    /test/functional/routes_controller_test.rb:22:in `test_should_create_route'
 
  13) Error:
-test_should_get_new(OldPointsControllerTest):
-NoMethodError: undefined method `old_points' for #<OldPointsControllerTest:0xb6dc1570>
-    /test/functional/old_points_controller_test.rb:5:in `_callback_before_129'
+test_should_destroy_route(RoutesControllerTest):
+AbstractController::ActionNotFound: The action 'destroy' could not be found for RoutesController
+    /test/functional/routes_controller_test.rb:46:in `test_should_destroy_route'
+    /test/functional/routes_controller_test.rb:45:in `test_should_destroy_route'
 
  14) Error:
-test_should_show_old_point(OldPointsControllerTest):
-NoMethodError: undefined method `old_points' for #<OldPointsControllerTest:0xb6dc1534>
-    /test/functional/old_points_controller_test.rb:5:in `_callback_before_129'
+test_should_get_edit(RoutesControllerTest):
+ActionView::Template::Error: undefined method `model_name' for NilClass:Class
+    app/views/routes/_form.html.erb:1:in `_app_views_routes__form_html_erb__902226173__612797368_568416'
+    app/views/routes/edit.html.erb:3:in `_app_views_routes_edit_html_erb__351993296__612789378_0'
+    /test/functional/routes_controller_test.rb:35:in `test_should_get_edit'
 
  15) Error:
-test_should_update_old_point(OldPointsControllerTest):
-NoMethodError: undefined method `old_points' for #<OldPointsControllerTest:0xb6dc14f8>
-    /test/functional/old_points_controller_test.rb:5:in `_callback_before_129'
+test_should_get_index(RoutesControllerTest):
+ActionView::Template::Error: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each
+    app/views/routes/index.html.erb:10:in `_app_views_routes_index_html_erb___377349239__612890878_0'
+    /test/functional/routes_controller_test.rb:11:in `test_should_get_index'
 
  16) Error:
-test_should_create_old_route_point(OldRoutePointsControllerTest):
-NoMethodError: undefined method `old_route_points' for #<OldRoutePointsControllerTest:0xb6dbff04>
-    /test/functional/old_route_points_controller_test.rb:5:in `_callback_before_127'
+test_should_get_new(RoutesControllerTest):
+ActionView::Template::Error: undefined method `model_name' for NilClass:Class
+    app/views/routes/_form.html.erb:1:in `_app_views_routes__form_html_erb__902226173__612797368_568416'
+    app/views/routes/new.html.erb:3:in `_app_views_routes_new_html_erb__194153855__612959378_0'
+    /test/functional/routes_controller_test.rb:17:in `test_should_get_new'
 
  17) Error:
-test_should_destroy_old_route_point(OldRoutePointsControllerTest):
-NoMethodError: undefined method `old_route_points' for #<OldRoutePointsControllerTest:0xb6dbfef0>
-    /test/functional/old_route_points_controller_test.rb:5:in `_callback_before_127'
-
- 18) Error:
-test_should_get_edit(OldRoutePointsControllerTest):
-NoMethodError: undefined method `old_route_points' for #<OldRoutePointsControllerTest:0xb6dbfeb4>
-    /test/functional/old_route_points_controller_test.rb:5:in `_callback_before_127'
-
- 19) Error:
-test_should_get_index(OldRoutePointsControllerTest):
-NoMethodError: undefined method `old_route_points' for #<OldRoutePointsControllerTest:0xb6dbfe78>
-    /test/functional/old_route_points_controller_test.rb:5:in `_callback_before_127'
-
- 20) Error:
-test_should_get_new(OldRoutePointsControllerTest):
-NoMethodError: undefined method `old_route_points' for #<OldRoutePointsControllerTest:0xb6dbfe3c>
-    /test/functional/old_route_points_controller_test.rb:5:in `_callback_before_127'
-
- 21) Error:
-test_should_show_old_route_point(OldRoutePointsControllerTest):
-NoMethodError: undefined method `old_route_points' for #<OldRoutePointsControllerTest:0xb6dbfe00>
-    /test/functional/old_route_points_controller_test.rb:5:in `_callback_before_127'
-
- 22) Error:
-test_should_update_old_route_point(OldRoutePointsControllerTest):
-NoMethodError: undefined method `old_route_points' for #<OldRoutePointsControllerTest:0xb6dbfdc4>
-    /test/functional/old_route_points_controller_test.rb:5:in `_callback_before_127'
-
- 23) Error:
-test_should_create_old_route_tag(OldRouteTagsControllerTest):
-NoMethodError: undefined method `old_route_tags' for #<OldRouteTagsControllerTest:0xb6dbe7d0>
-    /test/functional/old_route_tags_controller_test.rb:5:in `_callback_before_125'
-
- 24) Error:
-test_should_destroy_old_route_tag(OldRouteTagsControllerTest):
-NoMethodError: undefined method `old_route_tags' for #<OldRouteTagsControllerTest:0xb6dbe7bc>
-    /test/functional/old_route_tags_controller_test.rb:5:in `_callback_before_125'
-
- 25) Error:
-test_should_get_edit(OldRouteTagsControllerTest):
-NoMethodError: undefined method `old_route_tags' for #<OldRouteTagsControllerTest:0xb6dbe780>
-    /test/functional/old_route_tags_controller_test.rb:5:in `_callback_before_125'
-
- 26) Error:
-test_should_get_index(OldRouteTagsControllerTest):
-NoMethodError: undefined method `old_route_tags' for #<OldRouteTagsControllerTest:0xb6dbe744>
-    /test/functional/old_route_tags_controller_test.rb:5:in `_callback_before_125'
-
- 27) Error:
-test_should_get_new(OldRouteTagsControllerTest):
-NoMethodError: undefined method `old_route_tags' for #<OldRouteTagsControllerTest:0xb6dbe708>
-    /test/functional/old_route_tags_controller_test.rb:5:in `_callback_before_125'
-
- 28) Error:
-test_should_show_old_route_tag(OldRouteTagsControllerTest):
-NoMethodError: undefined method `old_route_tags' for #<OldRouteTagsControllerTest:0xb6dbe6cc>
-    /test/functional/old_route_tags_controller_test.rb:5:in `_callback_before_125'
-
- 29) Error:
-test_should_update_old_route_tag(OldRouteTagsControllerTest):
-NoMethodError: undefined method `old_route_tags' for #<OldRouteTagsControllerTest:0xb6dbe690>
-    /test/functional/old_route_tags_controller_test.rb:5:in `_callback_before_125'
-
- 30) Error:
-test_should_create_old_route(OldRoutesControllerTest):
-NoMethodError: undefined method `old_routes' for #<OldRoutesControllerTest:0xb6dbd09c>
-    /test/functional/old_routes_controller_test.rb:5:in `_callback_before_123'
-
- 31) Error:
-test_should_destroy_old_route(OldRoutesControllerTest):
-NoMethodError: undefined method `old_routes' for #<OldRoutesControllerTest:0xb6dbd088>
-    /test/functional/old_routes_controller_test.rb:5:in `_callback_before_123'
-
- 32) Error:
-test_should_get_edit(OldRoutesControllerTest):
-NoMethodError: undefined method `old_routes' for #<OldRoutesControllerTest:0xb6dbd04c>
-    /test/functional/old_routes_controller_test.rb:5:in `_callback_before_123'
-
- 33) Error:
-test_should_get_index(OldRoutesControllerTest):
-NoMethodError: undefined method `old_routes' for #<OldRoutesControllerTest:0xb6dbd010>
-    /test/functional/old_routes_controller_test.rb:5:in `_callback_before_123'
-
- 34) Error:
-test_should_get_new(OldRoutesControllerTest):
-NoMethodError: undefined method `old_routes' for #<OldRoutesControllerTest:0xb6dbcfd4>
-    /test/functional/old_routes_controller_test.rb:5:in `_callback_before_123'
-
- 35) Error:
-test_should_show_old_route(OldRoutesControllerTest):
-NoMethodError: undefined method `old_routes' for #<OldRoutesControllerTest:0xb6dbcf98>
-    /test/functional/old_routes_controller_test.rb:5:in `_callback_before_123'
-
- 36) Error:
-test_should_update_old_route(OldRoutesControllerTest):
-NoMethodError: undefined method `old_routes' for #<OldRoutesControllerTest:0xb6dbcf5c>
-    /test/functional/old_routes_controller_test.rb:5:in `_callback_before_123'
-
- 37) Error:
-test_should_create_point_tag(PointTagsControllerTest):
-NoMethodError: undefined method `point_tags' for #<PointTagsControllerTest:0xb6dc2d6c>
-    /test/functional/point_tags_controller_test.rb:5:in `_callback_before_131'
-
- 38) Error:
-test_should_destroy_point_tag(PointTagsControllerTest):
-NoMethodError: undefined method `point_tags' for #<PointTagsControllerTest:0xb6dc2d58>
-    /test/functional/point_tags_controller_test.rb:5:in `_callback_before_131'
-
- 39) Error:
-test_should_get_edit(PointTagsControllerTest):
-NoMethodError: undefined method `point_tags' for #<PointTagsControllerTest:0xb6dc2d1c>
-    /test/functional/point_tags_controller_test.rb:5:in `_callback_before_131'
-
- 40) Error:
-test_should_get_index(PointTagsControllerTest):
-NoMethodError: undefined method `point_tags' for #<PointTagsControllerTest:0xb6dc2ce0>
-    /test/functional/point_tags_controller_test.rb:5:in `_callback_before_131'
-
- 41) Error:
-test_should_get_new(PointTagsControllerTest):
-NoMethodError: undefined method `point_tags' for #<PointTagsControllerTest:0xb6dc2ca4>
-    /test/functional/point_tags_controller_test.rb:5:in `_callback_before_131'
-
- 42) Error:
-test_should_show_point_tag(PointTagsControllerTest):
-NoMethodError: undefined method `point_tags' for #<PointTagsControllerTest:0xb6dc2c68>
-    /test/functional/point_tags_controller_test.rb:5:in `_callback_before_131'
-
- 43) Error:
-test_should_update_point_tag(PointTagsControllerTest):
-NoMethodError: undefined method `point_tags' for #<PointTagsControllerTest:0xb6dc2c2c>
-    /test/functional/point_tags_controller_test.rb:5:in `_callback_before_131'
-
- 44) Error:
-test_should_create_point(PointsControllerTest):
-NoMethodError: undefined method `points' for #<PointsControllerTest:0xb6db3330>
-    /test/functional/points_controller_test.rb:5:in `_callback_before_113'
-
- 45) Error:
-test_should_destroy_point(PointsControllerTest):
-NoMethodError: undefined method `points' for #<PointsControllerTest:0xb6db331c>
-    /test/functional/points_controller_test.rb:5:in `_callback_before_113'
-
- 46) Error:
-test_should_get_edit(PointsControllerTest):
-NoMethodError: undefined method `points' for #<PointsControllerTest:0xb6db32e0>
-    /test/functional/points_controller_test.rb:5:in `_callback_before_113'
-
- 47) Error:
-test_should_get_index(PointsControllerTest):
-NoMethodError: undefined method `points' for #<PointsControllerTest:0xb6db32a4>
-    /test/functional/points_controller_test.rb:5:in `_callback_before_113'
-
- 48) Error:
-test_should_get_new(PointsControllerTest):
-NoMethodError: undefined method `points' for #<PointsControllerTest:0xb6db3268>
-    /test/functional/points_controller_test.rb:5:in `_callback_before_113'
-
- 49) Error:
-test_should_show_point(PointsControllerTest):
-NoMethodError: undefined method `points' for #<PointsControllerTest:0xb6db322c>
-    /test/functional/points_controller_test.rb:5:in `_callback_before_113'
-
- 50) Error:
-test_should_update_point(PointsControllerTest):
-NoMethodError: undefined method `points' for #<PointsControllerTest:0xb6db31f0>
-    /test/functional/points_controller_test.rb:5:in `_callback_before_113'
-
- 51) Error:
-test_should_create_route_point(RoutePointsControllerTest):
-NoMethodError: undefined method `route_points' for #<RoutePointsControllerTest:0xb6db4a64>
-    /test/functional/route_points_controller_test.rb:5:in `_callback_before_115'
-
- 52) Error:
-test_should_destroy_route_point(RoutePointsControllerTest):
-NoMethodError: undefined method `route_points' for #<RoutePointsControllerTest:0xb6db4a50>
-    /test/functional/route_points_controller_test.rb:5:in `_callback_before_115'
-
- 53) Error:
-test_should_get_edit(RoutePointsControllerTest):
-NoMethodError: undefined method `route_points' for #<RoutePointsControllerTest:0xb6db4a14>
-    /test/functional/route_points_controller_test.rb:5:in `_callback_before_115'
-
- 54) Error:
-test_should_get_index(RoutePointsControllerTest):
-NoMethodError: undefined method `route_points' for #<RoutePointsControllerTest:0xb6db49d8>
-    /test/functional/route_points_controller_test.rb:5:in `_callback_before_115'
-
- 55) Error:
-test_should_get_new(RoutePointsControllerTest):
-NoMethodError: undefined method `route_points' for #<RoutePointsControllerTest:0xb6db499c>
-    /test/functional/route_points_controller_test.rb:5:in `_callback_before_115'
-
- 56) Error:
-test_should_show_route_point(RoutePointsControllerTest):
-NoMethodError: undefined method `route_points' for #<RoutePointsControllerTest:0xb6db4960>
-    /test/functional/route_points_controller_test.rb:5:in `_callback_before_115'
-
- 57) Error:
-test_should_update_route_point(RoutePointsControllerTest):
-NoMethodError: undefined method `route_points' for #<RoutePointsControllerTest:0xb6db4924>
-    /test/functional/route_points_controller_test.rb:5:in `_callback_before_115'
-
- 58) Error:
-test_should_create_route_tag(RouteTagsControllerTest):
-NoMethodError: undefined method `route_tags' for #<RouteTagsControllerTest:0xb6dbb968>
-    /test/functional/route_tags_controller_test.rb:5:in `_callback_before_121'
-
- 59) Error:
-test_should_destroy_route_tag(RouteTagsControllerTest):
-NoMethodError: undefined method `route_tags' for #<RouteTagsControllerTest:0xb6dbb954>
-    /test/functional/route_tags_controller_test.rb:5:in `_callback_before_121'
-
- 60) Error:
-test_should_get_edit(RouteTagsControllerTest):
-NoMethodError: undefined method `route_tags' for #<RouteTagsControllerTest:0xb6dbb918>
-    /test/functional/route_tags_controller_test.rb:5:in `_callback_before_121'
-
- 61) Error:
-test_should_get_index(RouteTagsControllerTest):
-NoMethodError: undefined method `route_tags' for #<RouteTagsControllerTest:0xb6dbb8dc>
-    /test/functional/route_tags_controller_test.rb:5:in `_callback_before_121'
-
- 62) Error:
-test_should_get_new(RouteTagsControllerTest):
-NoMethodError: undefined method `route_tags' for #<RouteTagsControllerTest:0xb6dbb8a0>
-    /test/functional/route_tags_controller_test.rb:5:in `_callback_before_121'
-
- 63) Error:
-test_should_show_route_tag(RouteTagsControllerTest):
-NoMethodError: undefined method `route_tags' for #<RouteTagsControllerTest:0xb6dbb864>
-    /test/functional/route_tags_controller_test.rb:5:in `_callback_before_121'
-
- 64) Error:
-test_should_update_route_tag(RouteTagsControllerTest):
-NoMethodError: undefined method `route_tags' for #<RouteTagsControllerTest:0xb6dbb828>
-    /test/functional/route_tags_controller_test.rb:5:in `_callback_before_121'
-
- 65) Error:
-test_should_create_route(RoutesControllerTest):
-NoMethodError: undefined method `routes' for #<RoutesControllerTest:0xb6dc44a0>
-    /test/functional/routes_controller_test.rb:5:in `_callback_before_133'
-
- 66) Error:
-test_should_destroy_route(RoutesControllerTest):
-NoMethodError: undefined method `routes' for #<RoutesControllerTest:0xb6dc448c>
-    /test/functional/routes_controller_test.rb:5:in `_callback_before_133'
-
- 67) Error:
-test_should_get_edit(RoutesControllerTest):
-NoMethodError: undefined method `routes' for #<RoutesControllerTest:0xb6dc4450>
-    /test/functional/routes_controller_test.rb:5:in `_callback_before_133'
-
- 68) Error:
-test_should_get_index(RoutesControllerTest):
-NoMethodError: undefined method `routes' for #<RoutesControllerTest:0xb6dc4414>
-    /test/functional/routes_controller_test.rb:5:in `_callback_before_133'
-
- 69) Error:
-test_should_get_new(RoutesControllerTest):
-NoMethodError: undefined method `routes' for #<RoutesControllerTest:0xb6dc43d8>
-    /test/functional/routes_controller_test.rb:5:in `_callback_before_133'
-
- 70) Error:
-test_should_show_route(RoutesControllerTest):
-NoMethodError: undefined method `routes' for #<RoutesControllerTest:0xb6dc439c>
-    /test/functional/routes_controller_test.rb:5:in `_callback_before_133'
-
- 71) Error:
 test_should_update_route(RoutesControllerTest):
-NoMethodError: undefined method `routes' for #<RoutesControllerTest:0xb6dc4360>
-    /test/functional/routes_controller_test.rb:5:in `_callback_before_133'
+AbstractController::ActionNotFound: The action 'update' could not be found for RoutesController
+    /test/functional/routes_controller_test.rb:40:in `test_should_update_route'
 
- 72) Failure:
+ 18) Failure:
 test_should_get_create(SessionsControllerTest) [/test/functional/sessions_controller_test.rb:11]:
 Expected response to be a <:success>, but was <302>
 
- 73) Error:
+ 19) Error:
 test_should_get_destroy(SessionsControllerTest):
-ActionController::RoutingError: No route matches {:action=>"destroy", :controller=>"sessions"}
+ActionController::RoutingError: No route matches {:controller=>"sessions", :action=>"destroy"}
     /test/functional/sessions_controller_test.rb:15:in `test_should_get_destroy'
 
- 74) Error:
-test_should_create_user(UsersControllerTest):
-NoMethodError: undefined method `users' for #<UsersControllerTest:0xb6dba234>
-    /test/functional/users_controller_test.rb:5:in `_callback_before_119'
+ 20) Failure:
+test_should_create_user(UsersControllerTest) [/test/functional/users_controller_test.rb:24]:
+"User.count" didn't change by 1.
+<2> expected but was
+<1>.
 
- 75) Error:
-test_should_destroy_user(UsersControllerTest):
-NoMethodError: undefined method `users' for #<UsersControllerTest:0xb6dba220>
-    /test/functional/users_controller_test.rb:5:in `_callback_before_119'
-
- 76) Error:
-test_should_get_edit(UsersControllerTest):
-NoMethodError: undefined method `users' for #<UsersControllerTest:0xb6dba1e4>
-    /test/functional/users_controller_test.rb:5:in `_callback_before_119'
-
- 77) Error:
-test_should_get_index(UsersControllerTest):
-NoMethodError: undefined method `users' for #<UsersControllerTest:0xb6dba1a8>
-    /test/functional/users_controller_test.rb:5:in `_callback_before_119'
-
- 78) Error:
-test_should_get_new(UsersControllerTest):
-NoMethodError: undefined method `users' for #<UsersControllerTest:0xb6dba16c>
-    /test/functional/users_controller_test.rb:5:in `_callback_before_119'
-
- 79) Error:
-test_should_show_user(UsersControllerTest):
-NoMethodError: undefined method `users' for #<UsersControllerTest:0xb6dba130>
-    /test/functional/users_controller_test.rb:5:in `_callback_before_119'
-
- 80) Error:
-test_should_update_user(UsersControllerTest):
-NoMethodError: undefined method `users' for #<UsersControllerTest:0xb6dba0f4>
-    /test/functional/users_controller_test.rb:5:in `_callback_before_119'
-
-88 tests, 12 assertions, 1 failures, 79 errors
+53 tests, 52 assertions, 5 failures, 15 errors
 Errors running test:functionals!
-debian/rules: line 13: build:: command not found
-debian/rules: line 15: build-stamp:: command not found
+debian/rules: Zeile 13: build:: Kommando nicht gefunden.
+debian/rules: Zeile 15: build-stamp:: Kommando nicht gefunden.
 ruby1.8: No such file or directory -- setup.rb (LoadError)
-debian/rules: line 23: clean:: command not found
+debian/rules: Zeile 23: clean:: Kommando nicht gefunden.
 ruby1.8: No such file or directory -- setup.rb (LoadError)
 	rm -f debian/transikiapi.substvars
 	rm -f debian/transikiapi.*.debhelper
@@ -466,7 +165,7 @@ ruby1.8: No such file or directory -- setup.rb (LoadError)
 		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
 		\) -exec rm -f {} \; \) -o \
 		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} \; \) \)
-debian/rules: line 33: install:: command not found
+debian/rules: Zeile 33: install:: Kommando nicht gefunden.
 	rm -f debian/transikiapi.substvars
 	rm -f debian/transikiapi.*.debhelper
 	rm -rf debian/transikiapi/
@@ -479,9 +178,9 @@ debian/rules: line 33: install:: command not found
 		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} \; \) \)
 	install -d debian/transikiapi
 ruby1.8: No such file or directory -- setup.rb (LoadError)
-mv: cannot stat `debian/transikiapi/usr/local/lib/site_ruby/1.8/*': No such file or directory
-debian/rules: line 45: binary-indep:: command not found
-debian/rules: line 49: binary-arch:: command not found
+mv: Aufruf von stat für „debian/transikiapi/usr/local/lib/site_ruby/1.8/*“ nicht möglich: No such file or directory
+debian/rules: Zeile 45: binary-indep:: Kommando nicht gefunden.
+debian/rules: Zeile 49: binary-arch:: Kommando nicht gefunden.
 	install -d debian/transikiapi/usr/share/doc/transikiapi
 	install -o 0 -g 0 -p -m644 debian/changelog debian/transikiapi/usr/share/doc/transikiapi/changelog
 	cd debian/transikiapi
@@ -501,13 +200,13 @@ debian/rules: line 49: binary-arch:: command not found
 	install -o 0 -g 0 -d debian/transikiapi/DEBIAN
 	echo misc:Depends= >> debian/transikiapi.substvars
 	dpkg-gencontrol -ldebian/changelog -Tdebian/transikiapi.substvars -Pdebian/transikiapi
-dpkg-gencontrol: warning: unknown substitution variable ${shlibs:Depends}
+dpkg-gencontrol: Warnung: unbekannte Substitutionsvariable ${shlibs:Depends}
 	chmod 644 debian/transikiapi/DEBIAN/control
 	chown 0:0 debian/transikiapi/DEBIAN/control
 	(cd debian/transikiapi >/dev/null ; find . -type f  ! -regex '.*/DEBIAN/.*' -printf '%P\0' | xargs -r0 md5sum > DEBIAN/md5sums) >/dev/null
 	chmod 644 debian/transikiapi/DEBIAN/md5sums
 	chown 0:0 debian/transikiapi/DEBIAN/md5sums
 	dpkg-deb --build debian/transikiapi ..
-dpkg-deb: building package `transikiapi' in `../transikiapi_0.1_all.deb'.
-debian/rules: line 79: binary:: command not found
-dpkg-buildpackage: error: fakeroot debian/rules clean gave error exit status 127
+dpkg-deb: Baue Paket »transikiapi« in »../transikiapi_0.1_all.deb«.
+debian/rules: Zeile 79: binary:: Kommando nicht gefunden.
+dpkg-buildpackage: Fehler: fakeroot debian/rules clean gab Fehler-Exitstatus 127
