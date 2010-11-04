@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class RouteTagsControllerTest < ActionController::TestCase
+  fixtures :route_tags
   setup do
     @route_tag = route_tags(:one)
   end

@@ -2,27 +2,18 @@
 
 <p>
   <b>Latitude:</b>
-  <%=
-      @point.latitude 
-       %> 
+  <%=      @point.latitude        %> 
 </p>
 
 <p>
   <b>Longitude:</b>
-  <%=
-      @point.longitude 
-     %> 
+  <%=      @point.longitude      %> 
 </p>
 
 <p>
   <b>tags:</b>
--  <%=
-       @point.tag_string 
-      %> 
+-  <%=       @point.tag_string       %> 
 </p>
 
-<%= 
-   # render 'form' 
-%>
 <%= link_to 'Edit', edit_point_path(@point) %> |
 <%= link_to 'Back', points_path %>

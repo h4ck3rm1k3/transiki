@@ -6,6 +6,6 @@ class RoutePointTag < ActiveRecord::Base
     route_point_tag.key = tag_xml.attributes['k']
     route_point_tag.value = tag_xml.attributes['v']
 
-    return route_point
+    return route_point_tag
   end
 end

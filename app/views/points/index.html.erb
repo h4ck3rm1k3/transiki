@@ -11,15 +11,13 @@
 
 <% @points.each do |point|    %>
   <tr>
-    <td><%= point.latitude 
+    <td><%= point.latitude 	     %></td>
+    <td><%= point.longitude 	    %></td>
+    <td>link_to 'Show' BROKEN <%=# link_to 'Show', points 	     
 	     %></td>
-    <td><%=point.longitude 
-	    %></td>
-    <td><%=# link_to 'Show', points 
+    <td>link_to 'Edit' BROKEN<%=# link_to 'Edit', edit_point_path(point) 	     
 	     %></td>
-    <td><%=# link_to 'Edit', edit_point_path(point) 
-	     %></td>
-    <td><%= #link_to 'Destroy', point, :confirm => 'Are you sure?', :method => :delete 
+    <td>link_to 'Destroy' BROKEN<%=# link_to 'Destroy', point, :confirm => 'Are you sure?', :method => :delete       
       %></td>
   </tr>
 <% end %>

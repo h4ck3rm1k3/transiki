@@ -1,15 +1,12 @@
 Transwiki::Application.routes.draw do
 
-  resources :route_point_tags
+  resources :point_tags
 
-  resources :old_route_points
   resources :route_points
   resources :users
   resources :sessions
-  resources :old_route_tags
   resources :points
   resources :route_tags
-  resources :old_routes
   resources :routes
 
   # points
@@ -21,10 +18,7 @@ Transwiki::Application.routes.draw do
   # routes
 
   # other
-
-  #resources :old_point_tags
   #resources :point_tags
-  #resources :old_points
   #resources :points
 
   # The priority is based upon order of creation:

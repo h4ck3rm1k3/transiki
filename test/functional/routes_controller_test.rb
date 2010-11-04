@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class RoutesControllerTest < ActionController::TestCase
+  fixtures :routes
+
   setup do
     @route = routes(:one)
   end
