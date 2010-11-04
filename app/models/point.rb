@@ -79,7 +79,7 @@ class Point < ActiveRecord::Base
         tag.save!
       end
 
-      old_point = OldPoint.from_point(self)
+      old_point = Point.from_point(self)
 
       old_point.save_with_dependencies!
     end
@@ -99,7 +99,7 @@ class Point < ActiveRecord::Base
 
       p = Point.find(self.id)
 
-      old_point = OldPoint.from_point(p)
+      old_point = Point.from_point(p)
 
       old_point.save_with_dependencies!
     end
