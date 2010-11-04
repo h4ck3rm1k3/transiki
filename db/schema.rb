@@ -10,45 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101011134822) do
-
-  create_table "old_point_tags", :force => true do |t|
-    t.string   "key"
-    t.string   "value"
-    t.integer  "point_id"
-    t.integer  "version"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "old_points", :force => true do |t|
-    t.float    "latitude"
-    t.float    "longitude"
-    t.integer  "point_id"
-    t.integer  "version"
-    t.integer  "user_id"
-    t.boolean  "visible"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "old_route_points", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "old_route_tags", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "old_routes", :force => true do |t|
-    t.integer  "version"
-    t.integer  "user_id"
-    t.boolean  "visible"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20101102074926) do
 
   create_table "point_tags", :force => true do |t|
     t.string   "key"
@@ -76,16 +38,24 @@ ActiveRecord::Schema.define(:version => 20101011134822) do
     t.string   "value"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "version"
   end
 
   create_table "route_points", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "point_id"
+    t.integer  "route_id"
+    t.integer  "version"
   end
 
   create_table "route_tags", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "key"
+    t.string   "value"
+    t.integer  "route_id"
+    t.integer  "version"
   end
 
   create_table "routes", :force => true do |t|
