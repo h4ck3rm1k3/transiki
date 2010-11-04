@@ -112,7 +112,6 @@ class Point < ActiveRecord::Base
   end
 
   def self.from_point(pt)
->>>>>>> 4b44a193281339cb4517fa51b332a02aef20c57f
 
     point = Point.new
 
