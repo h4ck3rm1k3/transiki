@@ -14,7 +14,6 @@ class PointTagsController < ApplicationController
   # GET /point_tags/1.xml
   def show
     @point_tag = PointTag.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @point_tag }

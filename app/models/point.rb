@@ -1,54 +1,27 @@
 class Point < ActiveRecord::Base 
   has_many :point_tags
 
-  # WARNING FIXME
-  # the tags modelling is broken in this model right now
-  # like OSM, we should maintain our own hash of tags internally to the model
-  # but we don't yet.
-
-  # def tagstring
-  #   return tags.collect {|tt| tt.tag}.join(", ")
-  # end
-
-  # def tagstring=(s)
-  #   if s.include? ','
-  #     self.tags = s.split(/\s*,\s*/).select {|tag| tag !~ /^\s*$/}.collect {|tag|
-  #       tt = Tracetag.new
-  #       tt.tag = tag
-  #       tt
-  #     }
-  #   else
-  #     #do as before for backwards compatibility:
-  #     self.tags = s.split().collect {|tag|
-  #       tt = Tracetag.new
-  #       tt.tag = tag
-  #       tt
-  #     }
-  #   end
-  # end
-
-
   def tag_string=(ts)
     point_tags = []
 
     ts.split(',').each do |keyval|
-        puts "Look at " + keyval
+      #puts "Look at " + keyval
       if keyval.include? '=' # throw it away if no equals
 
         keyvalarray = keyval.chomp.split('=')
         key = keyvalarray[0]
         val = keyvalarray[1]
-        puts "Look at " 
-        puts key
-        puts val
+       # puts "Look at " 
+       # puts key
+       # puts val
 
         pt = PointTag.new
         pt.key = key.strip
         pt.value = val.strip
         point_tags  += [pt]
-        p point_tags
+        #p point_tags
       else
-        puts "Bad" + keyval
+        #puts "Bad" + keyval
       end
     end
 
@@ -77,48 +50,44 @@ class Point < ActiveRecord::Base
     puts "FIXME validate_tag_string"
   end
 
-  def save_with_dependencies!
-    puts "FIXME save_with_dependencies"
-    # return true for now
-    
-    point_tags.each do |tag|
-      tag.save!
-      puts "after save"
-      p tag
-        
-    end
-
-    return true
-  end
 
   def save_with_history!
     Point.transaction do
       self.version = 0 unless self.version
       self.version += 1
+      
+      puts "going to save"
       p self
       self.save!
       p self
-      point_tags.each do |tag|
-        tag.key=tag.key
-        tag.value=tag.value
-        tag.version = 1
-        tag.visible = true
-        tag.user_id=session[:user_id] 
-        tag.point_id = self.id # FIXME I think this isn't needed
+      point = Point.from_point(self)
+
+      puts "Create new point"
+      p point
+
+
+      @tags.each do |tag|
+        ntag = PointTag.new
+        ntag.key=tag.key
+        ntag.value=tag.value
+        ntag.version = 1
+        ntag.point_id = self.id # FIXME I think this isn't needed
         puts "before save"
-        p tag
+        p ntag
 
-#        PointTag
-
-        tag.save!
+        point.point_tags  += [ntag]
+        p point.point_tags
+        ntag.save!
         puts "after save"
         p tag
+        p ntag
+        p point.point_tags
         
       end
-      point = Point.from_point(self)
+
       p point
       p self
-      point.save_with_dependencies!
+
 
     end
 
@@ -140,7 +109,7 @@ class Point < ActiveRecord::Base
 
       point = Point.from_point(p)
 
-      point.save_with_dependencies!
+#      point.save_with_dependencies!
     end
   end
 
@@ -160,9 +129,7 @@ class Point < ActiveRecord::Base
       pt.key = tag.key
       pt.value = tag.value
       pt.version = tag.version
-      pt.visible = tag.visible
       pt.point_id = pt.point_id
-      pt.user_id = pt.user_id
       p point
       p point.point_tags
       p pt

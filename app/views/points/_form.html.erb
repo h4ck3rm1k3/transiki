@@ -21,8 +21,17 @@
   </div>
 
   <div class="tags">
-    TAGS TODO
-    <%= render :partial => 'tags', :collection => @point.point_tags %>
+    <h3>tags</h3>
+
+    <% for tag in @point.point_tags %>
+    <div id="tag">
+      id: <%= tag.id %>
+      key: <%= tag.key %>
+      value: <%= tag.value %>
+      <%= link_to 'Edit', edit_point_tag_path(tag) %> |
+    </div>
+    <% end %>
+
   </div>
   
 
