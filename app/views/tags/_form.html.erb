@@ -1,0 +1,48 @@
+<%= form_for(@tag) do |f| %>
+  <% if @tag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tag.errors.count, "error") %> prohibited this tag from being saved:</h2>
+
+      <ul>
+      <% @tag.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="tags">
+    <h3>tags</h3>
+
+    <% for tag in @tag.tag_tags %>
+    <div id="tag">
+      id: <%= tag.id %>
+      key: <%= tag.key %>
+      value: <%= tag.value %>
+      <%= link_to 'Edit', edit_tag_tag_path(tag) %> |
+    </div>
+    <% end %>
+    <%= link_to 'New Tag', new_tag_tag_path, :tag_id => @tag.id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

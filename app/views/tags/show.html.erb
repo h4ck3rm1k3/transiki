@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @tag.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @tag.description %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @tag.version %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @tag.user_id %>
+</p>
+
+<p>
+    <% for tag in @tag.tag_tags %>
+    <div id="tag">
+      id: <%= tag.id %>
+      key: <%= tag.key %>
+      value: <%= tag.value %>
+      <%= link_to ('Show',tag_tags_path ) 	     	     %>
+      <%= link_to 'Edit', edit_tag_tag_path(tag) %> 
+    </div>    
+    <% end %>
+</p>
+
+<%= link_to 'Edit', edit_tag_path(@tag) %> |
+<%= link_to 'Back', tags_path %>
