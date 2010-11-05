@@ -24,8 +24,8 @@ Factory.define :user do |user| user.salt "pepper" end
 
   test "should create user" do
     assert_difference('User.count') do
-      @newuser = Factory.create(:user,
-                                :id => 123,
+
+      @newuser = User.new(       :id => 123,
                                 :email => "testnew@openstreetmap.org",
                                 :hashed_password =>"12334556",
 #                                :confimed => true,
@@ -34,7 +34,8 @@ Factory.define :user do |user| user.salt "pepper" end
 
       post :create, :user => @newuser.attributes
     end
-    print user_path(assigns(:user))
+#    print user_path(assigns(:user)) /users/3/users
+
     assert_redirected_to user_path(assigns(:user))
   end
 
