@@ -6,6 +6,7 @@ Transwiki::Application.routes.draw do
   resources :users
   resources :sessions
   resources :points
+  resources :admin
   resources :route_tags
   resources :routes
 
