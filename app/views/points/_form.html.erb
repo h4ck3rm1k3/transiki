@@ -19,6 +19,13 @@
     <%= f.label :longitude %><br />
     <%= f.text_field :longitude %>
   </div>
+
+  <div class="tags">
+    TAGS TODO
+    <%= render :partial => 'tags', :collection => @point.point_tags %>
+  </div>
+  
+
   <div class="actions">
     <%= f.submit %>
   </div>
