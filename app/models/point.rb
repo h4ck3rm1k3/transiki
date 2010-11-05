@@ -66,10 +66,13 @@ class Point < ActiveRecord::Base
 
   def validate_tag_string
     #maybe FIXME?
+    puts "FIXME validate_tag_string"
   end
 
   def save_with_dependencies!
-    #FIXME
+    puts "FIXME save_with_dependencies"
+    # return true for now
+    return true
   end
 
   def save_with_history!
@@ -83,12 +86,11 @@ class Point < ActiveRecord::Base
         tag.point_id = self.id # FIXME I think this isn't needed
         tag.save!
       end
-
-
       point = Point.from_point(self)
-
       point.save_with_dependencies!
+
     end
+
   end
 
   def delete_with_history!(user)

@@ -79,10 +79,14 @@ class PointsController < ApplicationController
 
     respond_to do |format|
       if @point.save_with_history!
-        format.html { redirect_to(@point, :notice => 'Point was successfully created.') }
+        format.html { 
+          puts "format history"
+          redirect_to(@point, :notice => 'Point was successfully created.') }
         format.xml  { render :xml => @point, :status => :created, :location => @point }
       else
-        format.html { render :action => "new" }
+        format.html { 
+          puts "new"
+          render :action => "new" }
         format.xml  { render :xml => @point.errors, :status => :unprocessable_entity }
       end
     end

@@ -12,15 +12,18 @@ class PointsControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
+    session[:user_id] = 1# hack
     get :new
+#    p @response
     assert_response :success
   end
 
   test "should create point" do
+    session[:user_id] = 1# hack
     assert_difference('Point.count') do
       post :create, :point => @point.attributes
     end
-
+#    p @response
     assert_redirected_to point_path(assigns(:point))
   end
 
@@ -30,7 +33,9 @@ class PointsControllerTest < ActionController::TestCase
   end
 
   test "should get edit" do
+    session[:user_id] = 1# hack
     get :edit, :id => @point.to_param
+
     assert_response :success
   end
 
