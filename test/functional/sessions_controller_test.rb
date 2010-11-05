@@ -13,11 +13,8 @@ class SessionsControllerTest < ActionController::TestCase
   end
 
   test "should get destroy" do
-    #session DELETE /sessions/:id(.:format)          {:controller=>"sessions", :action=>"destroy"}
-    #ActionController::RoutingError: No route matches {:action=>"destroy", :controller=>"sessions"}
-
-    #DELETE /sessions/:id(.:format) 
-    get :destroy
+    #thanks to RurouniJones and aknagi from #ror on irc.freenode.net
+    get(:destroy, {:controller=>"sessions", :action=>"destroy", :id => 1})
     assert_response 302 # redirect
   end
 

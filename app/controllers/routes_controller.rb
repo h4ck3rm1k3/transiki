@@ -1,6 +1,9 @@
 class RoutesController < ApplicationController
   before_filter :require_user_api, :only => [:create_xml]
 
+  def create
+  end
+
   def create_xml
     route = Route.from_xml(request.raw_post.to_s, true)
     route.user_id = @user.id
