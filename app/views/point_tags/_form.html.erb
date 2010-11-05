@@ -23,8 +23,16 @@
     <b>be careful editing this field</b>
     <%= f.label :point_id %><br />
     <%= f.text_field :point_id %>
+    <%=h link_to ("Point", :controller => "points", :action => "show", :id => @point_tag.point_id) %></p>
+  </div>
+
+  <div class="field">
+    <b>be careful editing this field</b>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
 
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
