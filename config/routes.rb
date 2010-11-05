@@ -1,5 +1,9 @@
 Transwiki::Application.routes.draw do
 
+  resources :tag_tags
+
+  resources :tags
+
   resources :point_tags
   resources :route_point_tags
   resources :route_points

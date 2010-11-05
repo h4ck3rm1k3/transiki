@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101102074926) do
+ActiveRecord::Schema.define(:version => 20101105202820) do
 
   create_table "point_tags", :force => true do |t|
     t.string   "key"
@@ -62,6 +62,25 @@ ActiveRecord::Schema.define(:version => 20101102074926) do
     t.integer  "version"
     t.integer  "user_id"
     t.boolean  "visible"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tag_tags", :force => true do |t|
+    t.integer  "tag_id"
+    t.string   "key"
+    t.string   "value"
+    t.integer  "version"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "version"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

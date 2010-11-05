@@ -1,0 +1,32 @@
+<h1>Listing tag_tags</h1>
+
+<table>
+  <tr>
+    <th>Tag</th>
+    <th>Key</th>
+    <th>Value</th>
+    <th>Version</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tag_tags.each do |tag_tag| %>
+  <tr>
+    <td><%= tag_tag.tag_id %></td>
+    <td><%= tag_tag.key %></td>
+    <td><%= tag_tag.value %></td>
+    <td><%= tag_tag.version %></td>
+    <td><%= tag_tag.user_id %></td>
+    <td><%= link_to 'Show', tag_tag %></td>
+    <td><%= link_to 'Edit', edit_tag_tag_path(tag_tag) %></td>
+    <td><%= link_to 'Destroy', tag_tag, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tag tag', new_tag_tag_path %>
+<%= link_to 'New Tag', new_tag_path %>
