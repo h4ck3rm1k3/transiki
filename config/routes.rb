@@ -1,7 +1,7 @@
 Transwiki::Application.routes.draw do
 
   resources :point_tags
-
+  resources :route_point_tags
   resources :route_points
   resources :users
   resources :sessions
