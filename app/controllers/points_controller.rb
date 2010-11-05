@@ -78,14 +78,12 @@ class PointsController < ApplicationController
     @point = Point.new(params[:point])
 
     respond_to do |format|
+      # if the save works, redirect to edit
       if @point.save_with_history!
-        format.html { 
-          puts "format history"
-          redirect_to(@point, :notice => 'Point was successfully created.') }
+        format.html { redirect_to(@point, :notice => 'Point was successfully created.') }
         format.xml  { render :xml => @point, :status => :created, :location => @point }
-      else
+      else  # redirect to new
         format.html { 
-          puts "new"
           render :action => "new" }
         format.xml  { render :xml => @point.errors, :status => :unprocessable_entity }
       end
