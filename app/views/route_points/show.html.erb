@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 
+<p><b>point_id:</b> <%= @route_point.point_id %></p>
+<p><b>route_id:</b> <%= @route_point.route_id %></p>
+<p><b>Version:</b> <%= @route_point.version %></p>
+
+
 <%= link_to 'Edit', edit_route_point_path(@route_point) %> |
 <%= link_to 'Back', route_points_path %>
