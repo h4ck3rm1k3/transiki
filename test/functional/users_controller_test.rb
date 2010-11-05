@@ -20,11 +20,21 @@ class UsersControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+Factory.define :user do |user| user.salt "pepper" end
+
   test "should create user" do
     assert_difference('User.count') do
-      post :create, :user => @user.attributes
-    end
+      @newuser = Factory.create(:user,
+                                :id => 123,
+                                :email => "testnew@openstreetmap.org",
+                                :hashed_password =>"12334556",
+#                                :confimed => true,
+                                :created_at => "2007-01-01 00:00:00",
+                                :updated_at => "2007-01-01 00:00:00")
 
+      post :create, :user => @newuser.attributes
+    end
+    print user_path(assigns(:user))
     assert_redirected_to user_path(assigns(:user))
   end
 
