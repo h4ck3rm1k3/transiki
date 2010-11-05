@@ -1,5 +1,40 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <b>Id:</b>
+  <%=      @route.id        %> 
+</p>
+
+<p>
+  <b>user:</b>
+  <%=      @route.user_id      %> 
+</p>
+
+<p>
+  <b>version:</b>
+  <%=      @route.version      %> 
+</p>
+
+<p>
+  <b>visible:</b>
+  <%=      @route.visible      %> 
+</p>
+
+<p>
+  <b>created:</b>
+  <%=      @route.created_at      %> 
+</p>
+
+<p>
+  <b>updated:</b>
+  <%=      @route.updated_at      %> 
+</p>
+
+<p>
+  <b>tags:</b>
+-  <%=       @route.tag_string       %> 
+</p>
+
 
 <%= link_to 'Edit', edit_route_path(@route) %> |
 <%= link_to 'Back', routes_path %>

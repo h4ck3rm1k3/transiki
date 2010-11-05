@@ -9,6 +9,13 @@
 
 <% @routes.each do |route| %>
   <tr>
+
+  <tr>
+    <td><%= route.id 	     %></td>
+    <td><%= route.user_id 	    %></td>
+    <td><%= route.visible 	    %></td>
+    <td><%= route.created_at 	    %></td>
+    <td><%= route.updated_at 	    %></td>
     <td><%= link_to 'Show', route %></td>
     <td><%= link_to 'Edit', edit_route_path(route) %></td>
     <td><%= link_to 'Destroy', route, :confirm => 'Are you sure?', :method => :delete %></td>

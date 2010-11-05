@@ -1,8 +1,14 @@
 class RoutesController < ApplicationController
+  before_filter :require_user, :only => [:new, :edit]
   before_filter :require_user_api, :only => [:create_xml]
 
   def index
     @routes = Route.all
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @points }
+    end
+
   end
 
   def show
@@ -11,8 +17,6 @@ class RoutesController < ApplicationController
       format.html # show.html.erb
       format.xml  { render :xml => @route }
     end
-
-
   end
 
   def create
@@ -33,13 +37,23 @@ class RoutesController < ApplicationController
 
   def update
     @route = Route.find(params[:id])
-    redirect_to(@route, :notice => "Route #{@route.id} was successfully updated.")     
+
+    respond_to do |format|
+      if @route.update_attributes(params[:route])
+        p "DEBUG update OK"
+        redirect_to(@route, :notice => "Route #{@route.id} was successfully updated.")     
+        format.xml  { head :ok }
+      else
+        p "DEBUG update fail"
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @route.errors, :status => :unprocessable_entity }
+      end
+    end
 
   end
 
   def edit
     @route = Route.find(params[:id])
-
   end
 
   def destroy

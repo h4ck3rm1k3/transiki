@@ -100,6 +100,7 @@ class PointsController < ApplicationController
         format.html { redirect_to(@point, :notice => 'Point was successfully updated.') }
         format.xml  { head :ok }
       else
+        
         format.html { render :action => "edit" }
         format.xml  { render :xml => @point.errors, :status => :unprocessable_entity }
       end

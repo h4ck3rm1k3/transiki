@@ -11,6 +11,28 @@
     </div>
   <% end %>
 
+  <div class="field"><%= f.label :user_id %><br /> <%= f.text_field :user_id %>  </div>
+  <div class="field"><%= f.label :visible %><br /> <%= f.text_field :visible %>  </div>
+  <div class="field"><%= f.label :version %><br /> <%= f.text_field :version %>  </div>
+  <div class="field"><%= f.label :created_at %><br /> <%= f.text_field :created_at %>  </div>
+  <div class="field"><%= f.label :updated_at %><br /> <%= f.text_field :updated_at %>  </div>
+
+  <div class="tags">
+    <h3>tags</h3>
+
+    <% for tag in @route.route_tags %>
+    <div id="tag">
+      id: <%= tag.id %>
+      key: <%= tag.key %>
+      value: <%= tag.value %>
+      <%= link_to ('Show',tag ) 	     	     %>
+      <%= link_to 'Edit', edit_route_tag_path(tag) %> 
+      <%= link_to 'Destroy', tag, :confirm => 'Are you sure?', :method => :delete             %>
+    </div>    
+    <% end %>
+    <%= link_to 'New Tag', new_route_tag_path, :route_id => @route.id %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

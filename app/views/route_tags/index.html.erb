@@ -8,7 +8,12 @@
   </tr>
 
 <% @route_tags.each do |route_tag| %>
+
   <tr>
+    <td><%= route_tag.key %></td>
+    <td><%= route_tag.value %></td>
+    <td><%= route_tag.route_id %></td>
+    <td><%= route_tag.version %></td>
     <td><%= link_to 'Show', route_tag %></td>
     <td><%= link_to 'Edit', edit_route_tag_path(route_tag) %></td>
     <td><%= link_to 'Destroy', route_tag, :confirm => 'Are you sure?', :method => :delete %></td>
