@@ -14,11 +14,13 @@ class RoutesControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
+    session[:user_id] = 1# hack
     get :new
     assert_response :success
   end
 
   test "should create route" do
+    session[:user_id] = 1# hack
     assert_difference('Route.count') do
       post :create, :route => @route.attributes
     end
@@ -32,16 +34,19 @@ class RoutesControllerTest < ActionController::TestCase
   end
 
   test "should get edit" do
+    session[:user_id] = 1# hack
     get :edit, :id => @route.to_param
     assert_response :success
   end
 
   test "should update route" do
+    session[:user_id] = 1# hack
     put :update, :id => @route.to_param, :route => @route.attributes
     assert_redirected_to route_path(assigns(:route))
   end
 
   test "should destroy route" do
+    session[:user_id] = 1# hack
     assert_difference('Route.count', -1) do
       delete :destroy, :id => @route.to_param
     end
