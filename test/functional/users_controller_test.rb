@@ -5,8 +5,6 @@ class UsersControllerTest < ActionController::TestCase
 
   setup do
     @user = users(:normal_user)
-#User.first
-      
   end
 
   test "should get index" do
@@ -26,16 +24,13 @@ Factory.define :user do |user| user.salt "pepper" end
     assert_difference('User.count') do
 
       @newuser = User.new(       :id => 123,
-                                :email => "testnew@openstreetmap.org",
-                                :hashed_password =>"12334556",
-#                                :confimed => true,
+                                :email => "test3@openstreetmap.org",
                                 :created_at => "2007-01-01 00:00:00",
                                 :updated_at => "2007-01-01 00:00:00")
-
+      @newuser.password ="test";
       post :create, :user => @newuser.attributes
-    end
-#    print user_path(assigns(:user)) /users/3/users
 
+    end
     assert_redirected_to user_path(assigns(:user))
   end
 

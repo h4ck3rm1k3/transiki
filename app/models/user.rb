@@ -2,16 +2,20 @@ class User < ActiveRecord::Base
   validates :email, :presence => true, :uniqueness => true
   attr_accessor :password_confirmation
   attr_reader :password
-#  attr_reader :confirmed
 
   validate :password_must_be_present
 
   class << self
     def authenticate(email, password)
+      return nil if password == nil        #todo better error handing
       if user = find_by_email(email)
-        if user.hashed_password == encrypt_password(password, user.salt)
+        testpass = encrypt_password(password, user.salt)
+        if user.hashed_password == testpass
           user
+        else
         end
+      else
+        # todo  "no user " + email + password
       end
       
     end
