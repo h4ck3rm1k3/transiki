@@ -19,18 +19,31 @@
 
   <div class="tags">
     <h3>tags</h3>
-
     <% for tag in @route.route_tags %>
     <div id="tag">
       id: <%= tag.id %>
       key: <%= tag.key %>
       value: <%= tag.value %>
-      <%= link_to ('Show',tag ) 	     	     %>
+      <%= link_to ('Show',route_tags_path ) 	     	     %>
       <%= link_to 'Edit', edit_route_tag_path(tag) %> 
       <%= link_to 'Destroy', tag, :confirm => 'Are you sure?', :method => :delete             %>
     </div>    
     <% end %>
     <%= link_to 'New Tag', new_route_tag_path, :route_id => @route.id %>
+  </div>
+
+  <h3>route points</h3>
+    <% for point in @route.route_points %>
+    <div id="point">
+      point:   <%= point.point_id %>
+      route:   <%= point.route_id %>
+      version: <%= point.version %>
+      <%= link_to ('Show',route_points_path ) 	     	     %>
+      <%= link_to 'Edit', edit_route_point_path(point) %> 
+      <%= link_to 'Destroy', point, :confirm => 'Are you sure?', :method => :delete             %>
+    </div>    
+    <% end %>
+    <%= link_to 'New Route Point', new_route_point_path, :route_id => @route.id %>
   </div>
 
   <div class="actions">
