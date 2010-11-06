@@ -22,6 +22,30 @@ class TagTagsController < ApplicationController
     end
   end
 
+  def used_keys
+    @used_keys =  TagTag.count(
+                              :all, 
+                              :group => "key",
+                              :order => "key"
+                              )
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @used_keys }
+    end
+  end
+
+  def used_values
+    @used_values =  TagTag.count(
+                                 :all, 
+                                 :group => "value",
+                                 :order => "value"
+                                 )
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @used_keys }
+    end
+  end
+
   # GET /tag_tags/1
   # GET /tag_tags/1.xml
   def show

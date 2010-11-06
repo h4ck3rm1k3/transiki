@@ -1,10 +1,20 @@
 Transwiki::Application.routes.draw do
 
-  resources :tag_tags
-
+  resources :tag_tags do
+    get 'used'
+    collection do
+      get 'used_keys' 
+      get 'used_values' 
+    end 
+  end
   resources :tags
 
-  resources :point_tags
+  resources :point_tags do
+    get 'used'
+    collection do
+          get 'used'
+    end
+  end
   resources :route_point_tags
   resources :route_points
   resources :users
@@ -13,6 +23,8 @@ Transwiki::Application.routes.draw do
   resources :admin
   resources :route_tags
   resources :routes
+
+
 
   # points
   match 'api/0.1/point/create' => 'points#create_xml'
