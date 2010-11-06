@@ -18,7 +18,10 @@ class TagsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @tags }
+      format.xml  { 
+        render :xml => @tags 
+
+      }
     end
   end
 

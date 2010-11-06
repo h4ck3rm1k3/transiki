@@ -4,7 +4,12 @@ class Tag < ActiveRecord::Base
 
   accepts_nested_attributes_for :tag_tags
 
-  def to_xml(options = {}) 
+  def to_xml(options = {})
+    options[:include] = [ :tag_tags ]
+    super
+  end
+
+  def to_xml_hide(options = {}) 
     doc = REXML::Document.new
     root = REXML::Element.new 'tw'
     point = REXML::Element.new 'tagtype'
