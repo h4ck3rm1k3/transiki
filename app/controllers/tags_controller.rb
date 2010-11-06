@@ -1,4 +1,16 @@
 class TagsController < ApplicationController
+  before_filter :require_user, :only => [:new, :edit]
+  before_filter :require_user_api, :only => [:create_xml, :delete]
+
+  def create_xml
+    tag = Tag.from_xml(request.raw_post.to_s, true)
+    tag.user_id = @user.id
+
+#    point.save_with_history!
+
+    render :text => tag.id, :content_type => 'text/plain'
+  end
+
   # GET /tags
   # GET /tags.xml
   def index
@@ -41,7 +53,7 @@ class TagsController < ApplicationController
   # POST /tags.xml
   def create
     @tag = Tag.new(params[:tag])
-
+    @tag.user_id = @user.id
     respond_to do |format|
       if @tag.save
         format.html { redirect_to(@tag, :notice => 'Tag was successfully created.') }

@@ -1,4 +1,16 @@
 class TagTagsController < ApplicationController
+  before_filter :require_user, :only => [:new, :edit]
+  before_filter :require_user_api, :only => [:create_xml, :delete]
+
+  def create_xml
+    tag = TagTag.from_xml(request.raw_post.to_s, true)
+    tag.user_id = @user.id
+
+#    point.save_with_history!
+
+    render :text => tag.id, :content_type => 'text/plain'
+  end
+
   # GET /tag_tags
   # GET /tag_tags.xml
   def index
