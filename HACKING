@@ -1,0 +1,10 @@
+here are things to do for hacking the code.
+
+1. create an atom feed of changes
+2. create a rest api for querying the tags
+   /tags/name or id/users
+3. show what tag keys used are not in the tag table.
+4. be able to create a tag based on a currently selected value
+5. be able to define tables with a column tag : table
+6. be able to sort the xml tags
+7. write the tag data in xml format
