@@ -36,6 +36,9 @@ class TagTagsController < ApplicationController
   # GET /tag_tags/new
   # GET /tag_tags/new.xml
   def new
+    # for selecting!
+    @tags =  Tag.find(:all, :order => "name").map {|t| [t.name, t.id] }
+
     @tag_tag = TagTag.new
 #    @tag_tag.tag_id = @tag.id
     @tag_tag.version = 1
@@ -62,9 +65,7 @@ class TagTagsController < ApplicationController
   # POST /tag_tags.xml
   def create
     @tag_tag = TagTag.new(params[:tag_tag])
-    @tag = Tag.find(params[:tag])
-    @tag_tag.tag_id = @tag.id
-    @tag_tag.user_id = @user.id
+
 
     respond_to do |format|
       if @tag_tag.save

@@ -41,6 +41,7 @@ class TagsController < ApplicationController
   def new
     @tag = Tag.new
     @tag.user_id = @user.id
+    @tag.version = 1
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @tag }
