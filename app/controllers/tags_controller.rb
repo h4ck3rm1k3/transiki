@@ -1,5 +1,5 @@
 class TagsController < ApplicationController
-  before_filter :require_user, :only => [:new, :edit]
+  before_filter :require_user, :only => [:new, :create, :edit]
   before_filter :require_user_api, :only => [:create_xml, :delete]
 
   def create_xml
@@ -40,7 +40,7 @@ class TagsController < ApplicationController
   # GET /tags/new.xml
   def new
     @tag = Tag.new
-
+    @tag.user_id = @user.id
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @tag }

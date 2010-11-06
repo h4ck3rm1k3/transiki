@@ -39,7 +39,7 @@
       <%= link_to 'Edit', edit_tag_tag_path(tag) %> |
     </div>
     <% end %>
-    <%= link_to 'New Tag', new_tag_tag_path, :tag_id => @tag.id %>
+    <%= link_to 'New Tag', new_tag_tag_path(:tag => @tag.id) %>
   </div>
 
   <div class="actions">

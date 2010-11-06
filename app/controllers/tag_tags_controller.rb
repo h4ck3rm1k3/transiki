@@ -1,5 +1,5 @@
 class TagTagsController < ApplicationController
-  before_filter :require_user, :only => [:new, :edit]
+  before_filter :require_user, :only => [:new, :create, :edit]
   before_filter :require_user_api, :only => [:create_xml, :delete]
 
   def create_xml
@@ -37,7 +37,16 @@ class TagTagsController < ApplicationController
   # GET /tag_tags/new.xml
   def new
     @tag_tag = TagTag.new
+#    @tag_tag.tag_id = @tag.id
+    @tag_tag.version = 1
+#    p params
+#    p @request
+    if params[:tag]
+      @tag = Tag.find(params[:tag])
+      @tag_tag.tag_id = @tag.id
+    end
 
+    @tag_tag.user_id = @user.id
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @tag_tag }
@@ -53,6 +62,9 @@ class TagTagsController < ApplicationController
   # POST /tag_tags.xml
   def create
     @tag_tag = TagTag.new(params[:tag_tag])
+    @tag = Tag.find(params[:tag])
+    @tag_tag.tag_id = @tag.id
+    @tag_tag.user_id = @user.id
 
     respond_to do |format|
       if @tag_tag.save
