@@ -4,12 +4,53 @@ FIXME link to codebase, wiki, mailing list, etc...
 
 To isntall this, I needed to :
 0. install the prereqs from the debian/control file
-1. run the scrip in debian/gems.sh
-2. setup the database like debian/database.sh
+1. run the script in : bash debian/gems.sh (paths from my ubuntu karmic system)
+
+# all the gem commands needed
+sudo  gem install rubygems-update
+pushd /var/lib/gems/1.8/bin/
+sudo ./update_rubygems
+popd
+sudo gem install bundler
+bundle install
+
+2. setup the postgres database like debian/database.sh
+2.1 create the config/database.yml 
+    development:
+      database: development_db
+      encoding: utf8
+      username: transiki
+      password: transiki
+      adapter:  postgresql
+      host:     localhost
+
+    test:
+      database: testing_db
+      encoding: utf8
+      username: transiki
+      password: transiki
+      adapter:  postgresql
+      host:     localhost
+
+    production:
+      database: production_db
+      encoding: utf8
+      username: transiki
+      password: transiki
+      adapter:  postgresql
+      host:     localhost
+
+2.3 if you want to use another database, change the config/database.yml and also you might want to edit the Gemfile 
+it is currently configured for postgres like this:
+#gem 'mysql'
+#gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'pg'
+
+
 3. install the /etc/postgresql/8.4/main/pg_hba.conf like debian/etc/postgresql/8.4/main/pg_hba.conf
 the just run dpkg-buildpackage -us -uc to try and build.
 
-you will get some errors. my results are currently in debian/testlog.txt.
+4. read the HACKING file for things to do...
 
 more to come
 
@@ -17,6 +58,8 @@ Mike
 ~~~~
 
 How to test :
+rake test
+
 rails server
 
 Create user :
@@ -25,3 +68,5 @@ http://0.0.0.0:3000/users/new
 Create a new point:
 http://0.0.0.0:3000/points/new/
 
+see more points here;
+http://0.0.0.0:3000/
