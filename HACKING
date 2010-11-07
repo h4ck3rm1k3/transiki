@@ -5,6 +5,21 @@ here are things to do for hacking the code.
    /tags/name or id/users
 3. show what tag keys used are not in the tag table.
 4. be able to create a tag based on a currently selected value
-5. be able to define tables with a column tag : table
-6. be able to sort the xml tags
+10. be able to add and document key=value combinations to the schema while tagging objects
+
+5. define tables with a column tag : table
+5.1 import csv files 
+5.2 import google docs xml feeds live
+
+6. sort the xml tags
 7. write the tag data in xml format
+8. check objects against current tags schema
+9. select possible tags from tag schema when tagging objects
+11. be able to browse and import openstreetmap data
+12. be able to browse and import wikipedia pages, transiki and openstreetmap wikipages
+12.1 be able to see what pages are linked and add them in as tags.
+12.2 be able to see what changes has taken place
+13. import mapnik styles
+14. import osmarender styles
+15. import and parse pdf files with train schedules
+16. be able to accept emails with travel schedules 
