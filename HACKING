@@ -27,3 +27,7 @@ here are things to do for hacking the code.
 18. be able to manage todos
 19. store wikipage directly in the rails.
 20. manage personal travel schedules. 
+21. be able to manage multiple transiki servers
+21.1 be able to pull changes from another server, maintain a list of servers
+21.2 be able to run transiki on your own machine, just for editing dont need to use a central server.
+21.3 be able transfer the data using git
