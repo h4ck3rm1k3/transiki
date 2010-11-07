@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101105202820) do
+ActiveRecord::Schema.define(:version => 20101107114917) do
+
+  create_table "google_sheets", :force => true do |t|
+    t.string   "key"
+    t.string   "type"
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "point_tags", :force => true do |t|
     t.string   "key"

@@ -1,5 +1,11 @@
 Transwiki::Application.routes.draw do
 
+  resources :simple_schedule_tables
+
+  resources :simple_schedules
+
+  resources :google_sheets
+
   resources :tag_tags do
     get 'used'
     collection do
