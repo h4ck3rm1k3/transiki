@@ -23,3 +23,7 @@ here are things to do for hacking the code.
 14. import osmarender styles
 15. import and parse pdf files with train schedules
 16. be able to accept emails with travel schedules 
+17. be able to report bugs in the system
+18. be able to manage todos
+19. store wikipage directly in the rails.
+20. manage personal travel schedules. 
