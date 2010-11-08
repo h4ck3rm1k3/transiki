@@ -12,12 +12,6 @@ two:
   name: MyString
   description: MyText
 
-two:
-  key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
-  sheettype: MyString
-  name: MyString
-  description: MyText
-
 three:
   key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
   sheettype: MyString

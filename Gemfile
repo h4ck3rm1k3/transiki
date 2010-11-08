@@ -26,6 +26,9 @@ gem "factory_girl", '>= 1.2.4'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 gem 'gdata'
+
+# xml parser
+gem 'nokogiri'
 #, :lib => 'gdata'
 
 # Bundle gems for the local environment. Make sure to

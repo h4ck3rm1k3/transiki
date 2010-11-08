@@ -20,8 +20,18 @@ class GoogleSheetsController < ApplicationController
     @client = GData::Client::Spreadsheets.new({})
     p url
     @feed = @client.get(url)
+
+    @xml = Nokogiri::XML.parse(@feed.body)
+    p @xml.css('entry').first
+
+  rescue GData::Client::BadRequestError => bang 
+    begin
+        print "Error running script: " + bang 
+        return false
+    end
+#    p @feed
     
-    p @feed
+    
 #    format.html 
   end
 
