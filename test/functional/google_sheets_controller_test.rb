@@ -29,7 +29,7 @@ class GoogleSheetsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should parse 3" do
+  test "shouldparseok" do
     google_sheet2 = google_sheets(:three)
     assert ! get( :parse, "google_sheet_id"=>google_sheet2.to_param)    
   end
