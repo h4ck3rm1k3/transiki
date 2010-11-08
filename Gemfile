@@ -7,7 +7,7 @@ gem 'rails', '>= 3.0.0'
 
 ### configure the database drivers
 #gem 'mysql'
-#gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'pg'
 
 gem "factory_girl", '>= 1.2.4'
