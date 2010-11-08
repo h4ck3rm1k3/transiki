@@ -12,17 +12,29 @@ class GoogleSheetsController < ApplicationController
     end
   end
 
+  def cell(coord, content)
+	#print "Coord"
+  end
+
   def parse
-    p params
+#    p params
     @google_sheet = GoogleSheet.find(params[:google_sheet_id])
     
     url = "http://spreadsheets.google.com/feeds/cells/" + @google_sheet.key + "/od6/public/basic"
     @client = GData::Client::Spreadsheets.new({})
-    p url
+ #   p url
     @feed = @client.get(url)
 
     @xml = Nokogiri::XML.parse(@feed.body)
-    p @xml.css('entry').first
+    @xml.css('entry').each do |e|
+#	p	e.content
+
+	title=e.search('title').first.content
+	cnt = e.search('content').first().content
+
+	print "TODO:" + title + " :" + cnt + "\n"
+	#cell (title,cnt )
+    end	
 
   rescue GData::Client::BadRequestError => bang 
     begin
