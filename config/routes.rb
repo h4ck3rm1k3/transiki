@@ -4,7 +4,9 @@ Transwiki::Application.routes.draw do
 
   resources :simple_schedules
 
-  resources :google_sheets
+  resources :google_sheets  do
+    get 'parse'
+  end
 
   resources :tag_tags do
     get 'used'

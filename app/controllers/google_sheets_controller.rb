@@ -1,4 +1,6 @@
 class GoogleSheetsController < ApplicationController
+#  helper :all 
+
   # GET /google_sheets
   # GET /google_sheets.xml
   def index
@@ -8,6 +10,19 @@ class GoogleSheetsController < ApplicationController
       format.html # index.html.erb
       format.xml  { render :xml => @google_sheets }
     end
+  end
+
+  def parse
+    p params
+    @google_sheet = GoogleSheet.find(params[:google_sheet_id])
+    
+    url = "http://spreadsheets.google.com/feeds/cells/" + @google_sheet.key + "/od6/public/basic"
+    @client = GData::Client::Spreadsheets.new({})
+    p url
+    @feed = @client.get(url)
+    
+    p @feed
+#    format.html 
   end
 
   # GET /google_sheets/1

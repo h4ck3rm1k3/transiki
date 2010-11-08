@@ -29,6 +29,12 @@ class GoogleSheetsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+
+  test "should parse" do
+    get :parse, :id => @google_sheet.to_param
+    assert_response :success
+  end
+
   test "should get edit" do
     get :edit, :id => @google_sheet.to_param
     assert_response :success

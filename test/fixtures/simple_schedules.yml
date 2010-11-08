@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fromloc: MyString
+  toloc: MyString
+  transporttype: MyString
+  departuretimes: MyString
+  dayofweek: MyString
+  cost: 1.5
+  currency: MyString
+  estimatedtraveltime: MyString
+  departinglocation: MyString
+  arrivinglocation: MyString
+
+two:
+  fromloc: MyString
+  toloc: MyString
+  transporttype: MyString
+  departuretimes: MyString
+  dayofweek: MyString
+  cost: 1.5
+  currency: MyString
+  estimatedtraveltime: MyString
+  departinglocation: MyString
+  arrivinglocation: MyString

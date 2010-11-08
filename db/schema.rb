@@ -10,11 +10,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101107114917) do
+ActiveRecord::Schema.define(:version => 20101107121930) do
 
   create_table "google_sheets", :force => true do |t|
     t.string   "key"
-    t.string   "type"
+    t.string   "sheettype"
     t.string   "name"
     t.text     "description"
     t.datetime "created_at"
@@ -71,6 +71,21 @@ ActiveRecord::Schema.define(:version => 20101107114917) do
     t.integer  "version"
     t.integer  "user_id"
     t.boolean  "visible"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "simple_schedules", :force => true do |t|
+    t.string   "fromloc"
+    t.string   "toloc"
+    t.string   "transporttype"
+    t.string   "departuretimes"
+    t.string   "dayofweek"
+    t.float    "cost"
+    t.string   "currency"
+    t.string   "estimatedtraveltime"
+    t.string   "departinglocation"
+    t.string   "arrivinglocation"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

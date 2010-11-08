@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fromloc:</b>
+  <%= @simple_schedule.fromloc %>
+</p>
+
+<p>
+  <b>Toloc:</b>
+  <%= @simple_schedule.toloc %>
+</p>
+
+<p>
+  <b>Transporttype:</b>
+  <%= @simple_schedule.transporttype %>
+</p>
+
+<p>
+  <b>Departuretimes:</b>
+  <%= @simple_schedule.departuretimes %>
+</p>
+
+<p>
+  <b>Dayofweek:</b>
+  <%= @simple_schedule.dayofweek %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @simple_schedule.cost %>
+</p>
+
+<p>
+  <b>Currency:</b>
+  <%= @simple_schedule.currency %>
+</p>
+
+<p>
+  <b>Estimatedtraveltime:</b>
+  <%= @simple_schedule.estimatedtraveltime %>
+</p>
+
+<p>
+  <b>Departinglocation:</b>
+  <%= @simple_schedule.departinglocation %>
+</p>
+
+<p>
+  <b>Arrivinglocation:</b>
+  <%= @simple_schedule.arrivinglocation %>
+</p>
+
+
+<%= link_to 'Edit', edit_simple_schedule_path(@simple_schedule) %> |
+<%= link_to 'Back', simple_schedules_path %>

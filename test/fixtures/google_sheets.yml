@@ -1,13 +1,34 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  key: MyString
-  type: MyString
+  key: 0Am70fsptsPF2dDZJYUtjMVF4Mk1Yc3B6c0ktVlRiNEE
+  sheettype: spreadsheet
   name: MyString
   description: MyText
 
 two:
-  key: MyString
-  type: MyString
+  key: 0AoQovvVR7xyxdFlEam5ES2VIQ2VyeWRlZTFXbXB0OEE
+  sheettype: MyString
   name: MyString
   description: MyText
+
+two:
+  key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
+  sheettype: MyString
+  name: MyString
+  description: MyText
+
+three:
+  key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
+  sheettype: MyString
+  name: MyString
+  description: MyText
+
+four:
+  key: 0AoQovvVR7xyxdDFTZ0d3QjBGaXN4S2NxVkNvb2J4UkE
+  sheettype: MyString
+  name: MyString
+  description: MyText
+
+
+

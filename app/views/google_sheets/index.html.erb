@@ -14,7 +14,7 @@
 <% @google_sheets.each do |google_sheet| %>
   <tr>
     <td><%= google_sheet.key %></td>
-    <td><%= google_sheet.type %></td>
+    <td><%= google_sheet.sheettype %></td>
     <td><%= google_sheet.name %></td>
     <td><%= google_sheet.description %></td>
     <td><%= link_to 'Show', google_sheet %></td>
