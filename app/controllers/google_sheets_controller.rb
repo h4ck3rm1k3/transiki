@@ -12,8 +12,7 @@ class GoogleSheetsController < ApplicationController
     end
   end
 
-
-  def parse
+  def loadgdata
     @google_sheet = GoogleSheet.find(params[:google_sheet_id])
     @table = Array.new
     @preheaderrow=Array.new
@@ -35,9 +34,6 @@ class GoogleSheetsController < ApplicationController
             if (@google_sheet.headerrow)  # if there is a header row defined, split by it
               if (row <  @google_sheet.headerrow) # before the header row
                 if (row > 0) # and not the fist empty row
-#                  p "Row " 
-#                  p row 
-#                  p cells
                   @preheaderrow.push(cells) # push the row into the header row.                  
                 end                  # skip row 0... no data.
               else
@@ -46,16 +42,12 @@ class GoogleSheetsController < ApplicationController
                   # put the keys in sorted order
                   cells.keys.sort.each { |key| @headerrowkeys.push key}
                   @headerrow=cells
-                  #
-                  #p @headerrow
                 else                  
-                  # no header row, just add all 
-                  @table.push(cells)
+                  @table.push(cells) # after the header row,  add all rows to the table
                 end            
               end
             else
-              # no header row, just add all 
-              @table.push(cells)
+              @table.push(cells)               # no header row, just add all 
             end
 
           row=crow # convert the string to intgere
@@ -70,23 +62,30 @@ class GoogleSheetsController < ApplicationController
       cells[ccol]= cnt
     end # each entry
     
-    #render
-#    p @table
+  end
+
+  def scaffold
+    # we generate a scaffold 
+    loadgdata
+
+    respond_to do |format|
+      format.html { render :action => "scaffold" } 
+    end
+  end
+
+  def parse
+    loadgdata
+    
     respond_to do |format|
       format.html { render :action => @google_sheet.name } 
-      format.xml  { render :xml => @google_sheets }
-      
-  end	
+      format.xml  { render :xml => @google_sheets }      
+    end	
 
   rescue GData::Client::BadRequestError => bang 
     begin
         print "Error running script: " + bang 
         return false
     end
-#    p @feed
-    
-    
-#    format.html 
   end
 
   # GET /google_sheets/1

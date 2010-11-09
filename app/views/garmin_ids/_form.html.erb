@@ -1,0 +1,61 @@
+<%= form_for(@garmin_id) do |f| %>
+  <% if @garmin_id.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@garmin_id.errors.count, "error") %> prohibited this garmin_id from being saved:</h2>
+
+      <ul>
+      <% @garmin_id.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :GeoNamesCode %><br />
+    <%= f.text_field :GeoNamesCode %>
+  </div>
+  <div class="field">
+    <%= f.label :GarminID %><br />
+    <%= f.text_field :GarminID %>
+  </div>
+  <div class="field">
+    <%= f.label :GarminFeatureDescription %><br />
+    <%= f.text_field :GarminFeatureDescription %>
+  </div>
+  <div class="field">
+    <%= f.label :KEY %><br />
+    <%= f.text_field :KEY %>
+  </div>
+  <div class="field">
+    <%= f.label :VALUE %><br />
+    <%= f.text_field :VALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :Code %><br />
+    <%= f.text_field :Code %>
+  </div>
+  <div class="field">
+    <%= f.label :Feature %><br />
+    <%= f.text_field :Feature %>
+  </div>
+  <div class="field">
+    <%= f.label :Description %><br />
+    <%= f.text_field :Description %>
+  </div>
+  <div class="field">
+    <%= f.label :Group %><br />
+    <%= f.text_field :Group %>
+  </div>
+  <div class="field">
+    <%= f.label :GroupName %><br />
+    <%= f.text_field :GroupName %>
+  </div>
+  <div class="field">
+    <%= f.label :Comments %><br />
+    <%= f.text_field :Comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

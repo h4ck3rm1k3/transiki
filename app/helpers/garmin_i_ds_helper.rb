@@ -1,0 +1,2 @@
+module GarminIDsHelper
+end

@@ -1,11 +1,17 @@
 Transwiki::Application.routes.draw do
 
+  resources :garmin_ids
+
   resources :simple_schedule_tables
 
   resources :simple_schedules
 
   resources :google_sheets  do
     get 'parse'
+    get 'scaffold'
+    get 'import'
+    get 'wikiexport'
+    get 'ymlexport'
   end
 
   resources :tag_tags do

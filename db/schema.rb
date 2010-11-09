@@ -10,7 +10,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101108184115) do
+ActiveRecord::Schema.define(:version => 20101109123321) do
+
+  create_table "garmin_ids", :force => true do |t|
+    t.string   "GeoNamesCode"
+    t.string   "GarminID"
+    t.string   "GarminFeatureDescription"
+    t.string   "KEY"
+    t.string   "VALUE"
+    t.string   "Code"
+    t.string   "Feature"
+    t.string   "Description"
+    t.string   "Group"
+    t.string   "GroupName"
+    t.string   "Comments"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "google_sheets", :force => true do |t|
     t.string   "key"
