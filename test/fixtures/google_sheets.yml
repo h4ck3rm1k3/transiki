@@ -14,9 +14,11 @@ two:
 
 three:
   key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
-  sheettype: MyString
-  name: MyString
+  sheettype: googlespreadsheet
+  name: GarminIDs
   description: MyText
+  headerrow: 2
+  classname: GarminMapping
 
 four:
   key: 0AoQovvVR7xyxdDFTZ0d3QjBGaXN4S2NxVkNvb2J4UkE

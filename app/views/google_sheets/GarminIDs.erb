@@ -1,8 +1,14 @@
 <table>
+  <hr>
+  <% @headerrowkeys.each do |key| %>
+      <td><%= @headerrow[key] %></td>
+<% end %>
+   </hr>	  
+
 <% @table.each do |row| %>
   <tr>
-  <% row.each do |cell| %>
-    <td><%= cell %></td>
+  <% @headerrowkeys.each do |key| %>
+    <td><%= row[key] %></td>
   <% end %>   
    </tr>
 <% end %>

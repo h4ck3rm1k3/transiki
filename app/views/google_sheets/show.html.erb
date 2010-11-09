@@ -20,6 +20,9 @@
   <%= @google_sheet.description %>
 </p>
 
+<p><b>HeaderRow:</b>  <%= @google_sheet.headerrow %></p>
+<p><b>ClassName:</b>  <%= @google_sheet.classname %></p>
+
 
 <%= link_to 'Edit', edit_google_sheet_path(@google_sheet) %> |
 <%= link_to 'Back', google_sheets_path %>
