@@ -2,28 +2,14 @@
 
 <table>
   <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Name</th>
-    <th>Description</th>
-    <th>HeaderRow</th>
-    <th>Class Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Title</th>
+    <th>Source</th>
   </tr>
 
-<% @google_sheets.each do |google_sheet| %>
+<% @sheets.each do |google_sheet| %>
   <tr>
-    <td><%= google_sheet.key %></td>
-    <td><%= google_sheet.sheettype %></td>
-    <td><%= google_sheet.name %></td>
-    <td><%= google_sheet.description %></td>
-    <td><%= google_sheet.headerrow %></td>
-    <td><%= google_sheet.classname %></td>
-    <td><%= link_to 'Show', google_sheet %></td>
-    <td><%= link_to 'Edit', edit_google_sheet_path(google_sheet) %></td>
-    <td><%= link_to 'Destroy', google_sheet, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= google_sheet["title"] %></td>
+    <td><%= google_sheet["src"] %></td>
   </tr>
 <% end %>
 </table>

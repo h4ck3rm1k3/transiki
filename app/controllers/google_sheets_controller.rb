@@ -1,6 +1,7 @@
 class GoogleSheetsController < ApplicationController
 #  helper :all 
-
+require 'pp'
+#require 'yaml'
   # GET /google_sheets
   # GET /google_sheets.xml
   def index
@@ -39,8 +40,56 @@ class GoogleSheetsController < ApplicationController
     @xml = Nokogiri::XML.parse(body)  
 #    p @xml
     
+  #   DOCUMENT
+  #   ELEMENT author
+  #   ELEMENT category
+  #     ELEMENT category
+  #     ELEMENT content
+  #     ELEMENT email
+  #   ELEMENT entry
+  # ELEMENT feed
+  #   ELEMENT id
+  #     ELEMENT id
+  #   ELEMENT link
+  #     ELEMENT link
+  #     ELEMENT name
+  #   ELEMENT openSearch:startIndex
+  #   ELEMENT openSearch:totalResults
+  #   ELEMENT title
+  #     ELEMENT title
+  #   ELEMENT updated
+  #     ELEMENT updated
+
+    @sheets= [];
     @xml.css('entry').each do |e|
-      p e
+#      p 
+#      pp e
+#      p e.to_yaml
+#      e.
+     # #(Element:0x..fdb818f20 {
+     #  name = "link",
+     #  namespace = #(Namespace:0x..fdb6791d8 {
+     #    href = "http://www.w3.org/2005/Atom"
+     #    }),
+     #  attributes = [
+     #    #(Attr:0x..fdb818b60 {     #      name = "rel",     #      value = "http://schemas.google.com/spreadsheets/2006#cellsfeed"
+     #      }),
+     #    #(Attr:0x..fdb818b56 {      name = "type",     #      value = "application/atom+xml"
+     #      }),
+     #    #(Attr:0x..fdb818b4c {     #      name = "href",     #      value = "https://spreadsheets.google.com/feeds/cells/0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc/odb/public/basic"
+     #      })]
+     #  }),
+ 
+#      p e.xpath('//name')
+#      p e.search('title')
+      item ={};
+      item["title"] = e.search('title').first.content
+      item["src"] = e.search('content').attribute("src").value()
+      @sheets.push(item)
+#      p e.search('content').attribute("src")
+#      p e.search('title').first.content
+#      p e.search('category').first.content
+#      p e.search('content').first.content
     end
 
   end
