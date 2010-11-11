@@ -16,10 +16,10 @@ two:
 three:
   key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
   sheettype: googlespreadsheet
-  name: GarminIDs
+  name: GarminId
   description: MyText
   headerrow: 2
-  classname: GarminIDs
+  classname: GarminId
 
 four:
   key: 0AoQovvVR7xyxdDFTZ0d3QjBGaXN4S2NxVkNvb2J4UkE

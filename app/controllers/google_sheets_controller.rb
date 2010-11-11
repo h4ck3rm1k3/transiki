@@ -13,14 +13,30 @@ class GoogleSheetsController < ApplicationController
   end
 
   def loadgdata
+#    p "params"
+#    p params[:google_sheet_id]
     @google_sheet = GoogleSheet.find(params[:google_sheet_id])
+
+#p "google sheet"
+#	p    @google_sheet 
+
     @table = Array.new
     @preheaderrow=Array.new
     @headerrowkeys=Array.new # sorted array of the keys in the right order.. we hope
     url = "http://spreadsheets.google.com/feeds/cells/" + @google_sheet.key + "/od6/public/basic"
-    @client = GData::Client::Spreadsheets.new({})
-    @feed = @client.get(url)
-    @xml = Nokogiri::XML.parse(@feed.body)  
+	p url
+    local_filename= File.dirname(__FILE__) + '/../../test/fixtures/' + @google_sheet.key + ".xml"
+ body = ""
+    if (!File.exist?(local_filename))
+	    @client = GData::Client::Spreadsheets.new({})
+	    @feed = @client.get(url)
+         body=@feed.body
+	File.open(local_filename, 'w') {|f| f.write(body) }
+    else
+	 File.open(local_filename, 'r') {|f| body = f.read() }
+   end
+    @xml = Nokogiri::XML.parse(body)  
+	
     row = 0 # the current row
     cells = Hash.new # current row data as hash 
     @xml.css('entry').each do |e|
@@ -35,6 +51,7 @@ class GoogleSheetsController < ApplicationController
               if (row <  @google_sheet.headerrow) # before the header row
                 if (row > 0) # and not the fist empty row
                   @preheaderrow.push(cells) # push the row into the header row.                  
+
                 end                  # skip row 0... no data.
               else
                 #not before header row
@@ -50,6 +67,7 @@ class GoogleSheetsController < ApplicationController
               @table.push(cells)               # no header row, just add all 
             end
 
+	
           row=crow # convert the string to intgere
           cells['_row']=row
 #          p cells 
@@ -61,24 +79,52 @@ class GoogleSheetsController < ApplicationController
       # append the data to a new row
       cells[ccol]= cnt
     end # each entry
+
+#p "google sheet load finished"
+#	p    @google_sheet 
     
   end
+
+
   def import
+p "going to load"
     # we generate a scaffold 
     loadgdata
-
-#    @headerrowkeys.each do |key|      @headerrow[key]     end 
+p "going to import"
+	
+#    @headerrowkeys.each do |key|   p   @headerrow[key]     end 
+    p @google_sheet
     
-    @table.each do |row| 
-      # create a new 
-    @object = eval(@googlesheet.classname + ".new(row)")
-      @google_sheet.update_attributes(row)
-      @headerrowkeys.each do |key| 
-        @object.Parse(key,row[key] )
-      end 
-    end 
-    @object.save
+	if (@google_sheet==nil)
+	p "error! sheet is null!"
+	return 
+	end
 
+
+    @table.each do |row| 
+# hash with better names
+	newrow = {}
+     
+ # create a new 
+p "going to import"
+p row
+p "going to eval"
+p @google_sheet.classname + ".new()"
+#      @object.update_attributes(row)
+p @object
+      @headerrowkeys.each do |key| 
+ 	name = @headerrow[key]
+#        @object.Parse(name,row[key] )
+	newrow[name]=row[key]
+      end 
+
+    @object = eval(@google_sheet.classname + ".new(newrow)")
+#row
+p "object"
+p @object
+	@object.save
+    end 
+#  format.html { render :action => "scaffold" } 
   end
 
   def scaffold

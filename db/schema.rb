@@ -28,6 +28,16 @@ ActiveRecord::Schema.define(:version => 20101109123321) do
     t.datetime "updated_at"
   end
 
+  create_table "geometry_columns", :id => false, :force => true do |t|
+    t.string  "f_table_catalog",   :limit => 256, :null => false
+    t.string  "f_table_schema",    :limit => 256, :null => false
+    t.string  "f_table_name",      :limit => 256, :null => false
+    t.string  "f_geometry_column", :limit => 256, :null => false
+    t.integer "coord_dimension",                  :null => false
+    t.integer "srid",                             :null => false
+    t.string  "type",              :limit => 30,  :null => false
+  end
+
   create_table "google_sheets", :force => true do |t|
     t.string   "key"
     t.string   "sheettype"
@@ -108,6 +118,14 @@ ActiveRecord::Schema.define(:version => 20101109123321) do
     t.datetime "updated_at"
   end
 
+  create_table "spatial_ref_sys", :id => false, :force => true do |t|
+    t.integer "srid",                      :null => false
+    t.string  "auth_name", :limit => 256
+    t.integer "auth_srid"
+    t.string  "srtext",    :limit => 2048
+    t.string  "proj4text", :limit => 2048
+  end
+
   create_table "tag_tags", :force => true do |t|
     t.integer  "tag_id"
     t.string   "key"
@@ -125,6 +143,10 @@ ActiveRecord::Schema.define(:version => 20101109123321) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "test", :id => false, :force => true do |t|
+    t.integer "test"
   end
 
   create_table "users", :force => true do |t|
