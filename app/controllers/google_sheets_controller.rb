@@ -12,6 +12,39 @@ class GoogleSheetsController < ApplicationController
     end
   end
 
+  def wikiexport
+    #create a wikipage 
+  end
+
+  def ymlexport
+    #create a yml doc
+  end
+
+  def listsheets
+    @google_sheet = GoogleSheet.find(params[:google_sheet_id])
+    #wget https://spreadsheets.google.com/feeds/worksheets/$1                       /public/basic
+    url = "http://spreadsheets.google.com/feeds/worksheets/" + @google_sheet.key + "/public/basic"
+    p "going to get url to see" + url
+    local_filename= File.dirname(__FILE__) + '/../../test/fixtures/' + @google_sheet.key + "sheets_.xml"
+    body = ""
+    if (!File.exist?(local_filename))
+      @client = GData::Client::Spreadsheets.new({})
+      @feed = @client.get(url)
+      body=@feed.body
+      File.open(local_filename, 'w') {|f| f.write(body) }
+    else
+      puts "going to read file " + local_filename
+      File.open(local_filename, 'r') {|f| body = f.read() }
+    end
+    @xml = Nokogiri::XML.parse(body)  
+#    p @xml
+    
+    @xml.css('entry').each do |e|
+      p e
+    end
+
+  end
+
   def loadgdata
 #    p "params"
 #    p params[:google_sheet_id]
@@ -91,8 +124,7 @@ class GoogleSheetsController < ApplicationController
 p "going to load"
     # we generate a scaffold 
     loadgdata
-p "going to import"
-	
+#p "going to import"
 #    @headerrowkeys.each do |key|   p   @headerrow[key]     end 
     p @google_sheet
     
@@ -106,7 +138,7 @@ p "going to import"
 # hash with better names
 	newrow = {}     
  # create a new 
-p "going to import"
+#p "going to import"
 #p row
 #p "going to eval"
 #p @google_sheet.classname + ".new()"
@@ -121,7 +153,7 @@ p "going to import"
     @object = eval(@google_sheet.classname + ".new(newrow)")
 #row
 #p "object"
-p @object
+#p @object
 	@object.save
     end 
 #  format.html { render :action => "scaffold" } 

@@ -10,6 +10,7 @@ Transwiki::Application.routes.draw do
     get 'parse'
     get 'scaffold'
     get 'import'
+    get 'listsheets'
     get 'wikiexport'
     get 'ymlexport'
   end

@@ -4,9 +4,11 @@ class GoogleSheetsControllerTest < ActionController::TestCase
   setup do
     @google_sheet = google_sheets(:one)
   end
-  test "should import google_sheet" do
+
+  test "shouldlistgoogleworksheets" do
+    p "going to test list"
     google_sheet2 = google_sheets(:three)
-    get :import, "google_sheet_id"=> google_sheet2.to_param
+    get :listsheets, "google_sheet_id"=> google_sheet2.to_param
     assert_response :success
   end
 
@@ -66,6 +68,12 @@ class GoogleSheetsControllerTest < ActionController::TestCase
   test "should update google_sheet" do
     put :update, :id => @google_sheet.to_param, :google_sheet => @google_sheet.attributes
     assert_redirected_to google_sheet_path(assigns(:google_sheet))
+  end
+
+  test "should import google_sheet" do
+    google_sheet2 = google_sheets(:three)
+    get :import, "google_sheet_id"=> google_sheet2.to_param
+    assert_response :success
   end
 
   test "should destroy google_sheet" do
