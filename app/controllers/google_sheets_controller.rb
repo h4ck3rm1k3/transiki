@@ -63,6 +63,23 @@ class GoogleSheetsController < ApplicationController
     end # each entry
     
   end
+  def import
+    # we generate a scaffold 
+    loadgdata
+
+#    @headerrowkeys.each do |key|      @headerrow[key]     end 
+    
+    @table.each do |row| 
+      # create a new 
+    @object = eval(@googlesheet.classname + ".new(row)")
+      @google_sheet.update_attributes(row)
+      @headerrowkeys.each do |key| 
+        @object.Parse(key,row[key] )
+      end 
+    end 
+    @object.save
+
+  end
 
   def scaffold
     # we generate a scaffold 

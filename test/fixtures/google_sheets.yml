@@ -5,12 +5,13 @@ one:
   sheettype: spreadsheet
   name: MyString
   description: MyText
-
+  classname: Unknown
 two:
   key: 0AoQovvVR7xyxdFlEam5ES2VIQ2VyeWRlZTFXbXB0OEE
   sheettype: MyString
   name: MyString
   description: MyText
+  classname: Unknown
 
 three:
   key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
@@ -18,13 +19,13 @@ three:
   name: GarminIDs
   description: MyText
   headerrow: 2
-  classname: GarminMapping
+  classname: GarminIDs
 
 four:
   key: 0AoQovvVR7xyxdDFTZ0d3QjBGaXN4S2NxVkNvb2J4UkE
   sheettype: MyString
   name: MyString
   description: MyText
-
+  classname: Unknown
 
 

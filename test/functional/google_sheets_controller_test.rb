@@ -4,6 +4,11 @@ class GoogleSheetsControllerTest < ActionController::TestCase
   setup do
     @google_sheet = google_sheets(:one)
   end
+  test "should import google_sheet" do
+    google_sheet2 = google_sheets(:three)
+    get :import, "google_sheet_id"=> google_sheet2.to_param
+    assert_response :success
+  end
 
   test "should get index" do
     get :index
@@ -24,10 +29,12 @@ class GoogleSheetsControllerTest < ActionController::TestCase
     assert_redirected_to google_sheet_path(assigns(:google_sheet))
   end
 
+
   test "should show google_sheet" do
     get :show, :id => @google_sheet.to_param
     assert_response :success
   end
+
 
   test "shouldparseok" do
     google_sheet2 = google_sheets(:three)
