@@ -33,6 +33,7 @@ class GoogleSheetsController < ApplicationController
          body=@feed.body
 	File.open(local_filename, 'w') {|f| f.write(body) }
     else
+	puts "going to read file " + local_filename
 	 File.open(local_filename, 'r') {|f| body = f.read() }
    end
     @xml = Nokogiri::XML.parse(body)  
@@ -103,15 +104,14 @@ p "going to import"
 
     @table.each do |row| 
 # hash with better names
-	newrow = {}
-     
+	newrow = {}     
  # create a new 
 p "going to import"
-p row
-p "going to eval"
-p @google_sheet.classname + ".new()"
+#p row
+#p "going to eval"
+#p @google_sheet.classname + ".new()"
 #      @object.update_attributes(row)
-p @object
+# p @object
       @headerrowkeys.each do |key| 
  	name = @headerrow[key]
 #        @object.Parse(name,row[key] )
@@ -120,7 +120,7 @@ p @object
 
     @object = eval(@google_sheet.classname + ".new(newrow)")
 #row
-p "object"
+#p "object"
 p @object
 	@object.save
     end 
