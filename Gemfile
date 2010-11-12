@@ -9,6 +9,7 @@ gem 'rails', '>= 3.0.0'
 #gem 'mysql'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'pg'
+gem 'archive-zip' 
 
 gem "factory_girl", '>= 1.2.4'
 # Use unicorn as the web server
