@@ -20,6 +20,11 @@ gem "factory_girl", '>= 1.2.4'
 # To use debugger
 # gem 'ruby-debug'
 
+# from the gtfs tool
+gem 'fastercsv'
+gem 'paperclip'
+gem 'shoulda'
+
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
