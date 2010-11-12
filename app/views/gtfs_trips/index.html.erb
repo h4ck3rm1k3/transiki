@@ -1,0 +1,35 @@
+<h1>Listing gtfs_trips</h1>
+
+<table>
+  <tr>
+    <th>Gtfs source</th>
+    <th>Route</th>
+    <th>Service</th>
+    <th>Trip</th>
+    <th>Trip headsign</th>
+    <th>Block</th>
+    <th>Shape</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gtfs_trips.each do |gtfs_trip| %>
+  <tr>
+    <td><%= gtfs_trip.gtfs_source_id %></td>
+    <td><%= gtfs_trip.route_id %></td>
+    <td><%= gtfs_trip.service_id %></td>
+    <td><%= gtfs_trip.trip_id %></td>
+    <td><%= gtfs_trip.trip_headsign %></td>
+    <td><%= gtfs_trip.block_id %></td>
+    <td><%= gtfs_trip.shape_id %></td>
+    <td><%= link_to 'Show', gtfs_trip %></td>
+    <td><%= link_to 'Edit', edit_gtfs_trip_path(gtfs_trip) %></td>
+    <td><%= link_to 'Destroy', gtfs_trip, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gtfs trip', new_gtfs_trip_path %>

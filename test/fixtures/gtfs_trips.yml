@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gtfs_source_id: 1
+  route_id: MyString
+  service_id: MyString
+  trip_id: MyString
+  trip_headsign: MyString
+  block_id: 1
+  shape_id: 1
+
+two:
+  gtfs_source_id: 1
+  route_id: MyString
+  service_id: MyString
+  trip_id: MyString
+  trip_headsign: MyString
+  block_id: 1
+  shape_id: 1

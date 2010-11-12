@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gtfs_source_id: 1
+  transiki_route_id: 1
+  route_id: MyString
+  agency_id: 1
+  route_short_name: MyString
+  route_long_name: MyString
+  route_desc: MyString
+  route_type: MyString
+  route_url: MyString
+
+two:
+  gtfs_source_id: 1
+  transiki_route_id: 1
+  route_id: MyString
+  agency_id: 1
+  route_short_name: MyString
+  route_long_name: MyString
+  route_desc: MyString
+  route_type: MyString
+  route_url: MyString

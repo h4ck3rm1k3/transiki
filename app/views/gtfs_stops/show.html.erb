@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Gtfs source:</b>
+  <%= @gtfs_stop.gtfs_source_id %>
+</p>
+
+<p>
+  <b>Stop:</b>
+  <%= @gtfs_stop.stop_id %>
+</p>
+
+<p>
+  <b>Stop name:</b>
+  <%= @gtfs_stop.stop_name %>
+</p>
+
+<p>
+  <b>Stop description:</b>
+  <%= @gtfs_stop.stop_description %>
+</p>
+
+<p>
+  <b>Stop lat:</b>
+  <%= @gtfs_stop.stop_lat %>
+</p>
+
+<p>
+  <b>Stop lon:</b>
+  <%= @gtfs_stop.stop_lon %>
+</p>
+
+<p>
+  <b>Stop street:</b>
+  <%= @gtfs_stop.stop_street %>
+</p>
+
+<p>
+  <b>Stop city:</b>
+  <%= @gtfs_stop.stop_city %>
+</p>
+
+<p>
+  <b>Stop region:</b>
+  <%= @gtfs_stop.stop_region %>
+</p>
+
+<p>
+  <b>Stop postcode:</b>
+  <%= @gtfs_stop.stop_postcode %>
+</p>
+
+<p>
+  <b>Stop country:</b>
+  <%= @gtfs_stop.stop_country %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_stop_path(@gtfs_stop) %> |
+<%= link_to 'Back', gtfs_stops_path %>

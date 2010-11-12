@@ -1,0 +1,61 @@
+<%= form_for(@gtfs_stop) do |f| %>
+  <% if @gtfs_stop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gtfs_stop.errors.count, "error") %> prohibited this gtfs_stop from being saved:</h2>
+
+      <ul>
+      <% @gtfs_stop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gtfs_source_id %><br />
+    <%= f.text_field :gtfs_source_id %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_id %><br />
+    <%= f.text_field :stop_id %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_name %><br />
+    <%= f.text_field :stop_name %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_description %><br />
+    <%= f.text_field :stop_description %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_lat %><br />
+    <%= f.text_field :stop_lat %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_lon %><br />
+    <%= f.text_field :stop_lon %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_street %><br />
+    <%= f.text_field :stop_street %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_city %><br />
+    <%= f.text_field :stop_city %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_region %><br />
+    <%= f.text_field :stop_region %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_postcode %><br />
+    <%= f.text_field :stop_postcode %>
+  </div>
+  <div class="field">
+    <%= f.label :stop_country %><br />
+    <%= f.text_field :stop_country %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

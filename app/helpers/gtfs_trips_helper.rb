@@ -1,0 +1,2 @@
+module GtfsTripsHelper
+end

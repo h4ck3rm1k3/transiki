@@ -1,0 +1,37 @@
+<h1>Listing gtfs_stop_times</h1>
+
+<table>
+  <tr>
+    <th>Gtfs source</th>
+    <th>Trip</th>
+    <th>Arrival time</th>
+    <th>Departure time</th>
+    <th>Stop</th>
+    <th>Stop sequence</th>
+    <th>Pickup type</th>
+    <th>Drop off type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gtfs_stop_times.each do |gtfs_stop_time| %>
+  <tr>
+    <td><%= gtfs_stop_time.gtfs_source_id %></td>
+    <td><%= gtfs_stop_time.trip_id %></td>
+    <td><%= gtfs_stop_time.arrival_time %></td>
+    <td><%= gtfs_stop_time.departure_time %></td>
+    <td><%= gtfs_stop_time.stop_id %></td>
+    <td><%= gtfs_stop_time.stop_sequence %></td>
+    <td><%= gtfs_stop_time.pickup_type %></td>
+    <td><%= gtfs_stop_time.drop_off_type %></td>
+    <td><%= link_to 'Show', gtfs_stop_time %></td>
+    <td><%= link_to 'Edit', edit_gtfs_stop_time_path(gtfs_stop_time) %></td>
+    <td><%= link_to 'Destroy', gtfs_stop_time, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gtfs stop time', new_gtfs_stop_time_path %>

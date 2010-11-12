@@ -1,0 +1,43 @@
+<h1>Listing gtfs_calendars</h1>
+
+<table>
+  <tr>
+    <th>Gtfs source</th>
+    <th>Service</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gtfs_calendars.each do |gtfs_calendar| %>
+  <tr>
+    <td><%= gtfs_calendar.gtfs_source_id %></td>
+    <td><%= gtfs_calendar.service_id %></td>
+    <td><%= gtfs_calendar.monday %></td>
+    <td><%= gtfs_calendar.tuesday %></td>
+    <td><%= gtfs_calendar.wednesday %></td>
+    <td><%= gtfs_calendar.thursday %></td>
+    <td><%= gtfs_calendar.friday %></td>
+    <td><%= gtfs_calendar.saturday %></td>
+    <td><%= gtfs_calendar.sunday %></td>
+    <td><%= gtfs_calendar.start_date %></td>
+    <td><%= gtfs_calendar.end_date %></td>
+    <td><%= link_to 'Show', gtfs_calendar %></td>
+    <td><%= link_to 'Edit', edit_gtfs_calendar_path(gtfs_calendar) %></td>
+    <td><%= link_to 'Destroy', gtfs_calendar, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gtfs calendar', new_gtfs_calendar_path %>

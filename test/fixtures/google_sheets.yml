@@ -20,6 +20,17 @@ three:
   description: MyText
   headerrow: 2
   classname: GarminId
+  sheetname: od6
+
+test1:
+  key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
+  sheettype: googlespreadsheet
+  name: GarminId
+  description: MyText
+  headerrow: 2
+  classname: GarminId
+  sheetname: od4
+
 
 four:
   key: 0AoQovvVR7xyxdDFTZ0d3QjBGaXN4S2NxVkNvb2J4UkE

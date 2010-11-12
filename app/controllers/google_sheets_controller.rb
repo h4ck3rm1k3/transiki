@@ -105,9 +105,11 @@ require 'pp'
     @table = Array.new
     @preheaderrow=Array.new
     @headerrowkeys=Array.new # sorted array of the keys in the right order.. we hope
-    url = "http://spreadsheets.google.com/feeds/cells/" + @google_sheet.key + "/od6/public/basic"
+    url = "http://spreadsheets.google.com/feeds/cells/" +    @google_sheet.key + "/" +  @google_sheet.sheetname + "/public/basic"
+
 	p url
-    local_filename= File.dirname(__FILE__) + '/../../test/fixtures/' + @google_sheet.key + ".xml"
+    local_filename= File.dirname(__FILE__) + '/../../test/fixtures/' +       @google_sheet.key + "_" + @google_sheet.sheetname  + ".xml"
+
  body = ""
     if (!File.exist?(local_filename))
 	    @client = GData::Client::Spreadsheets.new({})

@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gtfs_source_id: 1
+  stop_id: MyString
+  stop_name: MyString
+  stop_description: MyString
+  stop_lat: 9.99
+  stop_lon: 9.99
+  stop_street: MyString
+  stop_city: MyString
+  stop_region: MyString
+  stop_postcode: MyString
+  stop_country: MyString
+
+two:
+  gtfs_source_id: 1
+  stop_id: MyString
+  stop_name: MyString
+  stop_description: MyString
+  stop_lat: 9.99
+  stop_lon: 9.99
+  stop_street: MyString
+  stop_city: MyString
+  stop_region: MyString
+  stop_postcode: MyString
+  stop_country: MyString

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101109123321) do
+ActiveRecord::Schema.define(:version => 20101112160252) do
 
   create_table "garmin_ids", :force => true do |t|
     t.string   "GeoNamesCode"
@@ -28,16 +28,6 @@ ActiveRecord::Schema.define(:version => 20101109123321) do
     t.datetime "updated_at"
   end
 
-  create_table "geometry_columns", :id => false, :force => true do |t|
-    t.string  "f_table_catalog",   :limit => 256, :null => false
-    t.string  "f_table_schema",    :limit => 256, :null => false
-    t.string  "f_table_name",      :limit => 256, :null => false
-    t.string  "f_geometry_column", :limit => 256, :null => false
-    t.integer "coord_dimension",                  :null => false
-    t.integer "srid",                             :null => false
-    t.string  "type",              :limit => 30,  :null => false
-  end
-
   create_table "google_sheets", :force => true do |t|
     t.string   "key"
     t.string   "sheettype"
@@ -47,6 +37,87 @@ ActiveRecord::Schema.define(:version => 20101109123321) do
     t.datetime "updated_at"
     t.integer  "headerrow"
     t.string   "classname"
+    t.string   "sheetname"
+  end
+
+  create_table "gtfs_calendars", :force => true do |t|
+    t.integer  "gtfs_source_id"
+    t.string   "service_id"
+    t.boolean  "monday"
+    t.boolean  "tuesday"
+    t.boolean  "wednesday"
+    t.boolean  "thursday"
+    t.boolean  "friday"
+    t.boolean  "saturday"
+    t.boolean  "sunday"
+    t.string   "start_date"
+    t.string   "end_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gtfs_routes", :force => true do |t|
+    t.integer  "gtfs_source_id"
+    t.integer  "transiki_route_id"
+    t.string   "route_id"
+    t.integer  "agency_id"
+    t.string   "route_short_name"
+    t.string   "route_long_name"
+    t.string   "route_desc"
+    t.string   "route_type"
+    t.string   "route_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gtfs_sources", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.integer  "version"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gtfs_stop_times", :force => true do |t|
+    t.integer  "gtfs_source_id"
+    t.string   "trip_id"
+    t.string   "arrival_time"
+    t.string   "departure_time"
+    t.integer  "stop_id"
+    t.integer  "stop_sequence"
+    t.integer  "pickup_type"
+    t.integer  "drop_off_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gtfs_stops", :force => true do |t|
+    t.integer  "gtfs_source_id"
+    t.string   "stop_id"
+    t.string   "stop_name"
+    t.string   "stop_description"
+    t.decimal  "stop_lat"
+    t.decimal  "stop_lon"
+    t.string   "stop_street"
+    t.string   "stop_city"
+    t.string   "stop_region"
+    t.string   "stop_postcode"
+    t.string   "stop_country"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gtfs_trips", :force => true do |t|
+    t.integer  "gtfs_source_id"
+    t.string   "route_id"
+    t.string   "service_id"
+    t.string   "trip_id"
+    t.string   "trip_headsign"
+    t.integer  "block_id"
+    t.integer  "shape_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "point_tags", :force => true do |t|
@@ -118,14 +189,6 @@ ActiveRecord::Schema.define(:version => 20101109123321) do
     t.datetime "updated_at"
   end
 
-  create_table "spatial_ref_sys", :id => false, :force => true do |t|
-    t.integer "srid",                      :null => false
-    t.string  "auth_name", :limit => 256
-    t.integer "auth_srid"
-    t.string  "srtext",    :limit => 2048
-    t.string  "proj4text", :limit => 2048
-  end
-
   create_table "tag_tags", :force => true do |t|
     t.integer  "tag_id"
     t.string   "key"
@@ -143,10 +206,6 @@ ActiveRecord::Schema.define(:version => 20101109123321) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "test", :id => false, :force => true do |t|
-    t.integer "test"
   end
 
   create_table "users", :force => true do |t|

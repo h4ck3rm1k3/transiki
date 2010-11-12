@@ -1,0 +1,43 @@
+<h1>Listing gtfs_stops</h1>
+
+<table>
+  <tr>
+    <th>Gtfs source</th>
+    <th>Stop</th>
+    <th>Stop name</th>
+    <th>Stop description</th>
+    <th>Stop lat</th>
+    <th>Stop lon</th>
+    <th>Stop street</th>
+    <th>Stop city</th>
+    <th>Stop region</th>
+    <th>Stop postcode</th>
+    <th>Stop country</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gtfs_stops.each do |gtfs_stop| %>
+  <tr>
+    <td><%= gtfs_stop.gtfs_source_id %></td>
+    <td><%= gtfs_stop.stop_id %></td>
+    <td><%= gtfs_stop.stop_name %></td>
+    <td><%= gtfs_stop.stop_description %></td>
+    <td><%= gtfs_stop.stop_lat %></td>
+    <td><%= gtfs_stop.stop_lon %></td>
+    <td><%= gtfs_stop.stop_street %></td>
+    <td><%= gtfs_stop.stop_city %></td>
+    <td><%= gtfs_stop.stop_region %></td>
+    <td><%= gtfs_stop.stop_postcode %></td>
+    <td><%= gtfs_stop.stop_country %></td>
+    <td><%= link_to 'Show', gtfs_stop %></td>
+    <td><%= link_to 'Edit', edit_gtfs_stop_path(gtfs_stop) %></td>
+    <td><%= link_to 'Destroy', gtfs_stop, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gtfs stop', new_gtfs_stop_path %>

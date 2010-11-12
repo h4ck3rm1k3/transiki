@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Gtfs source:</b>
+  <%= @gtfs_route.gtfs_source_id %>
+</p>
+
+<p>
+  <b>Transiki route:</b>
+  <%= @gtfs_route.transiki_route_id %>
+</p>
+
+<p>
+  <b>Route:</b>
+  <%= @gtfs_route.route_id %>
+</p>
+
+<p>
+  <b>Agency:</b>
+  <%= @gtfs_route.agency_id %>
+</p>
+
+<p>
+  <b>Route short name:</b>
+  <%= @gtfs_route.route_short_name %>
+</p>
+
+<p>
+  <b>Route long name:</b>
+  <%= @gtfs_route.route_long_name %>
+</p>
+
+<p>
+  <b>Route desc:</b>
+  <%= @gtfs_route.route_desc %>
+</p>
+
+<p>
+  <b>Route type:</b>
+  <%= @gtfs_route.route_type %>
+</p>
+
+<p>
+  <b>Route url:</b>
+  <%= @gtfs_route.route_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_route_path(@gtfs_route) %> |
+<%= link_to 'Back', gtfs_routes_path %>
