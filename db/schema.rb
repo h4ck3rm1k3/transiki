@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101112160252) do
+ActiveRecord::Schema.define(:version => 20101113080821) do
 
   create_table "garmin_ids", :force => true do |t|
     t.string   "GeoNamesCode"
@@ -68,6 +68,8 @@ ActiveRecord::Schema.define(:version => 20101112160252) do
     t.string   "route_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "route_text_color"
+    t.string   "route_color"
   end
 
   create_table "gtfs_sources", :force => true do |t|
@@ -106,6 +108,12 @@ ActiveRecord::Schema.define(:version => 20101112160252) do
     t.string   "stop_country"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "parent_station"
+    t.string   "location_type"
+    t.string   "zone_id"
+    t.string   "stop_url"
+    t.string   "stop_code"
+    t.string   "stop_desc"
   end
 
   create_table "gtfs_trips", :force => true do |t|
@@ -118,6 +126,7 @@ ActiveRecord::Schema.define(:version => 20101112160252) do
     t.integer  "shape_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "direction_id"
   end
 
   create_table "point_tags", :force => true do |t|

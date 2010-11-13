@@ -28,117 +28,47 @@ class GtfsSourcesController < ApplicationController
     end
   end
 
-
-
-  def import_trips
-      Trip.delete_all if Trip.all.any?
-      print "Importing Trip records..."
-      rows = FasterCSV.read("#{RAILS_ROOT}/tmp/gtfs/trips.txt")
-      rows[1..rows.length].each do |column|
-        trip = Trip.new
-        trip.route_id = column[0]
-        trip.service_id = column[1]
-        trip.trip_id = column[2]
-        trip.trip_headsign = column[3]
-        trip.block_id = column[4]
-        trip.shape_id = column[5]
-        trip.save!
-      end
-      puts "#{Trip.count} imported."
-    end
-  
-  def import_routes
-      Route.delete_all if Route.all.any?
-      print "Importing Route records..."
-      rows = FasterCSV.read("#{RAILS_ROOT}/tmp/gtfs/routes.txt")
-      rows[1..rows.length].each do |column|
-        route = Route.new
-        route.route_id = column[0]
-        route.agency_id = column[1]
-        route.route_short_name = column[2]
-        route.route_long_name = column[3]
-        route.route_desc = column[4]
-        route.route_type = column[5]
-        route.route_url = column[6]
-        route.save!
-      end
-      puts "#{Route.count} imported."
-    end
-
-  def import_stoptimes    
-      StopTime.delete_all if StopTime.all.any?
-      print "Importing StopTime records..."
-      rows = FasterCSV.read("#{RAILS_ROOT}/tmp/gtfs/stop_times.txt")
-      rows[1..rows.length].each do |column|
-        stop_time = StopTime.new
-        stop_time.trip_id = column[0]
-        stop_time.arrival_time = column[1]
-        stop_time.departure_time = column[2]
-        stop_time.stop_id = column[3]
-        stop_time.stop_sequence = column[4]
-        stop_time.pickup_type = column[5]
-        stop_time.save!
-      end
-      puts "#{StopTime.count} imported."
-    end
-    
-  def import_stops
-      Stop.delete_all if Stop.all.any?
-      print "Importing Stop records..."
-      rows = FasterCSV.read("#{RAILS_ROOT}/tmp/gtfs/stops.txt")
-      rows[1..rows.length].each do |column|
-        stop = Stop.new
-        stop.stop_id = column[0]
-        stop.stop_name = column[1]
-        stop.stop_description = column[2]
-        stop.stop_lat = column[3]
-        stop.stop_lon = column[4]
-        stop.stop_street = column[5]
-        stop.stop_city = column[6]
-        stop.stop_region = column[7]
-        stop.stop_postcode = column[8]
-        stop.stop_country = column[9]
-        stop.save!
-      end
-      puts "#{Stop.count} imported."
-    end
-    
-
-  def import_calendars (path)
+  def import_generic (path,dest)
     
 # simple delete 
-    GtfsCalendar.delete_all if GtfsCalendar.all.any?
-    print "Importing Calendar records..."
+    dest.delete_all if dest.all.any?
+    print "Importing records..."
+  #  p dest
 
-    file =path + "calendar.txt"
+    file =path;
     p "going to parse" + file
     rows = FasterCSV.table(file)
     rows.each do |row|
-      obj = GtfsCalendar.create!(row.to_hash)
+      obj = dest.create!(row.to_hash)
       obj.gtfs_source_id= @gtfs_source.id
-      p obj
+ #     p obj
       obj.save
     end
-
-    puts "#{GtfsCalendar.count} imported."
+    puts "#{dest.count} imported."
   end
 
-  def test12
-      calendar = GtfsCalendar.new
-      calendar.gtfs_source_id = @gtfs_source.id
-      calendar.service_id = column["service_id"]
-      calendar.start_date = column["start_date"]
-      calendar.end_date = column["end_date"]
-      calendar.monday = column["monday"]
-      calendar.tuesday = column["tuesday"]
-      calendar.wednesday = column["wednesday"]
-      calendar.thursday = column["thursday"]
-      calendar.friday = column["friday"]
-      calendar.saturday = column["saturday"]
-      calendar.sunday = column["sunday"]
-      calendar.save!
 
-end 
+  def import_trips(base)
+    import_generic(base  + "trips.txt",GtfsTrip)
+    #block_id,route_id,direction_id,trip_headsign,shape_id,service_id,trip_id
+    end
+  
+  def import_routes(base)
+    import_generic(base  + "routes.txt",GtfsRoute)
+  end
+
+  def import_stoptimes(base)
+    import_generic(base  + "stop_times.txt",GtfsStopTime)    
+  end
+    
+  def import_stops(base)
+    import_generic(base  + "stops.txt",GtfsStop)    
+  end
+    
+  def import_calendars(path)
+    import_generic(base  + "calendar.txt",GtfsCalendar)    
+  end
+
   def import
     @gtfs_source = GtfsSource.find(params[:gtfs_source_id])
     p @gtfs_source.url
@@ -149,7 +79,7 @@ end
     Dir.mkdir(target) unless File.exists? target
     Dir.mkdir(target_out) unless File.exists? target_out
 
-    if (!File.exists? local_filename)
+    if(!File.exists? local_filename)
       url = @gtfs_source.url
       r = Net::HTTP.get_response(URI.parse(url).host, URI.parse(url).path)
       File.open(local_filename,'w') {|f|
@@ -160,7 +90,12 @@ end
 
     # now we can be sure the file is there and unpacked.
     # now to import the fields
-    import_calendars(target_out)
+#    import_calendars(target_out)
+#    import_stops(target_out)
+    import_trips(target_out)
+    import_routes(target_out)
+    import_stoptimes(target_out)
+
     
   end
 
