@@ -65,7 +65,7 @@ class GtfsSourcesController < ApplicationController
     import_generic(base  + "stops.txt",GtfsStop)    
   end
     
-  def import_calendars(path)
+  def import_calendars(base)
     import_generic(base  + "calendar.txt",GtfsCalendar)    
   end
 
@@ -90,8 +90,8 @@ class GtfsSourcesController < ApplicationController
 
     # now we can be sure the file is there and unpacked.
     # now to import the fields
-#    import_calendars(target_out)
-#    import_stops(target_out)
+    import_calendars(target_out)
+    import_stops(target_out)
     import_trips(target_out)
     import_routes(target_out)
     import_stoptimes(target_out)
