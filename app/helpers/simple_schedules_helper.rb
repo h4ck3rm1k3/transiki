@@ -1,0 +1,2 @@
+module SimpleSchedulesHelper
+end

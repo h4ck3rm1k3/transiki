@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Key:</b>
+  <%= @google_sheet.key %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @google_sheet.sheettype %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @google_sheet.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @google_sheet.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_google_sheet_path(@google_sheet) %> |
+<%= link_to 'Back', google_sheets_path %>

@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  GeoNamesCode: MyString
+  GarminID: MyString
+  GarminFeatureDescription: MyString
+  KEY: MyString
+  VALUE: MyString
+  Code: MyString
+  Feature: MyString
+  Description: MyString
+  Group: MyString
+  GroupName: MyString
+  Comments: MyString
+
+two:
+  GeoNamesCode: MyString
+  GarminID: MyString
+  GarminFeatureDescription: MyString
+  KEY: MyString
+  VALUE: MyString
+  Code: MyString
+  Feature: MyString
+  Description: MyString
+  Group: MyString
+  GroupName: MyString
+  Comments: MyString

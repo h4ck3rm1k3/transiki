@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Gtfs source:</b>
+  <%= @gtfs_calendar.gtfs_source_id %>
+</p>
+
+<p>
+  <b>Service:</b>
+  <%= @gtfs_calendar.service_id %>
+</p>
+
+<p>
+  <b>Monday:</b>
+  <%= @gtfs_calendar.monday %>
+</p>
+
+<p>
+  <b>Tuesday:</b>
+  <%= @gtfs_calendar.tuesday %>
+</p>
+
+<p>
+  <b>Wednesday:</b>
+  <%= @gtfs_calendar.wednesday %>
+</p>
+
+<p>
+  <b>Thursday:</b>
+  <%= @gtfs_calendar.thursday %>
+</p>
+
+<p>
+  <b>Friday:</b>
+  <%= @gtfs_calendar.friday %>
+</p>
+
+<p>
+  <b>Saturday:</b>
+  <%= @gtfs_calendar.saturday %>
+</p>
+
+<p>
+  <b>Sunday:</b>
+  <%= @gtfs_calendar.sunday %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @gtfs_calendar.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @gtfs_calendar.end_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_calendar_path(@gtfs_calendar) %> |
+<%= link_to 'Back', gtfs_calendars_path %>

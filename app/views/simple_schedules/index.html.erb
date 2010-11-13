@@ -1,0 +1,41 @@
+<h1>Listing simple_schedules</h1>
+
+<table>
+  <tr>
+    <th>Fromloc</th>
+    <th>Toloc</th>
+    <th>Transporttype</th>
+    <th>Departuretimes</th>
+    <th>Dayofweek</th>
+    <th>Cost</th>
+    <th>Currency</th>
+    <th>Estimatedtraveltime</th>
+    <th>Departinglocation</th>
+    <th>Arrivinglocation</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @simple_schedules.each do |simple_schedule| %>
+  <tr>
+    <td><%= simple_schedule.fromloc %></td>
+    <td><%= simple_schedule.toloc %></td>
+    <td><%= simple_schedule.transporttype %></td>
+    <td><%= simple_schedule.departuretimes %></td>
+    <td><%= simple_schedule.dayofweek %></td>
+    <td><%= simple_schedule.cost %></td>
+    <td><%= simple_schedule.currency %></td>
+    <td><%= simple_schedule.estimatedtraveltime %></td>
+    <td><%= simple_schedule.departinglocation %></td>
+    <td><%= simple_schedule.arrivinglocation %></td>
+    <td><%= link_to 'Show', simple_schedule %></td>
+    <td><%= link_to 'Edit', edit_simple_schedule_path(simple_schedule) %></td>
+    <td><%= link_to 'Destroy', simple_schedule, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Simple schedule', new_simple_schedule_path %>

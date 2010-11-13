@@ -1,0 +1,42 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  key: 0Am70fsptsPF2dDZJYUtjMVF4Mk1Yc3B6c0ktVlRiNEE
+  sheettype: spreadsheet
+  name: MyString
+  description: MyText
+  classname: Unknown
+two:
+  key: 0AoQovvVR7xyxdFlEam5ES2VIQ2VyeWRlZTFXbXB0OEE
+  sheettype: MyString
+  name: MyString
+  description: MyText
+  classname: Unknown
+
+three:
+  key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
+  sheettype: googlespreadsheet
+  name: GarminId
+  description: MyText
+  headerrow: 2
+  classname: GarminId
+  sheetname: od6
+
+test1:
+  key: 0Am70fsptsPF2dENGRWNOQ3lmeU5UbWlORFZTZFpvRWc
+  sheettype: googlespreadsheet
+  name: GarminId
+  description: MyText
+  headerrow: 2
+  classname: GarminId
+  sheetname: od4
+
+
+four:
+  key: 0AoQovvVR7xyxdDFTZ0d3QjBGaXN4S2NxVkNvb2J4UkE
+  sheettype: MyString
+  name: MyString
+  description: MyText
+  classname: Unknown
+
+

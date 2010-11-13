@@ -1,0 +1,57 @@
+<%= form_for(@simple_schedule) do |f| %>
+  <% if @simple_schedule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@simple_schedule.errors.count, "error") %> prohibited this simple_schedule from being saved:</h2>
+
+      <ul>
+      <% @simple_schedule.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fromloc %><br />
+    <%= f.text_field :fromloc %>
+  </div>
+  <div class="field">
+    <%= f.label :toloc %><br />
+    <%= f.text_field :toloc %>
+  </div>
+  <div class="field">
+    <%= f.label :transporttype %><br />
+    <%= f.text_field :transporttype %>
+  </div>
+  <div class="field">
+    <%= f.label :departuretimes %><br />
+    <%= f.text_field :departuretimes %>
+  </div>
+  <div class="field">
+    <%= f.label :dayofweek %><br />
+    <%= f.text_field :dayofweek %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :currency %><br />
+    <%= f.text_field :currency %>
+  </div>
+  <div class="field">
+    <%= f.label :estimatedtraveltime %><br />
+    <%= f.text_field :estimatedtraveltime %>
+  </div>
+  <div class="field">
+    <%= f.label :departinglocation %><br />
+    <%= f.text_field :departinglocation %>
+  </div>
+  <div class="field">
+    <%= f.label :arrivinglocation %><br />
+    <%= f.text_field :arrivinglocation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Gtfs source:</b>
+  <%= @gtfs_stop_time.gtfs_source_id %>
+</p>
+
+<p>
+  <b>Trip:</b>
+  <%= @gtfs_stop_time.trip_id %>
+</p>
+
+<p>
+  <b>Arrival time:</b>
+  <%= @gtfs_stop_time.arrival_time %>
+</p>
+
+<p>
+  <b>Departure time:</b>
+  <%= @gtfs_stop_time.departure_time %>
+</p>
+
+<p>
+  <b>Stop:</b>
+  <%= @gtfs_stop_time.stop_id %>
+</p>
+
+<p>
+  <b>Stop sequence:</b>
+  <%= @gtfs_stop_time.stop_sequence %>
+</p>
+
+<p>
+  <b>Pickup type:</b>
+  <%= @gtfs_stop_time.pickup_type %>
+</p>
+
+<p>
+  <b>Drop off type:</b>
+  <%= @gtfs_stop_time.drop_off_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_stop_time_path(@gtfs_stop_time) %> |
+<%= link_to 'Back', gtfs_stop_times_path %>

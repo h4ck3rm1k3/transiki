@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fare:</b>
+  <%= @gtfs_fare_attribute.fare_id %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @gtfs_fare_attribute.price %>
+</p>
+
+<p>
+  <b>Currency type:</b>
+  <%= @gtfs_fare_attribute.currency_type %>
+</p>
+
+<p>
+  <b>Payment method:</b>
+  <%= @gtfs_fare_attribute.payment_method %>
+</p>
+
+<p>
+  <b>Transfers:</b>
+  <%= @gtfs_fare_attribute.transfers %>
+</p>
+
+<p>
+  <b>Transfer duration:</b>
+  <%= @gtfs_fare_attribute.transfer_duration %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_fare_attribute_path(@gtfs_fare_attribute) %> |
+<%= link_to 'Back', gtfs_fare_attributes_path %>

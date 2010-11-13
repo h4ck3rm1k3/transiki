@@ -1,0 +1,61 @@
+<%= form_for(@gtfs_calendar) do |f| %>
+  <% if @gtfs_calendar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gtfs_calendar.errors.count, "error") %> prohibited this gtfs_calendar from being saved:</h2>
+
+      <ul>
+      <% @gtfs_calendar.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gtfs_source_id %><br />
+    <%= f.text_field :gtfs_source_id %>
+  </div>
+  <div class="field">
+    <%= f.label :service_id %><br />
+    <%= f.text_field :service_id %>
+  </div>
+  <div class="field">
+    <%= f.label :monday %><br />
+    <%= f.check_box :monday %>
+  </div>
+  <div class="field">
+    <%= f.label :tuesday %><br />
+    <%= f.check_box :tuesday %>
+  </div>
+  <div class="field">
+    <%= f.label :wednesday %><br />
+    <%= f.check_box :wednesday %>
+  </div>
+  <div class="field">
+    <%= f.label :thursday %><br />
+    <%= f.check_box :thursday %>
+  </div>
+  <div class="field">
+    <%= f.label :friday %><br />
+    <%= f.check_box :friday %>
+  </div>
+  <div class="field">
+    <%= f.label :saturday %><br />
+    <%= f.check_box :saturday %>
+  </div>
+  <div class="field">
+    <%= f.label :sunday %><br />
+    <%= f.text_field :sunday %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br />
+    <%= f.text_field :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br />
+    <%= f.text_field :end_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<h1>Listing gtfs_routes</h1>
+
+<table>
+  <tr>
+    <th>Gtfs source</th>
+    <th>Transiki route</th>
+    <th>Route</th>
+    <th>Agency</th>
+    <th>Route short name</th>
+    <th>Route long name</th>
+    <th>Route desc</th>
+    <th>Route type</th>
+    <th>Route url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gtfs_routes.each do |gtfs_route| %>
+  <tr>
+    <td><%= gtfs_route.gtfs_source_id %></td>
+    <td><%= gtfs_route.transiki_route_id %></td>
+    <td><%= gtfs_route.route_id %></td>
+    <td><%= gtfs_route.agency_id %></td>
+    <td><%= gtfs_route.route_short_name %></td>
+    <td><%= gtfs_route.route_long_name %></td>
+    <td><%= gtfs_route.route_desc %></td>
+    <td><%= gtfs_route.route_type %></td>
+    <td><%= gtfs_route.route_url %></td>
+    <td><%= link_to 'Show', gtfs_route %></td>
+    <td><%= link_to 'Edit', edit_gtfs_route_path(gtfs_route) %></td>
+    <td><%= link_to 'Destroy', gtfs_route, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gtfs route', new_gtfs_route_path %>

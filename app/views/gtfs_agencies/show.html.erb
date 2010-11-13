@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Agency phone:</b>
+  <%= @gtfs_agency.agency_phone %>
+</p>
+
+<p>
+  <b>Agency url:</b>
+  <%= @gtfs_agency.agency_url %>
+</p>
+
+<p>
+  <b>Agency:</b>
+  <%= @gtfs_agency.agency_id %>
+</p>
+
+<p>
+  <b>Agency name:</b>
+  <%= @gtfs_agency.agency_name %>
+</p>
+
+<p>
+  <b>Agency timezone:</b>
+  <%= @gtfs_agency.agency_timezone %>
+</p>
+
+<p>
+  <b>Agency lang:</b>
+  <%= @gtfs_agency.agency_lang %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_agency_path(@gtfs_agency) %> |
+<%= link_to 'Back', gtfs_agencies_path %>

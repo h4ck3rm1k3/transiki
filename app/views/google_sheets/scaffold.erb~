@@ -1,0 +1,15 @@
+<table>
+  <hr>
+  <% @headerrowkeys.each do |key| %>
+      <td><%= @headerrow[key] %></td>
+<% end %>
+   </hr>	  
+
+<% @table.each do |row| %>
+  <tr>
+  <% @headerrowkeys.each do |key| %>
+    <td><%= row[key] %></td>
+  <% end %>   
+   </tr>
+<% end %>
+</table>

@@ -1,1 +1,1 @@
-rails server -p 9623 -b nightshade.toolserver.org
+rails server -p 9624 -b nightshade.toolserver.org

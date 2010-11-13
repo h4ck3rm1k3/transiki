@@ -1,0 +1,53 @@
+<%= form_for(@gtfs_route) do |f| %>
+  <% if @gtfs_route.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gtfs_route.errors.count, "error") %> prohibited this gtfs_route from being saved:</h2>
+
+      <ul>
+      <% @gtfs_route.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gtfs_source_id %><br />
+    <%= f.text_field :gtfs_source_id %>
+  </div>
+  <div class="field">
+    <%= f.label :transiki_route_id %><br />
+    <%= f.text_field :transiki_route_id %>
+  </div>
+  <div class="field">
+    <%= f.label :route_id %><br />
+    <%= f.text_field :route_id %>
+  </div>
+  <div class="field">
+    <%= f.label :agency_id %><br />
+    <%= f.text_field :agency_id %>
+  </div>
+  <div class="field">
+    <%= f.label :route_short_name %><br />
+    <%= f.text_field :route_short_name %>
+  </div>
+  <div class="field">
+    <%= f.label :route_long_name %><br />
+    <%= f.text_field :route_long_name %>
+  </div>
+  <div class="field">
+    <%= f.label :route_desc %><br />
+    <%= f.text_field :route_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :route_type %><br />
+    <%= f.text_field :route_type %>
+  </div>
+  <div class="field">
+    <%= f.label :route_url %><br />
+    <%= f.text_field :route_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,5 +1,69 @@
 Transwiki::Application.routes.draw do
 
+  resources :gtfs_shapes
+
+  resources :gtfs_calendar_dates
+
+  resources :gtfs_agencies
+
+  resources :gtfs_fare_attributes
+
+  resources :gtfs_trips do
+    get 'match_transiki'
+    get 'match_osm'
+    get 'import'
+    get 'wikiexport'
+    get 'ymlexport'
+  end
+
+  resources :gtfs_stops do
+    get 'match_transiki'
+    get 'match_osm'
+    get 'import'
+    get 'wikiexport'
+    get 'ymlexport'
+  end
+
+  resources :gtfs_stop_times do
+    get 'match_transiki'
+    get 'match_osm'
+    get 'import'
+    get 'wikiexport'
+    get 'ymlexport'
+  end
+
+  resources :gtfs_calendars
+
+  resources :gtfs_routes do
+    get 'match_transiki'
+    get 'match_osm'
+    get 'import'
+    get 'wikiexport'
+    get 'ymlexport'
+  end
+
+  resources :gtfs_sources do
+    get 'parse'
+    get 'import'
+    get 'wikiexport'
+    get 'ymlexport'
+  end
+
+  resources :garmin_ids
+
+  resources :simple_schedule_tables
+
+  resources :simple_schedules
+
+  resources :google_sheets  do
+    get 'parse'
+    get 'scaffold'
+    get 'import'
+    get 'listsheets'
+    get 'wikiexport'
+    get 'ymlexport'
+  end
+
   resources :tag_tags do
     get 'used'
     collection do

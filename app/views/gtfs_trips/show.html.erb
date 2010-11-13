@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Gtfs source:</b>
+  <%= @gtfs_trip.gtfs_source_id %>
+</p>
+
+<p>
+  <b>Route:</b>
+  <%= @gtfs_trip.route_id %>
+</p>
+
+<p>
+  <b>Service:</b>
+  <%= @gtfs_trip.service_id %>
+</p>
+
+<p>
+  <b>Trip:</b>
+  <%= @gtfs_trip.trip_id %>
+</p>
+
+<p>
+  <b>Trip headsign:</b>
+  <%= @gtfs_trip.trip_headsign %>
+</p>
+
+<p>
+  <b>Block:</b>
+  <%= @gtfs_trip.block_id %>
+</p>
+
+<p>
+  <b>Shape:</b>
+  <%= @gtfs_trip.shape_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_trip_path(@gtfs_trip) %> |
+<%= link_to 'Back', gtfs_trips_path %>

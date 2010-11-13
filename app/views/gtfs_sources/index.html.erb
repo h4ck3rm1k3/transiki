@@ -1,0 +1,29 @@
+<h1>Listing gtfs_sources</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Url</th>
+    <th>Version</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gtfs_sources.each do |gtfs_source| %>
+  <tr>
+    <td><%= gtfs_source.name %></td>
+    <td><%= gtfs_source.url %></td>
+    <td><%= gtfs_source.version %></td>
+    <td><%= gtfs_source.user_id %></td>
+    <td><%= link_to 'Show', gtfs_source %></td>
+    <td><%= link_to 'Edit', edit_gtfs_source_path(gtfs_source) %></td>
+    <td><%= link_to 'Destroy', gtfs_source, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gtfs source', new_gtfs_source_path %>

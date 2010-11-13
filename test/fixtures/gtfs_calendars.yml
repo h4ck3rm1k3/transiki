@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gtfs_source_id: 1
+  service_id: MyString
+  monday: false
+  tuesday: false
+  wednesday: false
+  thursday: false
+  friday: false
+  saturday: false
+  sunday: 
+  start_date: MyString
+  end_date: MyString
+
+two:
+  gtfs_source_id: 1
+  service_id: MyString
+  monday: false
+  tuesday: false
+  wednesday: false
+  thursday: false
+  friday: false
+  saturday: false
+  sunday: 
+  start_date: MyString
+  end_date: MyString

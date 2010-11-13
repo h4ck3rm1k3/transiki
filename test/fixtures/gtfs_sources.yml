@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: hamilton
+  url: http://googlehsr.hamilton.ca/latest/google_transit.zip
+  version: 1
+  user_id: 1
+
+two:
+  name: MyString
+  url: MyString
+  version: 1
+  user_id: 1

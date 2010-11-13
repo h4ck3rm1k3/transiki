@@ -1,0 +1,45 @@
+<%= form_for(@gtfs_trip) do |f| %>
+  <% if @gtfs_trip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gtfs_trip.errors.count, "error") %> prohibited this gtfs_trip from being saved:</h2>
+
+      <ul>
+      <% @gtfs_trip.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gtfs_source_id %><br />
+    <%= f.text_field :gtfs_source_id %>
+  </div>
+  <div class="field">
+    <%= f.label :route_id %><br />
+    <%= f.text_field :route_id %>
+  </div>
+  <div class="field">
+    <%= f.label :service_id %><br />
+    <%= f.text_field :service_id %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_id %><br />
+    <%= f.text_field :trip_id %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_headsign %><br />
+    <%= f.text_field :trip_headsign %>
+  </div>
+  <div class="field">
+    <%= f.label :block_id %><br />
+    <%= f.text_field :block_id %>
+  </div>
+  <div class="field">
+    <%= f.label :shape_id %><br />
+    <%= f.text_field :shape_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

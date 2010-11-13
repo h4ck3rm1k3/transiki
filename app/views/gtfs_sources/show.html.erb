@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @gtfs_source.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @gtfs_source.url %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @gtfs_source.version %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @gtfs_source.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_source_path(@gtfs_source) %> |
+<%= link_to 'Back', gtfs_sources_path %>

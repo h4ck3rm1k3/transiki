@@ -1,0 +1,4 @@
+<h2>scaffold command</h2>
+<pre>
+rails generate scaffold 	<%=@google_sheet.name%>  <% @headerrowkeys.each do |key| %> <%= @headerrow[key] %>:string<% end %>
+</pre>

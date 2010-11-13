@@ -1,0 +1,43 @@
+<h1>Listing garmin_ids</h1>
+
+<table>
+  <tr>
+    <th>Geonamescode</th>
+    <th>Garminid</th>
+    <th>Garminfeaturedescription</th>
+    <th>Key</th>
+    <th>Value</th>
+    <th>Code</th>
+    <th>Feature</th>
+    <th>Description</th>
+    <th>Group</th>
+    <th>Groupname</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @garmin_ids.each do |garmin_id| %>
+  <tr>
+    <td><%= garmin_id.GeoNamesCode %></td>
+    <td><%= garmin_id.GarminID %></td>
+    <td><%= garmin_id.GarminFeatureDescription %></td>
+    <td><%= garmin_id.KEY %></td>
+    <td><%= garmin_id.VALUE %></td>
+    <td><%= garmin_id.Code %></td>
+    <td><%= garmin_id.Feature %></td>
+    <td><%= garmin_id.Description %></td>
+    <td><%= garmin_id.Group %></td>
+    <td><%= garmin_id.GroupName %></td>
+    <td><%= garmin_id.Comments %></td>
+    <td><%= link_to 'Show', garmin_id %></td>
+    <td><%= link_to 'Edit', edit_garmin_id_path(garmin_id) %></td>
+    <td><%= link_to 'Destroy', garmin_id, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Garmin', new_garmin_id_path %>
