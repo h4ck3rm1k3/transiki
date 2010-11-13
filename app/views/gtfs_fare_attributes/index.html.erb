@@ -1,0 +1,33 @@
+<h1>Listing gtfs_fare_attributes</h1>
+
+<table>
+  <tr>
+    <th>Fare</th>
+    <th>Price</th>
+    <th>Currency type</th>
+    <th>Payment method</th>
+    <th>Transfers</th>
+    <th>Transfer duration</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gtfs_fare_attributes.each do |gtfs_fare_attribute| %>
+  <tr>
+    <td><%= gtfs_fare_attribute.fare_id %></td>
+    <td><%= gtfs_fare_attribute.price %></td>
+    <td><%= gtfs_fare_attribute.currency_type %></td>
+    <td><%= gtfs_fare_attribute.payment_method %></td>
+    <td><%= gtfs_fare_attribute.transfers %></td>
+    <td><%= gtfs_fare_attribute.transfer_duration %></td>
+    <td><%= link_to 'Show', gtfs_fare_attribute %></td>
+    <td><%= link_to 'Edit', edit_gtfs_fare_attribute_path(gtfs_fare_attribute) %></td>
+    <td><%= link_to 'Destroy', gtfs_fare_attribute, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gtfs fare attribute', new_gtfs_fare_attribute_path %>

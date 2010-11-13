@@ -1,0 +1,2 @@
+module GtfsCalendarDatesHelper
+end

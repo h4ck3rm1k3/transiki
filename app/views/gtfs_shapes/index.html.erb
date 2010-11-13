@@ -1,0 +1,31 @@
+<h1>Listing gtfs_shapes</h1>
+
+<table>
+  <tr>
+    <th>Shape</th>
+    <th>Shape pt lat</th>
+    <th>Shape pt lon</th>
+    <th>Shape pt sequence</th>
+    <th>Shape dist traveled</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gtfs_shapes.each do |gtfs_shape| %>
+  <tr>
+    <td><%= gtfs_shape.shape_id %></td>
+    <td><%= gtfs_shape.shape_pt_lat %></td>
+    <td><%= gtfs_shape.shape_pt_lon %></td>
+    <td><%= gtfs_shape.shape_pt_sequence %></td>
+    <td><%= gtfs_shape.shape_dist_traveled %></td>
+    <td><%= link_to 'Show', gtfs_shape %></td>
+    <td><%= link_to 'Edit', edit_gtfs_shape_path(gtfs_shape) %></td>
+    <td><%= link_to 'Destroy', gtfs_shape, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gtfs shape', new_gtfs_shape_path %>

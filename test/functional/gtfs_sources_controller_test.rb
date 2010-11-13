@@ -5,6 +5,11 @@ class GtfsSourcesControllerTest < ActionController::TestCase
     @gtfs_source = gtfs_sources(:one)
   end
 
+  test "shouldimporttest" do
+    get :import, "gtfs_source_id"=> @gtfs_source.to_param
+    assert_response :success
+  end
+
   test "should get index" do
     get :index
     assert_response :success

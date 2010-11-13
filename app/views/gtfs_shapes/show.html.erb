@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Shape:</b>
+  <%= @gtfs_shape.shape_id %>
+</p>
+
+<p>
+  <b>Shape pt lat:</b>
+  <%= @gtfs_shape.shape_pt_lat %>
+</p>
+
+<p>
+  <b>Shape pt lon:</b>
+  <%= @gtfs_shape.shape_pt_lon %>
+</p>
+
+<p>
+  <b>Shape pt sequence:</b>
+  <%= @gtfs_shape.shape_pt_sequence %>
+</p>
+
+<p>
+  <b>Shape dist traveled:</b>
+  <%= @gtfs_shape.shape_dist_traveled %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_shape_path(@gtfs_shape) %> |
+<%= link_to 'Back', gtfs_shapes_path %>

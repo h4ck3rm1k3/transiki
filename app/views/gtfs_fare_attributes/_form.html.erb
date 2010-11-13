@@ -1,0 +1,41 @@
+<%= form_for(@gtfs_fare_attribute) do |f| %>
+  <% if @gtfs_fare_attribute.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gtfs_fare_attribute.errors.count, "error") %> prohibited this gtfs_fare_attribute from being saved:</h2>
+
+      <ul>
+      <% @gtfs_fare_attribute.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fare_id %><br />
+    <%= f.text_field :fare_id %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :currency_type %><br />
+    <%= f.text_field :currency_type %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_method %><br />
+    <%= f.text_field :payment_method %>
+  </div>
+  <div class="field">
+    <%= f.label :transfers %><br />
+    <%= f.text_field :transfers %>
+  </div>
+  <div class="field">
+    <%= f.label :transfer_duration %><br />
+    <%= f.text_field :transfer_duration %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

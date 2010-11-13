@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Service:</b>
+  <%= @gtfs_calendar_date.service_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @gtfs_calendar_date.date %>
+</p>
+
+<p>
+  <b>Exception type:</b>
+  <%= @gtfs_calendar_date.exception_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_gtfs_calendar_date_path(@gtfs_calendar_date) %> |
+<%= link_to 'Back', gtfs_calendar_dates_path %>

@@ -1,0 +1,33 @@
+<h1>Listing gtfs_agencies</h1>
+
+<table>
+  <tr>
+    <th>Agency phone</th>
+    <th>Agency url</th>
+    <th>Agency</th>
+    <th>Agency name</th>
+    <th>Agency timezone</th>
+    <th>Agency lang</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gtfs_agencies.each do |gtfs_agency| %>
+  <tr>
+    <td><%= gtfs_agency.agency_phone %></td>
+    <td><%= gtfs_agency.agency_url %></td>
+    <td><%= gtfs_agency.agency_id %></td>
+    <td><%= gtfs_agency.agency_name %></td>
+    <td><%= gtfs_agency.agency_timezone %></td>
+    <td><%= gtfs_agency.agency_lang %></td>
+    <td><%= link_to 'Show', gtfs_agency %></td>
+    <td><%= link_to 'Edit', edit_gtfs_agency_path(gtfs_agency) %></td>
+    <td><%= link_to 'Destroy', gtfs_agency, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gtfs agency', new_gtfs_agency_path %>

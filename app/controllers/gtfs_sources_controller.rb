@@ -34,15 +34,19 @@ class GtfsSourcesController < ApplicationController
     dest.delete_all if dest.all.any?
     print "Importing records..."
   #  p dest
+#	count =0
 
     file =path;
     p "going to parse" + file
-    rows = FasterCSV.table(file)
-    rows.each do |row|
-      obj = dest.create!(row.to_hash)
-      obj.gtfs_source_id= @gtfs_source.id
- #     p obj
-      obj.save
+	FasterCSV.foreach( file, { :headers        => true, :converters        => :numeric,    :header_converters => :symbol } ) do |row|
+#	count++	
+
+#	if ((count % 1000) ==0) do	p count end
+#	p row
+
+	obj = dest.create!(row.to_hash)
+      	obj.gtfs_source_id= @gtfs_source.id
+      	obj.save
     end
     puts "#{dest.count} imported."
   end
@@ -69,6 +73,19 @@ class GtfsSourcesController < ApplicationController
     import_generic(base  + "calendar.txt",GtfsCalendar)    
   end
 
+  def  import_fare_attributes(base) 
+    import_generic(base  + "fare_attributes.txt",GtfsFareAttribute)    
+  end
+
+  def  import_agency(base) 
+    import_generic(base  + "agency.txt",GtfsAgency)    
+  end
+
+  def  import_calendar_dates(base) 
+    import_generic(base  + "calendar_dates.txt",GtfsCalendarDate)    
+  end
+
+
   def import
     @gtfs_source = GtfsSource.find(params[:gtfs_source_id])
     p @gtfs_source.url
@@ -90,11 +107,15 @@ class GtfsSourcesController < ApplicationController
 
     # now we can be sure the file is there and unpacked.
     # now to import the fields
+    import_fare_attributes(target_out) 
+    import_agency(target_out) 
+    import_calendar_dates(target_out) 
+    import_stoptimes(target_out) # the big one 
     import_calendars(target_out)
     import_stops(target_out)
     import_trips(target_out)
     import_routes(target_out)
-    import_stoptimes(target_out)
+
 
     
   end
