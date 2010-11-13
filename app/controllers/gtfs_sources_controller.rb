@@ -31,7 +31,7 @@ class GtfsSourcesController < ApplicationController
   def import_generic (path,dest)
     
 # simple delete 
-    dest.delete_all if dest.all.any?
+    dest.delete_all # if dest.all.any?
     print "Importing records..."
   #  p dest
 #	count =0
