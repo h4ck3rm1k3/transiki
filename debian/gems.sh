@@ -4,4 +4,4 @@ pushd /var/lib/gems/1.8/bin/
 sudo ./update_rubygems
 popd
 sudo gem install bundler
-bundle install
+sudo bundle install
