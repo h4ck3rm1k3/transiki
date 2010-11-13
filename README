@@ -2,8 +2,12 @@ transiki is a wiki of transit data, see transiki.org
 
 FIXME link to codebase, wiki, mailing list, etc...
 
-To isntall this, I needed to :
+To install this, I needed to :
 0. install the prereqs from the debian/control file
+0.1 sudo apt-get install dpkg-dev dpkg
+0.2 dpkg-buildpackage
+0.3 sudo apt-get install debhelper ruby1.8 ruby1.8-dev ruby-full build-essential libopenssl-ruby apache2 apache2-prefork-dev rubygems  rake  rdoc  liberb-ruby libbuilder-ruby  libmocha-ruby  rubygems libredcloth-ruby1.8  librack-ruby postgis postgresql-8.4-postgis  postgresql-8.4 postgresql-client-8.4
+
 1. run the script in : bash debian/gems.sh (paths from my ubuntu karmic system)
 
 # all the gem commands needed
