@@ -2,7 +2,7 @@ Source: transikiapi
 Section: interpreters
 Priority: optional
 Maintainer: James Michael DuPont <h4ck3rm1k3@flossk.org>
-Build-Depends: debhelper (>= 4.0.0), ruby1.8, ruby1.8-dev,ruby-full, build-essential, libopenssl-ruby, apache2, apache2-prefork-dev, rubygems , rake (>> 0.8.3), ruby1.8 (>= 1.8.7.249-3) | rdoc (>> 1.8.2), liberb-ruby, libbuilder-ruby (>> 2.1.2), libmocha-ruby (>> 0.6), rubygems, libredcloth-ruby1.8 (>> 4.1.1), librack-ruby,postgis, postgresql-8.4-postgis,  postgresql-8.4, postgresql-client-8.4,libnokogiri-ruby
+Build-Depends: debhelper (>= 4.0.0), ruby1.8, ruby1.8-dev,ruby-full, build-essential, libopenssl-ruby, apache2, apache2-prefork-dev, rubygems , rake (>> 0.8.3), ruby1.8 (>= 1.8.7.249-3) | rdoc (>> 1.8.2), liberb-ruby, libbuilder-ruby (>> 2.1.2), libmocha-ruby (>> 0.6), rubygems, libredcloth-ruby1.8 (>> 4.1.1), librack-ruby,postgis, postgresql-8.4-postgis,  postgresql-8.4, postgresql-client-8.4,libnokogiri-ruby, libxml2-dev libxslt1-dev
 Standards-Version: 3.6.2
 
 Package: transikiapi
