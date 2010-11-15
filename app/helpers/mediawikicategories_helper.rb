@@ -1,0 +1,2 @@
+module MediawikicategoriesHelper
+end

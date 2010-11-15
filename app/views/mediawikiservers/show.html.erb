@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @mediawikiserver.name %>
+</p>
+
+<p>
+  <b>Baseurl:</b>
+  <%= @mediawikiserver.baseurl %>
+</p>
+
+
+<%= link_to 'Edit', edit_mediawikiserver_path(@mediawikiserver) %> |
+<%= link_to 'Back', mediawikiservers_path %>

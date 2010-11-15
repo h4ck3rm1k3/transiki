@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mediawikiserver:</b>
+  <%= @mediawikiuser.mediawikiserver_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @mediawikiuser.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @mediawikiuser.user_id %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @mediawikiuser.password %>
+</p>
+
+
+<%= link_to 'Edit', edit_mediawikiuser_path(@mediawikiuser) %> |
+<%= link_to 'Back', mediawikiusers_path %>

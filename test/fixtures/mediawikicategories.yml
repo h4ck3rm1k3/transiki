@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  mediawikiserver_id: 1
+  name: 
+  description: MyText
+
+two:
+  mediawikiserver_id: 1
+  name: 
+  description: MyText

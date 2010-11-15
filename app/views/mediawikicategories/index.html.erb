@@ -1,0 +1,27 @@
+<h1>Listing mediawikicategories</h1>
+
+<table>
+  <tr>
+    <th>Mediawikiserver</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mediawikicategories.each do |mediawikicategory| %>
+  <tr>
+    <td><%= mediawikicategory.mediawikiserver_id %></td>
+    <td><%= mediawikicategory.name %></td>
+    <td><%= mediawikicategory.description %></td>
+    <td><%= link_to 'Show', mediawikicategory %></td>
+    <td><%= link_to 'Edit', edit_mediawikicategory_path(mediawikicategory) %></td>
+    <td><%= link_to 'Destroy', mediawikicategory, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mediawikicategory', new_mediawikicategory_path %>

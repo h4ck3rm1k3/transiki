@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mediawikiserver:</b>
+  <%= @mediawikicategory.mediawikiserver_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @mediawikicategory.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @mediawikicategory.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_mediawikicategory_path(@mediawikicategory) %> |
+<%= link_to 'Back', mediawikicategories_path %>

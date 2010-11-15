@@ -1,0 +1,2 @@
+module MediawikiimagefilesHelper
+end

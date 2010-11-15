@@ -1,0 +1,25 @@
+<%= form_for(@mediawikiserver) do |f| %>
+  <% if @mediawikiserver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mediawikiserver.errors.count, "error") %> prohibited this mediawikiserver from being saved:</h2>
+
+      <ul>
+      <% @mediawikiserver.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :baseurl %><br />
+    <%= f.text_field :baseurl %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

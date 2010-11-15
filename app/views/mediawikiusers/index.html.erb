@@ -1,0 +1,29 @@
+<h1>Listing mediawikiusers</h1>
+
+<table>
+  <tr>
+    <th>Mediawikiserver</th>
+    <th>Name</th>
+    <th>User</th>
+    <th>Password</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mediawikiusers.each do |mediawikiuser| %>
+  <tr>
+    <td><%= mediawikiuser.mediawikiserver_id %></td>
+    <td><%= mediawikiuser.name %></td>
+    <td><%= mediawikiuser.user_id %></td>
+    <td><%= mediawikiuser.password %></td>
+    <td><%= link_to 'Show', mediawikiuser %></td>
+    <td><%= link_to 'Edit', edit_mediawikiuser_path(mediawikiuser) %></td>
+    <td><%= link_to 'Destroy', mediawikiuser, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mediawikiuser', new_mediawikiuser_path %>

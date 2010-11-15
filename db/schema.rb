@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101113132028) do
+ActiveRecord::Schema.define(:version => 20101115115636) do
 
   create_table "garmin_ids", :force => true do |t|
     t.string   "GeoNamesCode"
@@ -173,6 +173,41 @@ ActiveRecord::Schema.define(:version => 20101113132028) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "direction_id"
+  end
+
+  create_table "mediawikicategories", :force => true do |t|
+    t.integer  "mediawikiserver_id"
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mediawikiimagefiles", :force => true do |t|
+    t.integer  "mediawikiserver_id"
+    t.string   "name"
+    t.text     "description"
+    t.string   "filetype"
+    t.string   "imageurl"
+    t.string   "imagethumb"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mediawikiservers", :force => true do |t|
+    t.string   "name"
+    t.string   "baseurl"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mediawikiusers", :force => true do |t|
+    t.integer  "mediawikiserver_id"
+    t.string   "name"
+    t.integer  "user_id"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "point_tags", :force => true do |t|

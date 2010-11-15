@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  mediawikiserver_id: 1
+  name: MyString
+  description: MyText
+  filetype: MyString
+  imageurl: MyString
+  imagethumb: MyString
+
+two:
+  mediawikiserver_id: 1
+  name: MyString
+  description: MyText
+  filetype: MyString
+  imageurl: MyString
+  imagethumb: MyString
