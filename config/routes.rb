@@ -1,5 +1,17 @@
 Transwiki::Application.routes.draw do
 
+  resources :mediawikiusers
+
+  resources :mediawikiimagefiles
+
+  resources :mediawikicategories do
+    get 'importimagefiles'
+    get 'importpages'
+  end
+
+
+  resources :mediawikiservers
+
   resources :gtfs_shapes
 
   resources :gtfs_calendar_dates

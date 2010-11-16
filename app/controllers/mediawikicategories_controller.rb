@@ -1,4 +1,9 @@
 class MediawikicategoriesController < ApplicationController
+  require 'json'
+#  require 'json/add/rails'
+  require 'uri'
+  require 'net/http'
+
   # GET /mediawikicategories
   # GET /mediawikicategories.xml
   def index
@@ -10,6 +15,73 @@ class MediawikicategoriesController < ApplicationController
     end
   end
 
+  def parsejsoncategory(jsondata)
+#    p jsondata
+    objs = JSON.parse(jsondata)
+    p objs
+#    p objs
+#    objs.each do |O|
+#      p O
+#    end
+    
+  end
+  def importimagefiles
+    idtoget = params[:mediawikicategory_id]
+    
+    target = File.dirname(__FILE__) + '/../../test/fixtures/mediawiki/';
+    target_out = target + "/" + idtoget.to_s + "/"
+    local_filename=  target_out + "wikijson.txt"
+    Dir.mkdir(target) unless File.exists? target
+    Dir.mkdir(target_out) unless File.exists? target_out
+
+    data = "NOTHING"
+
+    if (File.exists? local_filename)
+      #get the existing data
+      p "going to read " +  local_filename
+      File.open(local_filename,'r') {|f|
+        data = f.read()
+      }
+    else
+      p idtoget
+      @mediawikicategory = Mediawikicategory.find(idtoget)
+      p @mediawikicategory
+#      maxc = 500
+      maxc = 10 
+      url = "http://commons.wikimedia.org/w/api.php?cmprop=title|ids|sortkey|timestamp&format=json&list=categorymembers&cmlimit=" + maxc + "&action=query&cmtitle=Category:" + @mediawikicategory.name
+      url = URI.encode(url)
+      uri = URI.parse(url)
+      p uri
+      p uri.host
+      #    r = Net::HTTP.get_response(uri)
+      #    p r    
+      http = Net::HTTP.new(uri.host)
+      http.start do |http|     
+        p "PATH:" + uri.path 
+        p "query:" + uri.query
+        req = Net::HTTP::Get.new(uri.path + "?" + uri.query,    {"User-Agent" =>   "flossk.org User:MdupontBot 0.1 image tagger tool"} )    
+        res = http.request(req)        
+        File.open(local_filename,'w') {|f|
+          data =res.body
+          f.write(data)
+        }            
+      end# end do http
+    end # end else
+
+#    res = Net::HTTP.start(uri.host, uri.port) {|http|
+#      http.request(req)
+#    }
+#    puts res
+#    puts res.body
+  
+
+#next page example    http://commons.wikimedia.org/w/api.php?cmprop=title|ids|sortkey|timestamp&cmcontinue=File:PrizrenCollection2 2010 100 2714.JPG|&format=json&list=categorymembers&cmlimit=500&action=query&cmtitle=Category:BestPictureOfKosovoForWikipediaContest
+
+    parsejsoncategory(data)
+    
+    
+  end
+  
   # GET /mediawikicategories/1
   # GET /mediawikicategories/1.xml
   def show

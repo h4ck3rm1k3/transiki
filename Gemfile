@@ -33,6 +33,8 @@ gem 'shoulda'
 # gem 'aws-s3', :require => 'aws/s3'
 gem 'gdata'
 
+gem 'json' # for mediawiki
+
 # xml parser
 gem 'nokogiri'
 #, :lib => 'gdata'

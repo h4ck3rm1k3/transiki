@@ -1,8 +1,8 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  baseurl: MyString
+  name: wikimedia commons
+  baseurl: http://commons.wikimedia.org
 
 two:
   name: MyString
