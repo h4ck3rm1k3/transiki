@@ -24,7 +24,10 @@ objs = JSON.parse(data)
 #p pp(objs)
 #objs
 p "Cont:" 
-p objs["query-continue"]["categorymembers"]
+p objs["query-continue"]["categorymembers"]["cmcontinue"]
+#"File:PrizrenCollection2 2010 100 2714.JPG|"}}
+
+#["categorymembers"]
 #.each {|key| puts key }
 
 #objs.each_pair {|key, value| puts "#{key} is #{value}\n" }
@@ -32,7 +35,7 @@ p "going to process"
 titles = []
 objs["query"]["categorymembers"].each {|arrayval| arrayval.each_key{ |key|  titles << arrayval["title"] } }
 p "done"
-titles.each{|v| p v}
+#titles.each{|v| p v}
 
 #bjs["query"].each_key{ |key|
 #  key.each {|k| 
