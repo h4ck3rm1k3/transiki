@@ -18,7 +18,9 @@ class MediawikicategoriesController < ApplicationController
   def parsejsoncategory(jsondata)
 #    p jsondata
     objs = JSON.parse(jsondata)
-    p objs
+#    p objs
+    @titles = []
+    objs["query"]["categorymembers"].each {|arrayval| arrayval.each_key{ |key|  @titles << arrayval["title"] } }
 #    p objs
 #    objs.each do |O|
 #      p O
