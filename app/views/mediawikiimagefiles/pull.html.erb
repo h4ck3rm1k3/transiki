@@ -6,6 +6,10 @@
 </p>
 
 <p>
+<a href="<%= @imageurl %>">
+<img src="<%= @thumb %>"></img>
+</a>
+<p>
   <b>Name:</b>
   <%= @mediawikiimagefile.name %>
 </p>
@@ -29,6 +33,7 @@
   <b>Imagethumb:</b>
   <%= @mediawikiimagefile.imagethumb %>
 </p>
+
 
 
 <%= link_to 'Edit', edit_mediawikiimagefile_path(@mediawikiimagefile) %> |

@@ -29,6 +29,10 @@
   <b>Imagethumb:</b>
   <%= @mediawikiimagefile.imagethumb %>
 </p>
+<p>
+<a href="<%=  @mediawikiimagefile.imageurl %>">
+<img src="<%= @mediawikiimagefile.imagethumb %>"></img>
+</a>
 
 
 <%= link_to 'Edit', edit_mediawikiimagefile_path(@mediawikiimagefile) %> |

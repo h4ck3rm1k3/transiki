@@ -103,7 +103,20 @@ class MediawikicategoriesController < ApplicationController
     if (jsondata)
       objs = JSON.parse(jsondata)
       objs["query"]["categorymembers"].each {|arrayval| 
-          @titles << arrayval["title"] 
+        @titles << arrayval["title"] 
+
+        # now we create a simple entry for it, we can pull more data for each one individually
+        @mediawikiimagefile = Mediawikiimagefile.new
+        @mediawikiimagefile.mediawikiserver_id=@mediawikicategory.mediawikiserver_id
+        @mediawikiimagefile.name=arrayval["title"]
+        @mediawikiimagefile.save
+#        mediawikiimagefiles.
+        # example :
+        #pageid":12043600
+        #"ns":6
+        #"title":"File:SinanPasha.JPG"
+        #"sortkey":"File:SinanPasha.JPG"
+        #"timestamp":"2010-11-13T18:01:36Z"
       }
       getnext(objs,idtoget,catname)
     else

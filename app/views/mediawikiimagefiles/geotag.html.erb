@@ -1,0 +1,91 @@
+<%# javascript_include_tag "openlayers/build/OpenLayers.js" %>
+<%= javascript_include_tag "openlayers/lib/OpenLayers.js" %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mediawikiserver:</b>
+  <%= @mediawikiimagefile.mediawikiserver_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @mediawikiimagefile.name %>
+</p>
+
+<a href="<%=  @mediawikiimagefile.imageurl %>">
+<img src="<%= @mediawikiimagefile.imagethumb %>"></img>
+</a>
+
+<h2>1. Move the marker to where the photo is:</h2>
+<div id="map" style="width: 500px; height: 300px; border: 1px solid black">
+</div>
+
+<script>
+
+  var map = new OpenLayers.Map("map");
+
+  var osmLayer = new OpenLayers.Layer.OSM();
+  map.addLayer(osmLayer);
+  map.addControl(new OpenLayers.Control.LayerSwitcher());
+  var vectorLayer = new OpenLayers.Layer.Vector("Vector Layer");
+  var p = new OpenLayers.Feature.Vector(
+            new OpenLayers.Geometry.Point(0,0),
+              {type: 5}
+          );
+
+  vectorLayer.addFeatures(p);
+
+  function dragComplete(feature,pixel) {
+    var x = feature.geometry.x;
+    var y = feature.geometry.y;
+    
+    var featureClone = feature.clone();
+
+    var proj = new OpenLayers.Projection("EPSG:4326");
+    var point = featureClone.geometry;
+    point.transform(map.getProjectionObject(), proj);
+
+    $('point_longitude').value = point.x;
+    $('point_latitude').value = point.y;
+    //alert(point.x + " " + point.y);
+
+    // you'd think getting the lat/lon wouldn't be this fucking difficult, wouldn't you?
+  }
+
+  var dragController = new OpenLayers.Control.DragFeature(
+    vectorLayer, {'onComplete':
+    dragComplete});
+
+  map.addControl(dragController);
+  dragController.activate();
+
+
+  map.addLayer(vectorLayer);
+  map.zoomToMaxExtent();
+</script>
+
+<p>
+  <b>Description:</b>
+  <%= @mediawikiimagefile.description %>
+</p>
+
+<p>
+  <b>Filetype:</b>
+  <%= @mediawikiimagefile.filetype %>
+</p>
+
+<p>
+  <b>Imageurl:</b>
+  <%= @mediawikiimagefile.imageurl %>
+</p>
+
+<p>
+  <b>Imagethumb:</b>
+  <%= @mediawikiimagefile.imagethumb %>
+</p>
+<p>
+
+
+<%= link_to 'Edit', edit_mediawikiimagefile_path(@mediawikiimagefile) %> |
+<%= link_to 'Back', mediawikiimagefiles_path %>

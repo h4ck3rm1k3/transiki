@@ -2,8 +2,12 @@ Transwiki::Application.routes.draw do
 
   resources :mediawikiusers
 
-  resources :mediawikiimagefiles
+  resources :mediawikiimagefiles do
+    get 'pull'
+    get 'geotag'
+    get 'import'
 
+  end
   resources :mediawikicategories do
     get 'importimagefiles'
     get 'importpages'
