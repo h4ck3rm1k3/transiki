@@ -77,6 +77,16 @@ class MediawikiimagefilesController < ApplicationController
   def geotag
     idtoget = params[:mediawikiimagefile_id]
     @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
+
+    newpoint = params["point"]
+    if(newpoint )
+      p newpoint 
+      @point=Point.new (newpoint)
+    else
+      # to store the tago
+      @point = Point.new      
+    end
+
   end
 
   def pull 

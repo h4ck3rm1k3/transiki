@@ -5,6 +5,8 @@ Transwiki::Application.routes.draw do
   resources :mediawikiimagefiles do
     get 'pull'
     get 'geotag'
+    # when the user  is finished, post it!
+    post 'geotag'
     get 'import'
 
   end

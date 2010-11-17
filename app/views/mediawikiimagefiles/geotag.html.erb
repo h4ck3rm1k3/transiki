@@ -29,23 +29,22 @@
   map.addLayer(osmLayer);
   map.addControl(new OpenLayers.Control.LayerSwitcher());
   var vectorLayer = new OpenLayers.Layer.Vector("Vector Layer");
-  var p = new OpenLayers.Feature.Vector(
-            new OpenLayers.Geometry.Point(0,0),
-              {type: 5}
-          );
+  var pnt = new OpenLayers.LonLat(<%= @point.longitude %>,<%= @point.latitude %>);
+  proj = new OpenLayers.Projection("EPSG:4326");
+  
+  pnt.transform(proj, map.getProjectionObject());
+  map.setCenter(pnt, 15);
 
+  var gpnt = new OpenLayers.Geometry.Point(pnt.lon,pnt.lat);
+  var p = new OpenLayers.Feature.Vector(gpnt,          {type: 5}          );
   vectorLayer.addFeatures(p);
 
   function dragComplete(feature,pixel) {
     var x = feature.geometry.x;
-    var y = feature.geometry.y;
-    
+    var y = feature.geometry.y;   
     var featureClone = feature.clone();
-
-    var proj = new OpenLayers.Projection("EPSG:4326");
     var point = featureClone.geometry;
     point.transform(map.getProjectionObject(), proj);
-
     $('point_longitude').value = point.x;
     $('point_latitude').value = point.y;
     //alert(point.x + " " + point.y);
@@ -59,10 +58,9 @@
 
   map.addControl(dragController);
   dragController.activate();
-
-
   map.addLayer(vectorLayer);
-  map.zoomToMaxExtent();
+
+
 </script>
 
 <p>
@@ -86,6 +84,22 @@
 </p>
 <p>
 
+<%= form_for(@point, :url => { :action => "geotag" } ) do |f| %>
+<div class="field">
+  <%= f.label :latitude %><br />
+  <%= f.text_field :latitude %>
+</div>
+
+<div class="field">
+  <%= f.label :longitude %><br />
+  <%= f.text_field :longitude %>
+</div>
+
+<div class="actions">
+  <%= f.submit %>
+</div>
+
+<% end %>
 
 <%= link_to 'Edit', edit_mediawikiimagefile_path(@mediawikiimagefile) %> |
 <%= link_to 'Back', mediawikiimagefiles_path %>
