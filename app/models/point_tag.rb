@@ -1,5 +1,5 @@
 class PointTag < ActiveRecord::Base
-  belongs_to :point, :foreign_key => 'id'
+  belongs_to :point, :foreign_key => 'point_id'
   validates_length_of :key, :value, :maximum => 512, :allow_blank => true
   validates_uniqueness_of :id, :scope => :key
 
