@@ -6,7 +6,8 @@ Transwiki::Application.routes.draw do
     get 'pull'
     get 'geotag'
     # when the user  is finished, post it!
-    post 'geotag'
+    post 'geotag' # new geodate
+    post 'geotag' on  => member
     get 'import'
 
   end
