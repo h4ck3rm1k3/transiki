@@ -1,3 +1,4 @@
+(in /media/87ce4eeb-6589-4edc-a13a-ac286d780634/experiments/transiki/transikiapi-0.1)
                     mediawikiusers GET    /mediawikiusers(.:format)                                             {:controller=>"mediawikiusers", :action=>"index"}
                     mediawikiusers POST   /mediawikiusers(.:format)                                             {:controller=>"mediawikiusers", :action=>"create"}
                  new_mediawikiuser GET    /mediawikiusers/new(.:format)                                         {:controller=>"mediawikiusers", :action=>"new"}
@@ -8,6 +9,7 @@
            mediawikiimagefile_pull GET    /mediawikiimagefiles/:mediawikiimagefile_id/pull(.:format)            {:controller=>"mediawikiimagefiles", :action=>"pull"}
          mediawikiimagefile_geotag GET    /mediawikiimagefiles/:mediawikiimagefile_id/geotag(.:format)          {:controller=>"mediawikiimagefiles", :action=>"geotag"}
          mediawikiimagefile_geotag POST   /mediawikiimagefiles/:mediawikiimagefile_id/geotag(.:format)          {:controller=>"mediawikiimagefiles", :action=>"geotag"}
+         geotag_mediawikiimagefile POST   /mediawikiimagefiles/:id/geotag(.:format)                             {:controller=>"mediawikiimagefiles", :action=>"geotag"}
          mediawikiimagefile_import GET    /mediawikiimagefiles/:mediawikiimagefile_id/import(.:format)          {:controller=>"mediawikiimagefiles", :action=>"import"}
                mediawikiimagefiles GET    /mediawikiimagefiles(.:format)                                        {:controller=>"mediawikiimagefiles", :action=>"index"}
                mediawikiimagefiles POST   /mediawikiimagefiles(.:format)                                        {:controller=>"mediawikiimagefiles", :action=>"create"}
@@ -247,3 +249,9 @@ mediawikicategory_importimagefiles GET    /mediawikicategories/:mediawikicategor
                                    PUT    /api/0.1/point/:id(.:format)                                          {:controller=>"points", :action=>"update", :id=>/\d+/}
                                    DELETE /api/0.1/point/:id(.:format)                                          {:controller=>"points", :action=>"delete", :id=>/\d+/}
                               root        /(.:format)                                                           {:controller=>"site", :action=>"index"}
+Loaded suite /usr/bin/rake
+Started
+
+Finished in 0.006034 seconds.
+
+0 tests, 0 assertions, 0 failures, 0 errors
