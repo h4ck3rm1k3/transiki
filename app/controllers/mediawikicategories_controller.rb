@@ -17,6 +17,7 @@ class MediawikicategoriesController < ApplicationController
 
   def geturl (url,local_filename)
     data = ""
+    p "going to get " + url
     url = URI.encode(url)
     uri = URI.parse(url)
     http = Net::HTTP.new(uri.host)
@@ -53,41 +54,58 @@ class MediawikicategoriesController < ApplicationController
     end
   end
   
-  def getdata (url,idtoget,filebase)
+  def getdata (url,idtoget)
     p "getdata"
-    local_filename=genfilename("next",filebase)
+    @pagecount = @pagecount +  1
+    p @pagecount
+    name = @pagecount.to_s
+    p name
+    local_filename=genfilename(idtoget.to_s,name)
     p local_filename
     data = cachepage(local_filename)
     if (data == nil)
       data=geturl(url,local_filename)
+
     else
       p "read data"
 
     end# end do http
+
+    
     return data
   end 
 
-  def getnext (objs,idtoget)
-    nextpage=objs["query-continue"]["categorymembers"]["cmcontinue"]
-    p nextpage
-    if (nextpage)     
-      catname= objs["query"]["categorymembers"][0]["title"]
-      nexturl = "http://commons.wikimedia.org/w/api.php?cmprop=title|ids|sortkey|timestamp&cmcontinue=" "&format=json&list=categorymembers&cmlimit=500&action=query&cmtitle=Category:" + catname
-      data=getdata(nexturl,idtoget,catname + nextpage)
-      parsejsoncategory(idtoget,data)
+  def getnext (objs,idtoget,catname)
+    if (objs != nil)
+      if objs["query-continue"]
+        if objs["query-continue"]["categorymembers"]
+          if objs["query-continue"]["categorymembers"]["cmcontinue"]
+            nextpage=objs["query-continue"]["categorymembers"]["cmcontinue"]
+            @titles << "NEXT PAGE "  + nextpage
+            end
+        end
+      end
+      if (nextpage)     
+        nexturl = "http://commons.wikimedia.org/w/api.php?cmprop=title|ids|sortkey|timestamp&cmcontinue=" +nextpage+ "&format=json&list=categorymembers&cmlimit=500&action=query&cmtitle=Category:" + catname
+        data=getdata(nexturl,idtoget)
+        parsejsoncategory(idtoget,data,catname)
+      else
+        p "no next page"
+      end
     else
-      p "no next page"
+      p "no data"
     end
   end
 
-  def parsejsoncategory (idtoget,jsondata)
-    @titles = []
+  def parsejsoncategory (idtoget,jsondata,catname)
+
+    @titles << "START OF PAGE " +  @pagecount.to_s
     if (jsondata)
       objs = JSON.parse(jsondata)
-      objs["query"]["categorymembers"].each {|arrayval| arrayval.each_key{ |key|  
+      objs["query"]["categorymembers"].each {|arrayval| 
           @titles << arrayval["title"] 
-        } }
-      getnext(objs,idtoget)
+      }
+      getnext(objs,idtoget,catname)
     else
       p "no data!"
       @titles << "NO DATA" 
@@ -96,14 +114,16 @@ class MediawikicategoriesController < ApplicationController
 
   def importimagefiles
     idtoget = params[:mediawikicategory_id].to_s
+    @titles = [] # clear the list
+    @pagecount =0
     data = nil
     data = cachepage(idtoget)
     if (data == nil)
       @mediawikicategory = Mediawikicategory.find(idtoget)
       url = "http://commons.wikimedia.org/w/api.php?cmprop=title|ids|sortkey|timestamp&format=json&list=categorymembers&cmlimit=500&action=query&cmtitle=Category:" + @mediawikicategory.name
-      data= getdata(url,idtoget,"first")
+      data= getdata(url,idtoget)
     end# end do http
-    parsejsoncategory(idtoget,data)
+    parsejsoncategory(idtoget,data,@mediawikicategory.name)
     
   end
 
