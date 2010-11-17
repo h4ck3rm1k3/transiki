@@ -79,8 +79,6 @@ class MediawikiimagefilesController < ApplicationController
     @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
 
     newpoint = nil
-    #params["point"]
-
 
     # lets look up 
     pt = PointTag.where(:key => "mediawikiimagefile_id",
@@ -93,6 +91,7 @@ class MediawikiimagefilesController < ApplicationController
       p @point
       
     else
+      newpoint = params["point"]
       if(newpoint ) 
         # we have a post, lets save it.
         @point=Point.new (newpoint)
@@ -105,6 +104,8 @@ class MediawikiimagefilesController < ApplicationController
       else
         # to store the point and to fill it out.
         @point = Point.new      
+        @point.latitude=0
+        @point.longitude=0
       end
     end
   end

@@ -63,28 +63,13 @@
 
 </script>
 
-<p>
-  <b>Description:</b>
-  <%= @mediawikiimagefile.description %>
-</p>
+<%= form_for(@point, :url => { :controller => "mediawikiimagefiles",:action => "geotag" } ) do |f| %>
 
-<p>
-  <b>Filetype:</b>
-  <%= @mediawikiimagefile.filetype %>
-</p>
+<div class="field">
+  <%= f.label :id %><br />
+  <%= f.text_field :id %>
+</div>
 
-<p>
-  <b>Imageurl:</b>
-  <%= @mediawikiimagefile.imageurl %>
-</p>
-
-<p>
-  <b>Imagethumb:</b>
-  <%= @mediawikiimagefile.imagethumb %>
-</p>
-<p>
-
-<%= form_for(@point, :url => { :action => "geotag" } ) do |f| %>
 <div class="field">
   <%= f.label :latitude %><br />
   <%= f.text_field :latitude %>
@@ -101,7 +86,32 @@
 
 <% end %>
 
-<%= link_to "point", point_path(@point) %> |
+<% if @point.id != nil %> 
+<%= link_to "point", point_path(@point) %> <p>
+<% end  %> 
+
+
+<p>
+  <b>Imageurl:</b>
+  <%= @mediawikiimagefile.imageurl %>
+</p>
+
+<p>
+  <b>Imagethumb:</b>
+  <%= @mediawikiimagefile.imagethumb %>
+</p>
+<p>
+
+<p>
+  <b>Description:</b>
+  <%= @mediawikiimagefile.description %>
+</p>
+
+<p>
+  <b>Filetype:</b>
+  <%= @mediawikiimagefile.filetype %>
+</p>
+
 
 <%= link_to 'Edit', edit_mediawikiimagefile_path(@mediawikiimagefile) %> |
 <%= link_to 'Back', mediawikiimagefiles_path %>
