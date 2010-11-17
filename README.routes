@@ -8,8 +8,8 @@
                      mediawikiuser DELETE /mediawikiusers/:id(.:format)                                         {:controller=>"mediawikiusers", :action=>"destroy"}
            mediawikiimagefile_pull GET    /mediawikiimagefiles/:mediawikiimagefile_id/pull(.:format)            {:controller=>"mediawikiimagefiles", :action=>"pull"}
          mediawikiimagefile_geotag GET    /mediawikiimagefiles/:mediawikiimagefile_id/geotag(.:format)          {:controller=>"mediawikiimagefiles", :action=>"geotag"}
-         mediawikiimagefile_geotag POST   /mediawikiimagefiles/:mediawikiimagefile_id/geotag(.:format)          {:controller=>"mediawikiimagefiles", :action=>"geotag"}
-         geotag_mediawikiimagefile POST   /mediawikiimagefiles/:id/geotag(.:format)                             {:controller=>"mediawikiimagefiles", :action=>"geotag"}
+  mediawikiimagefile_create_geotag POST   /mediawikiimagefiles/:mediawikiimagefile_id/create_geotag(.:format)   {:controller=>"mediawikiimagefiles", :action=>"create_geotag"}
+  create_geotag_mediawikiimagefile PUT    /mediawikiimagefiles/:id/create_geotag(.:format)                      {:controller=>"mediawikiimagefiles", :action=>"create_geotag"}
          mediawikiimagefile_import GET    /mediawikiimagefiles/:mediawikiimagefile_id/import(.:format)          {:controller=>"mediawikiimagefiles", :action=>"import"}
                mediawikiimagefiles GET    /mediawikiimagefiles(.:format)                                        {:controller=>"mediawikiimagefiles", :action=>"index"}
                mediawikiimagefiles POST   /mediawikiimagefiles(.:format)                                        {:controller=>"mediawikiimagefiles", :action=>"create"}
@@ -252,6 +252,6 @@ mediawikicategory_importimagefiles GET    /mediawikicategories/:mediawikicategor
 Loaded suite /usr/bin/rake
 Started
 
-Finished in 0.006034 seconds.
+Finished in 0.000974 seconds.
 
 0 tests, 0 assertions, 0 failures, 0 errors

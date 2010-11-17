@@ -74,6 +74,41 @@ class MediawikiimagefilesController < ApplicationController
     jsondata= getdata ("http://commons.wikimedia.org/w/api.php?" + baseurl, curid)
   end
 
+  def create_geotag
+    idtoget = params[:id]
+    @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
+    newpoint = nil
+
+    # lets look up 
+    pt = PointTag.where(:key => "mediawikiimagefile_id",
+                   :value => @mediawikiimagefile.id.to_s).first
+    
+    if (pt)
+      p "Found:"
+      p pt
+      @point =pt.point()
+      p @point
+
+#"commit"=>"Update Point",
+# "authenticity_token"=>"OKGT0Wc88EVlsyyWL6blXFFZi2lVNpXkPoUkEXl0nLk=",
+# "_method"=>"put",
+# "utf8"=>"✓",
+# "point"=>{"latitude"=>"-0.0018453598018566",
+# "id"=>"33",
+# "longitude"=>"-0.008239746093421"},
+# "id"=>"59"
+      newpoint = params["point"]
+      if(newpoint ) 
+        # we have a post, lets save it.
+        @point.latitude=newpoint["latitude"]
+        @point.longitude=newpoint["longitude"]
+        @point.save
+      end
+    end
+
+    
+  end
+  
   def geotag
     idtoget = params[:mediawikiimagefile_id]
     @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
