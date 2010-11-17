@@ -78,31 +78,35 @@ class MediawikiimagefilesController < ApplicationController
     idtoget = params[:mediawikiimagefile_id]
     @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
 
-    newpoint = params["point"]
-    if(newpoint ) 
-      # we have a post, lets save it.
-
-      @point=Point.new (newpoint)
-      @point.save
-
-p @point
-
-      pt = PointTag.new
-      pt.point_id=@point.id
-      pt.key = "mediawikiimagefile_id"
-      pt.value = @mediawikiimagefile.id
-p pt
-      pt.save
+    newpoint = nil
+    #params["point"]
 
 
-#
+    # lets look up 
+    pt = PointTag.where(:key => "mediawikiimagefile_id",
+                   :value => @mediawikiimagefile.id.to_s).first
 
-
+    if (pt)
+      p "Found:"
+      p pt
+      @point =pt.point()
+      p @point
+      
     else
-      # to store the tago
-      @point = Point.new      
+      if(newpoint ) 
+        # we have a post, lets save it.
+        @point=Point.new (newpoint)
+        @point.save
+        pt = PointTag.new
+        pt.point_id=@point.id
+        pt.key = "mediawikiimagefile_id"
+        pt.value = @mediawikiimagefile.id
+        pt.save
+      else
+        # to store the point and to fill it out.
+        @point = Point.new      
+      end
     end
-
   end
 
   def pull 
