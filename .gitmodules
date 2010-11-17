@@ -1,0 +1,3 @@
+[submodule "public/javascripts/openlayers"]
+	path = public/javascripts/openlayers
+	url = ../openlayers/
