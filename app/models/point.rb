@@ -57,9 +57,9 @@ class Point < ActiveRecord::Base
       self.version += 1
       
       puts "going to save"
-      p self
+#      p self
       self.save!
-      p self
+#      p self
       point = Point.from_point(self)
 
       puts "Create new point"

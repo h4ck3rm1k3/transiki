@@ -79,9 +79,25 @@ class MediawikiimagefilesController < ApplicationController
     @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
 
     newpoint = params["point"]
-    if(newpoint )
-      p newpoint 
+    if(newpoint ) 
+      # we have a post, lets save it.
+
       @point=Point.new (newpoint)
+      @point.save
+
+p @point
+
+      pt = PointTag.new
+      pt.point_id=@point.id
+      pt.key = "mediawikiimagefile_id"
+      pt.value = @mediawikiimagefile.id
+p pt
+      pt.save
+
+
+#
+
+
     else
       # to store the tago
       @point = Point.new      
