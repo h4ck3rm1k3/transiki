@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mediawikiserver:</b>
+  <%= @mediawikiimagefile.mediawikiserver_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @mediawikiimagefile.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @mediawikiimagefile.description %>
+</p>
+
+<p>
+  <b>Filetype:</b>
+  <%= @mediawikiimagefile.filetype %>
+</p>
+
+<p>
+  <b>Imageurl:</b>
+  <%= @mediawikiimagefile.imageurl %>
+</p>
+
+<p>
+  <b>Imagethumb:</b>
+  <%= @mediawikiimagefile.imagethumb %>
+</p>
+
+
+<%= link_to 'Edit', edit_mediawikiimagefile_path(@mediawikiimagefile) %> |
+<%= link_to 'Back', mediawikiimagefiles_path %>
