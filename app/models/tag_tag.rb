@@ -1,5 +1,5 @@
 class TagTag < ActiveRecord::Base
-  belongs_to :tag, :foreign_key => 'id'
+  belongs_to :tag, :foreign_key => 'tag_id'
   validates_length_of :key, :value, :maximum => 512, :allow_blank => true
   validates_uniqueness_of :id, :scope => :key
 
