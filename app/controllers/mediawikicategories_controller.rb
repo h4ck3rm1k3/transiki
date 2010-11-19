@@ -108,6 +108,7 @@ class MediawikicategoriesController < ApplicationController
         # now we create a simple entry for it, we can pull more data for each one individually
         @mediawikiimagefile = Mediawikiimagefile.new
         @mediawikiimagefile.mediawikiserver_id=@mediawikicategory.mediawikiserver_id
+        @mediawikiimagefile.mediawikicategory_id=@mediawikicategory.id
         @mediawikiimagefile.name=arrayval["title"]
         @mediawikiimagefile.save
 #        mediawikiimagefiles.
@@ -123,6 +124,27 @@ class MediawikicategoriesController < ApplicationController
       p "no data!"
       @titles << "NO DATA" 
     end
+  end
+
+  def pull
+    #
+    idtoget = params[:mediawikicategory_id].to_s
+    @mediawikicategory = Mediawikicategory.find(idtoget)
+    @titles = [] # clear the list
+    
+    # now pull all the pages from this category 
+    @mediawikiimagefiles = Mediawikiimagefile.where(:mediawikicategory_id => params[:mediawikicategory_id])
+    @mediawikiimagefiles.each {|image|
+      errorcode= image.pull
+      
+      if (errorcode == 0)
+        p "OK"
+      else
+        p errorcode
+      end
+      @titles << image
+    }
+
   end
 
   def importimagefiles

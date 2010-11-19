@@ -16,6 +16,9 @@ Transwiki::Application.routes.draw do
   resources :mediawikicategories do
     get 'importimagefiles'
     get 'importpages'
+    
+    #pull updated versions of the items
+    get 'pull'
   end
 
 
