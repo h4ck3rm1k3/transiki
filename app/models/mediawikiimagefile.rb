@@ -1,13 +1,23 @@
 class Mediawikiimagefile < ActiveRecord::Base
 
+  def log (message)
+    print "LOG:" + message + "\n";
+  end
+
   def geturl (url,local_filename)
     data = ""
-#    p "going to get " + url
+    log( "going to get " + url)
     url = URI.encode(url)
     uri = URI.parse(url)
     http = Net::HTTP.new(uri.host)
     http.start do |http|     
-      req = Net::HTTP::Get.new(uri.path + "?" + uri.query,    {"User-Agent" =>   "flossk.org User:MdupontBot 0.1 image tagger tool"} )    
+      tmpurl = uri.path
+
+      # does it have a query
+      if (uri.query)
+        tmpurl = tmpurl+ "?" + uri.query
+      end
+      req = Net::HTTP::Get.new(tmpurl,    {"User-Agent" =>   "flossk.org User:MdupontBot 0.1 image tagger tool"} )    
       res = http.request(req)        
       File.open(local_filename,'w') {|f|
         data =res.body
@@ -30,7 +40,7 @@ class Mediawikiimagefile < ActiveRecord::Base
     data = "NOTHING"
     if (File.exists? local_filename)
       #get the existing data
-#      p "going to read " +  local_filename
+      log( "going to read " +  local_filename)
       File.open(local_filename,'r') {|f|
         return f.read()
       }
@@ -43,29 +53,27 @@ class Mediawikiimagefile < ActiveRecord::Base
 #    p "getdata"
     @pagecount = 1
     name = @pagecount.to_s
-#    p name
+    log( "getdata" + name)
     local_filename=genfilename(idtoget.to_s,name)
-#    p local_filename
-    data = cachepage(local_filename)
-    if (data == nil)
+    log("created local file" + local_filename)
+    data = cachepage(local_filename) # look up the page
+    if (data == nil) # no data and then get it if not 
       data=geturl(url,local_filename)
-
     else
-#      p "read data"
+      # we have gotten the data already
+    end # end do http
 
-    end# end do http
-
-    
     return data
   end 
 
   def api (curid, baseurl)
-#    p baseurl 
+    log("api" + baseurl )
     jsondata= getdata("http://commons.wikimedia.org/w/api.php?" + baseurl, curid)
   end
 
-  def pull 
-    jsondata= api(id.to_s, "action=query&titles=" + name + "&prop=imageinfo&format=json&iiprop=timestamp|user|comment|url|size|dimensions|sha1|mime|metadata|archivename|bitdepth&iiurlwidth=120px")
+  def pull (imagename)
+    
+    jsondata= api(id.to_s, "action=query&titles=" + imagename + "&prop=imageinfo&format=json&iiprop=timestamp|user|comment|url|size|dimensions|sha1|mime|metadata|archivename|bitdepth&iiurlwidth=120px")
     info= JSON.parse(jsondata)
     info["query"]["pages"].each {|imageid, image|
       if image["imageinfo"]
