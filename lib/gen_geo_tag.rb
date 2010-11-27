@@ -13,16 +13,13 @@ class GenGeoTag
 
     logv("targetclassname",targetclassname)
     logv("newpoint",newpoint)
-    pp targetclass 
-    pp targetclass.name
 
-#    targetobject = eval(targetclassname + ".find(idtoget)")
-    targetclassname.find(idtoget)
-    newgeoobject = nil
+    targetobject = targetclassname.find(idtoget)
+    newgeoobject = nil # the point 
 
     # lets look up 
     fieldname = targetclassname + "_id"
-    fieldval  = targetobject.id.to_s
+    fieldval  = targetobject.object_id.to_s
 
     pt = PointTag.where(:key => fieldname,     :value =>fieldval ).first
 
