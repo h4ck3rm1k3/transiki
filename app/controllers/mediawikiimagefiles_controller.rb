@@ -10,71 +10,25 @@ class MediawikiimagefilesController < ApplicationController
     end
   end
 
-  def create_geotag
-    idtoget = params[:id]
-    @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
-    newpoint = nil
-    # lets look up 
-    pt = PointTag.where(:key => "mediawikiimagefile_id",
-                   :value => @mediawikiimagefile.id.to_s).first
-    
-    if (pt)
-      # found 
-      @point =pt.point()
-      newpoint = params["point"]
-      if(newpoint ) 
-        # we have a post, lets save it.
-        @point.latitude=newpoint["latitude"]
-        @point.longitude=newpoint["longitude"]
-        @point.save
-      end
-    end
-  end
+  #          mediawikiimagefile_pull GET    /mediawikiimagefiles/:mediawikiimagefile_id/pull(.:format)            {:controller=>"mediawikiimagefiles", :action=>"pull"}
+  #        mediawikiimagefile_geotag GET    /mediawikiimagefiles/:mediawikiimagefile_id/geotag(.:format)          {:controller=>"mediawikiimagefiles", :action=>"geotag"}
+  # mediawikiimagefile_create_geotag POST   /mediawikiimagefiles/:mediawikiimagefile_id/create_geotag(.:format)   {:controller=>"mediawikiimagefiles", :action=>"create_geotag"}
+  # create_geotag_mediawikiimagefile PUT    /mediawikiimagefiles/:id/create_geotag(.:format)                      {:controller=>"mediawikiimagefiles", :action=>"create_geotag"}
+  #        mediawikiimagefile_import GET    /mediawikiimagefiles/:mediawikiimagefile_id/import(.:format)          {:controller=>"mediawikiimagefiles", :action=>"import"}
+  #              mediawikiimagefiles GET    /mediawikiimagefiles(.:format)                                        {:controller=>"mediawikiimagefiles", :action=>"index"}
+  #              mediawikiimagefiles POST   /mediawikiimagefiles(.:format)                                        {:controller=>"mediawikiimagefiles", :action=>"create"}
+  #           new_mediawikiimagefile GET    /mediawikiimagefiles/new(.:format)                                    {:controller=>"mediawikiimagefiles", :action=>"new"}
+  #          edit_mediawikiimagefile GET    /mediawikiimagefiles/:id/edit(.:format)                               {:controller=>"mediawikiimagefiles", :action=>"edit"}
+  #               mediawikiimagefile GET    /mediawikiimagefiles/:id(.:format)                                    {:controller=>"mediawikiimagefiles", :action=>"show"}
+  #               mediawikiimagefile PUT    /mediawikiimagefiles/:id(.:format)                                    {:controller=>"mediawikiimagefiles", :action=>"update"}
+  #               mediawikiimagefile DELETE /mediawikiimagefiles/:id(.:format)                                    {:controller=>"mediawikiimagefiles", :action=>"destroy"}
 
   def geotag
     idtoget = params[:mediawikiimagefile_id]
     @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
-
-    newpoint = nil
-
-    # lets look up 
-    pt = PointTag.where(:key => "mediawikiimagefile_id",
-                   :value => @mediawikiimagefile.id.to_s).first
-
-    if (pt)
-      p "Found:"
-      p pt
-      @point =pt.point()
-      p @point
-      
-    else
-      newpoint = params["point"]
-      if(newpoint ) 
-        # we have a post, lets save it.
-        @point=Point.new(newpoint)
-        @point.save
-        pt = PointTag.new
-        pt.point_id=@point.id
-        pt.key = "mediawikiimagefile_id"
-        pt.value = @mediawikiimagefile.id
-        pt.save
-      else
-        # to store the point and to fill it out.
-        @point = Point.new
-        @point.latitude=0
-        @point.longitude=0
-      end
-    end
+# TODO   b@mediawikiimagefile.geota
   end
 
-  def pull 
-    idtoget = params[:mediawikiimagefile_id]
-    @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
-    @mediawikiimagefile.pull
-  end
-
-  # GET /mediawikiimagefiles/1
-  # GET /mediawikiimagefiles/1.xml
   def show
     @mediawikiimagefile = Mediawikiimagefile.find(params[:id])
 
@@ -82,6 +36,12 @@ class MediawikiimagefilesController < ApplicationController
       format.html # show.html.erb
       format.xml  { render :xml => @mediawikiimagefile }
     end
+  end
+
+  def pull 
+    idtoget = params[:mediawikiimagefile_id]
+    @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
+    @mediawikiimagefile.pull
   end
 
   # GET /mediawikiimagefiles/new

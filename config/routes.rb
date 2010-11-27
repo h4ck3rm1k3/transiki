@@ -1,5 +1,6 @@
 Transwiki::Application.routes.draw do
 
+
   resources :mediawikiusers
 
   resources :mediawikiimagefiles do

@@ -6,28 +6,38 @@ class MediawikiimagefileTest < ActiveSupport::TestCase
     assert true
   end
 
-  test "geturl" do
-        f=Mediawikiimagefile.new
-    f.geturl("http://www.archive.org/index.php","testfile")
+  test "testgeneric" do
+    g = GenGeoTag.new()
+    newpoint = {}
+    newpoint["latitude"]=123
+    newpoint["longitude"]=345
+    g.create_point_geotag(Mediawikiimagefile,"mediawikiimagefile",1, newpoint)
+
+
   end
 
-  test "def genfilename (idtoget,basename)" do 
-    f=Mediawikiimagefile.new
-    filename =f.genfilename("idtoget123","basename")
-    f.geturl("http://www.archive.org/index.php",filename)
+  # test "geturl" do
+  #       f=Mediawikiimagefile.new
+  #   f.geturl("http://www.archive.org/index.php","testfile")
+  # end
+
+  # test "def genfilename (idtoget,basename)" do 
+  #   f=Mediawikiimagefile.new
+  #   filename =f.genfilename("idtoget123","basename")
+  #   f.geturl("http://www.archive.org/index.php",filename)
     
-  end
+  # end
 
-  test "def getdata (url,idtoget)" do
-    f=Mediawikiimagefile.new
-    f.geturl("http://www.archive.org/index.php","1234")
+  # test "def getdata (url,idtoget)" do
+  #   f=Mediawikiimagefile.new
+  #   f.geturl("http://www.archive.org/index.php","1234")
 
-  end
+  # end
 
-  test "def pull " do
-    f=Mediawikiimagefile.new
-    data = f.pull("File:Brandbil i Hofors.jpg")
-  end
+  # test "def pull " do
+  #   f=Mediawikiimagefile.new
+  #   data = f.pull("File:Brandbil i Hofors.jpg")
+  # end
 
 
 end
