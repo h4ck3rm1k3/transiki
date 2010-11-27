@@ -6,39 +6,79 @@ class GenGeoTag
     pp val
   end
 
+
+
   # the targetclass is the class we want to create
   # targetclassname is the name of the class 
   # this uses the class Point as the geotag
-  def create_point_geotag (targetclass, targetclassname, idtoget, newpoint )
 
-    logv("targetclassname",targetclassname)
+  # four cases 
+  # called with no newpoint parameter or empty one, this will create a new point in memory to be filled out.
+  # called to save that point
+  # called to update the location of the point, so the pointtag was filled out.
+
+  def create_point_geotag (targetclass,  idtoget, newpoint )
+
+    logv("targetclassname",targetclass.name)
     logv("newpoint",newpoint)
 
-    targetobject = targetclassname.find(idtoget)
+    # the object that will be associated with a point
+    targetobject = targetclass.find(idtoget)
+    raise "No object found " + targetclass.name + " and " + idtoget unless targetobject
+    fieldvalraw  = targetobject.object_id
+    fieldval     = fieldvalraw.to_s
+
     newgeoobject = nil # the point 
 
     # lets look up 
-    fieldname = targetclassname + "_id"
-    fieldval  = targetobject.object_id.to_s
+    fieldname = targetclass.name + "_id"
 
     pt = PointTag.where(:key => fieldname,     :value =>fieldval ).first
-
+    
     if (pt)
       # found 
+      logv( "We found an exiting tag ", pt)
+
       point =pt.point()
 
-      if(newpoint ) 
+      if(newpoint )  # we have an object to save
         # we have a post, lets save it.
         point.latitude=newpoint["latitude"]
         point.longitude=newpoint["longitude"]
-        point.save
+        point.save        
+      else
+
+        ## we have a database point to update, but no data, strange!
+
       end
 
-      return point
     else
-      # no point fount
+      # no pointtag found, lets add one
+      if(newpoint )  # did we get a point as a parametre?
+        # we have a post, lets save it.
+        point=Point.new(newpoint)
+        point.save
+        pt = PointTag.new
+        pt.point_id=point.id
+        pt.key = fieldname
+        pt.value = fieldval # as a string
+        pt.save
+      else
+        # to store the point and to fill it out.
+        # this is the new point
+        point = Point.new
+        point.latitude=0
+        point.longitude=0
+      end
+
     end
+
+    # the point will be returned no matter what
+    return point
     
   end
+
+
+
 
 end

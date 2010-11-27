@@ -6,15 +6,53 @@ class MediawikiimagefileTest < ActiveSupport::TestCase
     assert true
   end
 
+  def makenew
+    obj =Mediawikiimagefile.new()
+    obj.save
+    p "Made new object " 
+    p obj
+    return obj
+  end
+
   test "testgeneric" do
     g = GenGeoTag.new()
     newpoint = {}
     newpoint["latitude"]=123
     newpoint["longitude"]=345
-    g.create_point_geotag(Mediawikiimagefile,"mediawikiimagefile",1, newpoint)
+    obj = makenew()
+    
+    pnt = g.create_point_geotag(Mediawikiimagefile,obj.id, newpoint)
+    p pnt
+  end
 
+  test "testgeneric2" do
+    g = GenGeoTag.new()
+    newpoint = {}
+    obj = makenew()
+    pnt= g.create_point_geotag(Mediawikiimagefile,obj.id, newpoint)
+    p pnt
+  end
+
+  test "testgeneric3" do
+    g = GenGeoTag.new()
+    newpoint = {}
+    newpoint["latitude"]=123
+    newpoint["longitude"]=345
+    obj = makenew()
+    pnt= g.create_point_geotag(Mediawikiimagefile,obj.id, newpoint)
+    p pnt
+
+# now update the point
+    newpoint["latitude"]=345
+    newpoint["longitude"]=434
+
+    pnt= g.create_point_geotag(Mediawikiimagefile,obj.id, newpoint)
+
+    p pnt 
 
   end
+
+
 
   # test "geturl" do
   #       f=Mediawikiimagefile.new
