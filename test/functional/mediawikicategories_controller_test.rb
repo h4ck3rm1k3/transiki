@@ -51,4 +51,5 @@ class MediawikicategoriesControllerTest < ActionController::TestCase
 
     assert_redirected_to mediawikicategories_path
   end
+
 end

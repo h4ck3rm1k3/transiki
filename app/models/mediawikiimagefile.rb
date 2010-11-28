@@ -7,6 +7,16 @@ class Mediawikiimagefile < ActiveRecord::Base
     print "LOG:" + message + "\n";
   end
 
+  def logv (name, message)
+    if (message)
+      print "LOG:" + name + ":"
+      pp message 
+      print "\n";
+    else
+      print "LOG:" + name + ":NULL\n";
+    end
+  end
+
   def geturl (url,local_filename)
     data = ""
     log( "going to get " + url)
@@ -99,62 +109,20 @@ class Mediawikiimagefile < ActiveRecord::Base
   end
 
 
-  def create_geotag
-    idtoget = params[:id]
-    @mediawikiimagefile = Mediawikiimagefile.find(idtoget)
-    newpoint = nil
-    # lets look up 
-    pt = PointTag.where(:key => "mediawikiimagefile_id",
-                   :value => @mediawikiimagefile.id.to_s).first
-    
-    if (pt)
-      # found 
-      @point =pt.point()
-      newpoint = params["point"]
-      if(newpoint ) 
-        # we have a post, lets save it.
-        @point.latitude=newpoint["latitude"]
-        @point.longitude=newpoint["longitude"]
-        @point.save
-      end
-    end
+  def geotag(newpoint)
+
+    logv("newpoint",newpoint)
+    g = GenGeoTag.new()
+    p "running geotag"
+    logv("mediawiki image file self", self)
+    logv("mediawiki image file self id",self.id)
+
+    point = g.create_point_geotag(Mediawikiimagefile,self.id, newpoint)
+
+    return point 
+
   end
 
-  def geotag
-
-    #
-    newpoint = nil
-
-    # lets look up a point tag based on our id, it is converted to a string and stored in a class 
-    # 
-    pt = PointTag.where(:key => "mediawikiimagefile_id",
-                   :value => self.id.to_s).first
-
-    if (pt)
-      p "Found:"
-      p pt
-      @point =pt.point()
-      p @point
-      
-    else
-      newpoint = params["point"]
-      if(newpoint ) 
-        # we have a post, lets save it.
-        @point=Point.new(newpoint)
-        @point.save
-        pt = PointTag.new
-        pt.point_id=@point.id
-        pt.key = "mediawikiimagefile_id"
-        pt.value = @mediawikiimagefile.id
-        pt.save
-      else
-        # to store the point and to fill it out.
-        @point = Point.new
-        @point.latitude=0
-        @point.longitude=0
-      end
-    end
-  end
 
 
   # GET /mediawikiimagefiles/1

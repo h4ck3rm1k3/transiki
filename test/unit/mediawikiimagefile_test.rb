@@ -47,35 +47,32 @@ class MediawikiimagefileTest < ActiveSupport::TestCase
     newpoint["longitude"]=434
 
     pnt= g.create_point_geotag(Mediawikiimagefile,obj.id, newpoint)
-
     p pnt 
 
   end
 
 
+   test "geturl" do
+         f=Mediawikiimagefile.new
+     f.geturl("http://www.archive.org/index.php","testfile")
+   end
 
-  # test "geturl" do
-  #       f=Mediawikiimagefile.new
-  #   f.geturl("http://www.archive.org/index.php","testfile")
-  # end
-
-  # test "def genfilename (idtoget,basename)" do 
-  #   f=Mediawikiimagefile.new
-  #   filename =f.genfilename("idtoget123","basename")
-  #   f.geturl("http://www.archive.org/index.php",filename)
+   test "def genfilename (idtoget,basename)" do 
+     f=Mediawikiimagefile.new
+     filename =f.genfilename("idtoget123","basename")
+     f.geturl("http://www.archive.org/index.php",filename)
     
-  # end
+   end
 
-  # test "def getdata (url,idtoget)" do
-  #   f=Mediawikiimagefile.new
-  #   f.geturl("http://www.archive.org/index.php","1234")
+   test "def getdata (url,idtoget)" do
+     f=Mediawikiimagefile.new
+     f.geturl("http://www.archive.org/index.php","1234")
+  end
 
-  # end
-
-  # test "def pull " do
-  #   f=Mediawikiimagefile.new
-  #   data = f.pull("File:Brandbil i Hofors.jpg")
-  # end
+   test "def pull " do
+     f=Mediawikiimagefile.new
+     data = f.pull("File:Brandbil i Hofors.jpg")
+   end
 
 
 end

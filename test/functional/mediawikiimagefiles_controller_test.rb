@@ -46,4 +46,32 @@ class MediawikiimagefilesControllerTest < ActionController::TestCase
 
     assert_redirected_to mediawikiimagefiles_path
   end
+
+  #categories_controller_test.rb
+  test "should update mediawikiimagefile geotag " do
+    assert_difference('Mediawikiimagefile.count') do
+      post :create, :mediawikiimagefile => @mediawikiimagefile.attributes
+    end
+    assert_redirected_to mediawikiimagefile_path(assigns(:mediawikiimagefile))
+
+    get :show, :id => @mediawikiimagefile.to_param
+    p @mediawikiimagefile
+
+    get :geotag, :mediawikiimagefile_id => @mediawikiimagefile.to_param
+    p @point
+
+    newpoint = {}
+    newpoint["latitude"]=123
+    newpoint["longitude"]=345
+    p "going to post "
+    p "as param"
+    pp @mediawikiimagefile.to_param
+    p "as data"
+    pp @mediawikiimagefile
+    p "next is post"
+    post :geotag, :point => newpoint, :mediawikiimagefile_id => @mediawikiimagefile.to_param
+    p @point
+
+  end
+
 end

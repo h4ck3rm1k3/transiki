@@ -21,6 +21,7 @@ class GenGeoTag
 
     logv("targetclassname",targetclass.name)
     logv("newpoint",newpoint)
+    logv("idtoget",idtoget)
 
     # the object that will be associated with a point
     targetobject = targetclass.find(idtoget)
