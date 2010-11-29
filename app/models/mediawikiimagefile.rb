@@ -119,6 +119,8 @@ class Mediawikiimagefile < ActiveRecord::Base
 
     point = g.create_point_geotag(Mediawikiimagefile,self.id, newpoint)
 
+    logv("geotag returned point",point)
+
     return point 
 
   end

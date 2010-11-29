@@ -2,8 +2,13 @@ class GenGeoTag
 #< ActiveRecord::Base
 
   def logv(name,val)
-    p "Name:" + name 
+    p "gengeotag:Name:" + name 
     pp val
+  end
+
+  def log(name)
+    p "gengeotag:LOG:" + name 
+
   end
 
 
@@ -26,7 +31,7 @@ class GenGeoTag
     # the object that will be associated with a point
     targetobject = targetclass.find(idtoget)
     raise "No object found " + targetclass.name + " and " + idtoget unless targetobject
-    fieldvalraw  = targetobject.object_id
+    fieldvalraw  = targetobject.id
     fieldval     = fieldvalraw.to_s
 
     newgeoobject = nil # the point 
@@ -34,11 +39,14 @@ class GenGeoTag
     # lets look up 
     fieldname = targetclass.name + "_id"
 
+    logv("look up point tag for fieldname ",fieldname)
+    logv("look up point tag for fieldvalue ",fieldval)
+
     pt = PointTag.where(:key => fieldname,     :value =>fieldval ).first
     
     if (pt)
       # found 
-      logv( "We found an exiting tag ", pt)
+      logv( "We found an existing tag ", pt)
 
       point =pt.point()
 
@@ -49,30 +57,39 @@ class GenGeoTag
         point.save        
       else
 
-        ## we have a database point to update, but no data, strange!
+        log("we have a database point to update, but no data, strange!")
+        raise "database inconsitent"
 
       end
 
     else
-      # no pointtag found, lets add one
+        log("no pointtag found, lets add one")
       if(newpoint )  # did we get a point as a parametre?
         # we have a post, lets save it.
         point=Point.new(newpoint)
         point.save
+        logv( "created new point", point)
+
         pt = PointTag.new
         pt.point_id=point.id
         pt.key = fieldname
         pt.value = fieldval # as a string
         pt.save
+        logv( "created new pointtag ", pt)
+
       else
         # to store the point and to fill it out.
         # this is the new point
         point = Point.new
         point.latitude=0
         point.longitude=0
+
+        logv( "created new point", point)
       end
 
     end
+
+    logv( "going to return  ", point)
 
     # the point will be returned no matter what
     return point

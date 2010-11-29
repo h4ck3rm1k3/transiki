@@ -72,6 +72,12 @@ class MediawikiimagefilesControllerTest < ActionController::TestCase
     post :geotag, :point => newpoint, :mediawikiimagefile_id => @mediawikiimagefile.to_param
     p @point
 
+    newpoint["latitude"]=987
+    newpoint["longitude"]=654
+    p "next is post a new point"
+    post :geotag, :point => newpoint, :mediawikiimagefile_id => @mediawikiimagefile.to_param
+    p @point
+
   end
 
 end
