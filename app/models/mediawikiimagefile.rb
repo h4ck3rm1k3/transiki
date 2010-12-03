@@ -10,7 +10,7 @@ class Mediawikiimagefile < ActiveRecord::Base
   def logv (name, message)
     if (message)
       print "LOG:" + name + ":"
-      pp message 
+      p message 
       print "\n";
     else
       print "LOG:" + name + ":NULL\n";
@@ -109,7 +109,7 @@ class Mediawikiimagefile < ActiveRecord::Base
   end
 
 
-  def geotag(newpoint)
+  def geotag(newpoint, defaultpoint)
 
     logv("newpoint",newpoint)
     g = GenGeoTag.new()
@@ -117,7 +117,7 @@ class Mediawikiimagefile < ActiveRecord::Base
     logv("mediawiki image file self", self)
     logv("mediawiki image file self id",self.id)
 
-    point = g.create_point_geotag(Mediawikiimagefile,self.id, newpoint)
+    point = g.create_point_geotag(Mediawikiimagefile,self.id, newpoint, defaultpoint)
 
     logv("geotag returned point",point)
 

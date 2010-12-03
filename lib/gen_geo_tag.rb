@@ -1,9 +1,12 @@
 class GenGeoTag 
 #< ActiveRecord::Base
+  require 'pp'
 
   def logv(name,val)
     p "gengeotag:Name:" + name 
+
     pp val
+
   end
 
   def log(name)
@@ -22,7 +25,7 @@ class GenGeoTag
   # called to save that point
   # called to update the location of the point, so the pointtag was filled out.
 
-  def create_point_geotag (targetclass,  idtoget, newpoint )
+  def create_point_geotag (targetclass,  idtoget, newpoint , defaultpoint)
 
     logv("targetclassname",targetclass.name)
     logv("newpoint",newpoint)
@@ -74,6 +77,7 @@ class GenGeoTag
         pt.point_id=point.id
         pt.key = fieldname
         pt.value = fieldval # as a string
+
         pt.save
         logv( "created new pointtag ", pt)
 
@@ -81,8 +85,9 @@ class GenGeoTag
         # to store the point and to fill it out.
         # this is the new point
         point = Point.new
-        point.latitude=0
-        point.longitude=0
+
+        point.latitude=     defaultpoint.latitude
+        point.longitude=    defaultpoint.longitude
 
         logv( "created new point", point)
       end
